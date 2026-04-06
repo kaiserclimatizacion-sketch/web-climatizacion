@@ -237,10 +237,10 @@
       /* Mobile background image */
       .bg-main {
         background-image: url('fondo-movil.png');
-        background-size: contain;
+        background-size: 95% auto; /* Reducido un 5% adicional */
         background-repeat: no-repeat;
         background-position: center top;
-        background-color: #f1f5f9; /* Color de fondo para rellenar el espacio extra */
+        background-color: #f1f5f9; 
         background-attachment: scroll;
       }
 
@@ -299,17 +299,28 @@
         display: flex;
       }
 
+      /* Control del submenú en móvil */
+      #mobile-dropdown-toggle:checked ~ .dropdown-menu {
+        display: flex;
+        animation: subMenuFade 0.3s ease;
+      }
+
+      @keyframes subMenuFade {
+        from { opacity: 0; transform: translateY(-5px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
       .dropdown-menu {
         position: static;
         box-shadow: none;
-        background: transparent;
+        background: rgba(0,0,0,0.03);
         border: none;
-        padding-top: 10px;
-        padding-left: 15px;
+        padding: 5px 0 5px 20px;
         opacity: 1;
         pointer-events: auto;
         transform: none;
-        display: flex;
+        display: none; /* Oculto por defecto en móvil */
+        min-width: unset;
       }
 
       .dropdown:active .dropdown-menu,
@@ -525,7 +536,8 @@
       <a href="#quienes-somos">Quienes Somos</a>
       <a href="#zonas">Zonas de Servicio</a>
       <div class="dropdown">
-        <div class="dropdown-label">Servicios de Climatización <span style="font-size: 0.7em;">▼</span></div>
+        <input type="checkbox" id="mobile-dropdown-toggle" style="display:none;">
+        <label for="mobile-dropdown-toggle" class="dropdown-label">Servicios de Climatización <span style="font-size: 0.7em;">▼</span></label>
         <div class="dropdown-menu">
           <a href="#servicios">Instalaciones</a>
           <a href="#servicios">Reparaciones</a>
