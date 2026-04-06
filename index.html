@@ -245,30 +245,37 @@
       }
 
       .glass-header {
-        left: 5%;
-        right: 5%;
+        left: 5% !important;
+        right: 5% !important;
+        width: 90% !important;
         top: 15px;
-        width: 90%; /* Misma anchura que la imagen de fondo */
-        border-radius: 14px;
+        border-radius: 12px;
         border: 4px solid #94a3b8;
+        overflow: hidden; /* Garantiza que nada se salga del rectangulo */
       }
 
       .header-top {
-        padding: 10px 20px;
-        gap: 15px;
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 8px 15px !important;
+        gap: 10px !important;
+        width: 100%;
       }
 
       .logo-img {
-        width: 80px;
-        height: 80px;
+        width: 60px !important;
+        height: 60px !important;
       }
 
       .title-img-container {
         display: flex;
+        flex: 1;
+        justify-content: center;
       }
 
       .title-img {
-        height: 55px;
+        height: 40px !important;
       }
 
       /* Ocultar número e icono en móvil para mayor limpieza */
