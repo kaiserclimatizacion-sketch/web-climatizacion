@@ -237,8 +237,10 @@
       /* Mobile background image */
       .bg-main {
         background-image: url('fondo-movil.png');
-        background-size: 100% auto;
+        background-size: contain;
+        background-repeat: no-repeat;
         background-position: center top;
+        background-color: #f1f5f9; /* Color de fondo para rellenar el espacio extra */
         background-attachment: scroll;
       }
 
@@ -307,7 +309,7 @@
         opacity: 1;
         pointer-events: auto;
         transform: none;
-        display: none;
+        display: flex;
       }
 
       .dropdown:active .dropdown-menu,
