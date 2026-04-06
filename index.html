@@ -227,19 +227,114 @@
       color: #00BCEB;
     }
 
+    .hamburger-btn {
+      display: none;
+      font-size: 2.2rem;
+      color: #1A3050;
+      cursor: pointer;
+    }
+
     @media (max-width: 950px) {
       .glass-header {
         left: 0;
         right: 0;
         top: 0;
         border-radius: 0;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+      }
+
+      .header-top {
+        padding: 10px 20px;
+        gap: 15px;
+      }
+
+      .logo-img {
+        width: 80px;
+        height: 80px;
       }
 
       .title-img-container {
+        display: flex;
+      }
+
+      .title-img {
+        height: 55px;
+      }
+
+      /* Ocultar número e icono en móvil para mayor limpieza */
+      .contact-block {
         display: none;
       }
 
-      /* Hide center title on small screens */
+      .hamburger-btn {
+        display: block;
+        margin-left: auto;
+      }
+
+      /* Menú Hamburguesa Toggle */
+      nav {
+        display: none;
+        flex-direction: column;
+        background: rgba(245, 248, 252, 0.98);
+        padding: 20px;
+        gap: 20px;
+      }
+
+      nav a, .dropdown-label {
+        font-size: 1.2rem;
+      }
+
+      #mobile-menu-toggle:checked ~ nav {
+        display: flex;
+      }
+
+      .dropdown-menu {
+        position: static;
+        box-shadow: none;
+        background: transparent;
+        border: none;
+        padding-top: 10px;
+        padding-left: 15px;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+        display: none;
+      }
+
+      .dropdown:active .dropdown-menu,
+      .dropdown:hover .dropdown-menu {
+        display: flex;
+        transform: none;
+      }
+
+      /* Ajustes Responsivos del Hero */
+      #hero > div {
+        padding-top: 130px !important;
+      }
+
+      #hero h1 {
+        font-size: 3rem !important;
+      }
+
+      #hero p:first-of-type {
+        font-size: 1.1rem !important;
+      }
+
+      /* Ajuste Quienes Somos a 1 Columna y la imagen baja sola */
+      .about-grid {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+      }
+
+      .about-grid > div > img {
+        max-height: 400px !important;
+      }
+      
+      .about-grid > div:last-child {
+        position: static !important;
+      }
     }
 
     /* ===================== HERO SPACER ===================== */
@@ -394,6 +489,7 @@
 
   <!-- THE GLASS HEADER -->
   <header class="glass-header">
+    <input type="checkbox" id="mobile-menu-toggle" style="display:none;">
     <div class="header-top">
       <div class="logo-container">
         <img src="logo-kaiser-clima.png" alt="Logo Kaiser Clima" class="logo-img">
@@ -410,6 +506,7 @@
         </div>
         <img src="icono-bombilla.png" alt="Icono Bombilla" class="contact-icon">
       </div>
+      <label for="mobile-menu-toggle" class="hamburger-btn">☰</label>
     </div>
 
     <div class="header-sep"></div>
@@ -452,7 +549,7 @@
   <!-- COMPANY INFO -->
   <section id="quienes-somos" class="section" style="background: rgba(240,242,245,0.92);">
     <div class="inner">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;">
+      <div class="about-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;">
         <!-- TEXT COLUMN -->
         <div>
           <h2 class="section-title">Quiénes Somos</h2>
