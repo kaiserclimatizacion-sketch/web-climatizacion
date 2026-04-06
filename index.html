@@ -1,118 +1,557 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Climatización en Cartagena y La Manga | Instalación Aire Acondicionado Murcia</title>
-
-  <!-- SEO LOCAL POTENTE -->
-  <meta name="description" content="Empresa de climatización en Cartagena, La Manga y toda Murcia. Instalación, reparación y mantenimiento de aire acondicionado y calefacción. Servicio rápido y profesional.">
-  <meta name="keywords" content="climatización Cartagena, aire acondicionado La Manga, instalación aire Murcia, reparación aire acondicionado Cartagena, mantenimiento climatización Murcia">
-  <meta name="author" content="Tu Empresa">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Climatización en Cartagena y La Manga">
-  <meta property="og:description" content="Instalación y reparación de aire acondicionado en Murcia">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaiser Clima | Instalaciones y Mantenimiento</title>
+  <meta name="description"
+    content="Instalación, reparación y mantenimiento de aire acondicionado y electricidad en la Región de Murcia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
   <style>
-    body { font-family: 'Inter', sans-serif; margin:0; background:#f4f7fb; color:#222 }
-    header { background:linear-gradient(135deg,#0a2540,#0077cc); color:white; padding:60px 20px; text-align:center }
-    header h1 { font-size:2.8rem; margin-bottom:10px }
-    nav { background:#0a2540; padding:15px; text-align:center }
-    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:600 }
-    section { padding:50px 20px; max-width:1100px; margin:auto }
-    h2 { color:#0a2540 }
-    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px }
-    .card { background:white; padding:25px; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.08) }
-    .cta { background:#0077cc; color:white; padding:30px; border-radius:12px; text-align:center }
-    .cta a { background:white; color:#0077cc; padding:12px 20px; border-radius:8px; text-decoration:none; font-weight:bold }
-    footer { background:#0a2540; color:white; text-align:center; padding:20px }
-    .whatsapp { position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px 20px; border-radius:50px; text-decoration:none; font-weight:bold }
-  </style>
+    /* ===================== RESET ===================== */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  <!-- DATOS ESTRUCTURADOS SEO -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Empresa Climatización",
-    "areaServed": "Murcia",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Cartagena",
-      "addressRegion": "Murcia",
-      "addressCountry": "ES"
-    },
-    "telephone": "+34600000000"
-  }
-  </script>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #2d3748;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===================== FIXED BACKGROUND ===================== */
+    .bg-main {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('fondo.png');
+      background-size: 140%;
+      background-position: center top;
+      background-attachment: fixed;
+      /* iOS fix handled appropriately */
+      z-index: -10;
+    }
+
+    /* ===================== GLASS HEADER ===================== */
+    .glass-header {
+      position: fixed;
+      top: 15px;
+      left: 5%;
+      right: 5%;
+      /* Glass panel mimicking the design */
+      background: linear-gradient(180deg, #f1f5f9 0%, #cbd5e1 100%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 6px solid #94a3b8; /* Outer silver border - Thicker */
+      border-top: 6px solid #f1f5f9; /* Lighter top for shine - Thicker */
+      border-bottom: 8px solid #475569; /* Darker bottom for depth - Thicker */
+      border-radius: 14px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25), 
+                  inset 0 1px 1px #ffffff,
+                  inset 0 -2px 3px rgba(0,0,0,0.1);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* HEADER TOP */
+    .header-top {
+      display: flex;
+      align-items: center;
+      padding: 8px 30px;
+      position: relative;
+      gap: 40px; /* Space between Logo and Title */
+    }
+
+    /* Left: Logo */
+    .logo-container {
+      position: relative;
+    }
+
+    /* LOGO */
+    .logo-img {
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
+      filter: drop-shadow(0 6px 16px rgba(0,0,0,0.3));
+    }
+
+    /* Center -> Left: Title */
+    .title-img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* TÍTULO CENTRAL */
+    .title-img {
+      height: 145px;
+      width: auto;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
+    }
+
+    /* Right: Contact */
+    .contact-block {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-left: auto; /* Pushes to the right */
+    }
+
+    .contact-info {
+      text-align: right;
+    }
+
+    /* TEXTO CONTACTO */
+    .contact-lbl {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #2d3748;
+      margin-bottom: 2px;
+    }
+
+    .contact-num {
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: #1a202c;
+      letter-spacing: 0.5px;
+    }
+
+    /* ICONO BOMBILLA */
+    .contact-icon {
+      width: 175px;
+      height: 175px;
+      object-fit: contain;
+    }
+
+    /* Separator Line */
+    .header-sep {
+      height: 1px;
+      background: rgba(0, 0, 0, 0.18);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+      margin: 0 20px;
+    }
+
+    /* Nav Bottom */
+    nav {
+      display: flex;
+      padding: 10px 30px;
+      gap: 30px;
+      align-items: center;
+    }
+
+    nav a,
+    .dropdown-label {
+      font-size: 0.98rem;
+      font-weight: 500;
+      color: #1a202c;
+      letter-spacing: 0.2px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    .dropdown-label:hover {
+      color: #00BCEB;
+    }
+
+    /* Nav Dropdown */
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: -10px;
+      /* Dropdown glass */
+      background: linear-gradient(180deg, rgba(245, 248, 252, 0.95), rgba(230, 235, 240, 0.92));
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      padding: 10px 0;
+      min-width: 190px;
+
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .dropdown-menu a {
+      padding: 12px 25px;
+      display: block;
+      transition: background 0.2s;
+    }
+
+    .dropdown-menu a:hover {
+      background: rgba(0, 0, 0, 0.04);
+      color: #00BCEB;
+    }
+
+    @media (max-width: 950px) {
+      .glass-header {
+        left: 0;
+        right: 0;
+        top: 0;
+        border-radius: 0;
+      }
+
+      .title-img-container {
+        display: none;
+      }
+
+      /* Hide center title on small screens */
+    }
+
+    /* ===================== HERO SPACER ===================== */
+    #hero {
+      /* Gives space so the header sits over the background alone like the image */
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-content {
+      /* Optional message box on top of the bg, but image has none. */
+      display: none;
+    }
+
+    /* ===================== SECTIONS (OVER BG) ===================== */
+    .section {
+      padding: 100px 5%;
+      position: relative;
+      /* Frosted glass content sections so background shows through slightly */
+      background: rgba(250, 250, 252, 0.88);
+      backdrop-filter: blur(8px);
+      border-top: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    .inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #1a202c;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #1A3050, #00BCEB);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .section-sub {
+      color: #4a5568;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 600px;
+    }
+
+    /* Service Cards */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 1100px) {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 15px 30px rgba(0, 188, 235, 0.15);
+      border-color: rgba(0, 188, 235, 0.3);
+    }
+
+    .service-icon {
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+
+    .service-card h3 {
+      font-size: 1.4rem;
+      color: #1A3050;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .service-card p {
+      color: #4a5568;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      background: #1A3050;
+      color: white;
+      padding: 60px 5% 30px;
+      position: relative;
+    }
+
+    /* Global CTA Button - WhatsApp Premium Design */
+    .btn-wsp {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25D366;
+      color: white;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5), inset 0 2px 2px rgba(255,255,255,0.3);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      z-index: 2000;
+      animation: wsp-pulse 2s infinite;
+      cursor: pointer;
+    }
+
+    .btn-wsp:hover {
+      transform: scale(1.15) rotate(5deg);
+      box-shadow: 0 15px 45px rgba(37, 211, 102, 0.7);
+      background: #20BA56;
+    }
+
+    .btn-wsp svg {
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    }
+
+    @keyframes wsp-pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>Climatización en Cartagena y La Manga</h1>
-  <p>Instalación · Reparación · Mantenimiento en toda Murcia</p>
-</header>
+  <!-- THE BACKGROUND IMAGE -->
+  <div class="bg-main"></div>
 
-<nav>
-  <a href="#servicios">Servicios</a>
-  <a href="#zonas">Zonas</a>
-  <a href="#empresa">Empresa</a>
-  <a href="#contacto">Contacto</a>
-</nav>
+  <!-- THE GLASS HEADER -->
+  <header class="glass-header">
+    <div class="header-top">
+      <div class="logo-container">
+        <img src="logo-kaiser-clima.png" alt="Logo Kaiser Clima" class="logo-img">
+      </div>
 
-<section id="servicios">
-  <h2>Servicios de Climatización</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Instalación de Aire Acondicionado</h3>
-      <p>Instalamos equipos eficientes en viviendas y negocios en Cartagena y La Manga.</p>
+      <div class="title-img-container">
+        <img src="titulo-kaiser-clima.png" alt="KAISER CLIMA" class="title-img">
+      </div>
+
+      <div class="contact-block">
+        <div class="contact-info">
+          <div class="contact-lbl">Contacto</div>
+          <div class="contact-num">649 990 443</div>
+        </div>
+        <img src="icono-bombilla.png" alt="Icono Bombilla" class="contact-icon">
+      </div>
     </div>
-    <div class="card">
-      <h3>Reparación urgente</h3>
-      <p>Servicio rápido para averías en sistemas de climatización en toda Murcia.</p>
-    </div>
-    <div class="card">
-      <h3>Mantenimiento</h3>
-      <p>Planes preventivos para alargar la vida útil de tus equipos.</p>
+
+    <div class="header-sep"></div>
+
+    <nav>
+      <a href="#hero">Inicio</a>
+      <a href="#quienes-somos">Quienes Somos</a>
+      <a href="#zonas">Zonas de Servicio</a>
+      <div class="dropdown">
+        <div class="dropdown-label">Servicios de Climatización <span style="font-size: 0.7em;">▼</span></div>
+        <div class="dropdown-menu">
+          <a href="#servicios">Instalaciones</a>
+          <a href="#servicios">Reparaciones</a>
+          <a href="#servicios">Mantenimiento</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<!-- HERO AREA -->
+<section id="hero" style="min-height: 100vh; display: flex; align-items: center; padding: 0 3%; position: relative; background: linear-gradient(90deg, rgba(26,48,80,0.85) 0%, rgba(26,48,80,0.5) 55%, rgba(26,48,80,0.1) 100%);">
+  <div style="position: relative; z-index: 2; max-width: 1000px; padding-top: 200px; padding-bottom: 60px;">
+    <p style="font-family: 'Inter', sans-serif; color: #ffffff; font-weight: 800; font-size: 1.25rem; letter-spacing: 6px; margin-bottom: 12px; text-transform: uppercase; text-shadow: 0 0 20px rgba(0,188,235,0.8), 0 2px 4px rgba(0,0,0,0.5); border-left: 5px solid #00BCEB; padding-left: 18px;">
+      EXPERTOS EN CLIMA
+    </p>
+    <h1 style="font-family: 'Playfair Display', serif; font-size: clamp(3.8rem, 8.5vw, 6.2rem); font-weight: 900; color: white; line-height: 1.0; margin-bottom: 20px; text-shadow: 0 4px 15px rgba(0,0,0,0.4);">
+      Tu confort, <span style="color: #E8620A;">nuestra<br>prioridad</span>
+    </h1>
+    <p style="font-family: 'Inter', sans-serif; font-size: 1.35rem; color: #e2e8f0; line-height: 1.7; max-width: 750px; margin-bottom: 35px; text-shadow: 0 2px 5px rgba(0,0,0,0.5); font-weight: 400; opacity: 0.95;">
+      Servicios profesionales de climatización: Instalación, reparación y mantenimiento.
+    </p>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">
+      <a href="https://wa.me/34649990443" target="_blank" style="font-family: 'Inter', sans-serif; background: #E8620A; color: white; padding: 22px 44px; border-radius: 8px; font-weight: 800; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 2px; box-shadow: 0 10px 30px rgba(232, 98, 10, 0.45); text-decoration: none; transition: 0.3s; border: 1px solid rgba(255,255,255,0.1);">
+        SOLICITAR PRESUPUESTO
+      </a>
     </div>
   </div>
 </section>
 
-<section id="zonas">
-  <h2>Servicio en toda la Región de Murcia</h2>
-  <p>Trabajamos en toda Murcia con especial enfoque en Cartagena y La Manga del Mar Menor. También ofrecemos servicio en San Javier, Los Alcázares, Torre Pacheco y alrededores.</p>
+  <!-- COMPANY INFO -->
+  <section id="quienes-somos" class="section" style="background: rgba(240,242,245,0.92);">
+    <div class="inner">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;">
+        <!-- TEXT COLUMN -->
+        <div>
+          <h2 class="section-title">Quiénes Somos</h2>
+          <p style="color: #4a5568; font-size: 1rem; line-height: 1.75; margin-bottom: 24px;">En Kaiser Clima somos especialistas en climatización con más de 10 años de experiencia en Cartagena y alrededores. Trabajamos con hogares y negocios de Cartagena, La Manga, San Javier, Los Alcázares y Torre de Pacheco para garantizar el funcionamiento óptimo de sus sistemas de climatización durante todo el año.</p>
 
-  <h3>Climatización en Cartagena</h3>
-  <p>Especialistas en instalación y reparación de aire acondicionado en Cartagena centro, barrios y polígonos industriales.</p>
+          <p style="color: #4a5568; font-size: 1rem; line-height: 1.75; margin-bottom: 28px;">Cada instalación, reparación o revisión la abordamos con el mismo estándar: rapidez de respuesta, calidad en la ejecución y soluciones adaptadas a las necesidades reales de cada cliente.</p>
 
-  <h3>Aire acondicionado en La Manga</h3>
-  <p>Instalamos equipos adaptados a apartamentos turísticos y viviendas en zonas costeras.</p>
-</section>
+          <h3 style="font-family: 'Inter', sans-serif; font-size: 1.4rem; font-weight: 800; color: #1A3050; margin-bottom: 24px;">¿Por qué confiar en Kaiser Clima?</h3>
 
-<section id="empresa">
-  <h2>Empresa de Climatización Profesional</h2>
-  <p>Contamos con años de experiencia ofreciendo soluciones de climatización eficientes en Murcia. Trabajamos con primeras marcas y garantizamos un servicio rápido y de calidad.</p>
-</section>
+          <div style="margin-bottom: 22px; padding-left: 16px; border-left: 3px solid #00BCEB;">
+            <h4 style="font-size: 1rem; font-weight: 700; color: #1A3050; margin-bottom: 6px;">Eficiencia energética en cada instalación</h4>
+            <p style="color: #4a5568; font-size: 0.95rem; line-height: 1.7;">Seleccionamos los equipos más eficientes del mercado para maximizar el rendimiento y minimizar el consumo energético. Una instalación bien dimensionada y correctamente ejecutada marca la diferencia en la factura eléctrica desde el primer mes.</p>
+          </div>
 
-<section id="contacto">
-  <h2>Solicita Presupuesto</h2>
-  <div class="cta">
-    <p>Llámanos ahora o escríbenos por WhatsApp</p>
-    <p><strong>Teléfono:</strong> +34649990443</p>
-    <a href="https://wa.me/34649990443">Contactar por WhatsApp</a>
+          <div style="margin-bottom: 22px; padding-left: 16px; border-left: 3px solid #00BCEB;">
+            <h4 style="font-size: 1rem; font-weight: 700; color: #1A3050; margin-bottom: 6px;">Reparaciones urgentes con respuesta rápida</h4>
+            <p style="color: #4a5568; font-size: 0.95rem; line-height: 1.7;">Una avería en el sistema de climatización afecta directamente a la calidad de vida y a la productividad. Por eso ofrecemos un servicio de reparación ágil en Cartagena y toda la zona, con diagnóstico rápido y solución eficaz en el menor tiempo posible.</p>
+          </div>
+
+          <div style="padding-left: 16px; border-left: 3px solid #E8620A;">
+            <h4 style="font-size: 1rem; font-weight: 700; color: #1A3050; margin-bottom: 6px;">Mantenimiento preventivo para alargar la vida de tu equipo</h4>
+            <p style="color: #4a5568; font-size: 0.95rem; line-height: 1.7;">Un sistema de climatización bien mantenido rinde mejor, consume menos y prolonga su vida útil. Nuestro servicio de mantenimiento preventivo detecta y corrige cualquier anomalía antes de que se convierta en una avería, protegiendo tu inversión a largo plazo.</p>
+          </div>
+        </div>
+        <!-- PHOTO COLUMN -->
+        <div style="position: sticky; top: 140px;">
+          <img src="instalacion.png" alt="Instalación de climatización Kaiser Clima"
+            style="width: 100%; border-radius: 16px; box-shadow: 0 20px 50px rgba(0,0,0,0.15); object-fit: cover; max-height: 600px;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ZONAS DE SERVICIO -->
+<section id="zonas" class="section" style="background: rgba(240,244,248,0.92);">
+  <div class="inner">
+    <h2 class="section-title">Zonas de Servicio</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 24px; margin-top: 40px;">
+      <div style="background: rgba(255,255,255,0.8); border: 1px solid rgba(0,188,235,0.2); border-radius: 12px; padding: 30px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
+        <div style="font-size: 2rem; margin-bottom: 12px;">📍</div>
+        <h3 style="font-size: 1.2rem; font-weight: 700; color: #1A3050; margin-bottom: 10px;">Toda la Región de Murcia</h3>
+        <p style="color: #4a5568; line-height: 1.6;">Trabajamos en toda Murcia con especial enfoque en Cartagena y La Manga del Mar Menor. También ofrecemos servicio en San Javier, Los Alcázares, Torre Pacheco y alrededores.</p>
+      </div>
+      <div style="background: rgba(255,255,255,0.8); border: 1px solid rgba(0,188,235,0.2); border-radius: 12px; padding: 30px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
+        <div style="font-size: 2rem; margin-bottom: 12px;">🏙️</div>
+        <h3 style="font-size: 1.2rem; font-weight: 700; color: #1A3050; margin-bottom: 10px;">Climatización en Cartagena</h3>
+        <p style="color: #4a5568; line-height: 1.6;">Especialistas en instalación y reparación de aire acondicionado en Cartagena centro, barrios y polígonos industriales.</p>
+      </div>
+      <div style="background: rgba(255,255,255,0.8); border: 1px solid rgba(0,188,235,0.2); border-radius: 12px; padding: 30px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
+        <div style="font-size: 2rem; margin-bottom: 12px;">🏖️</div>
+        <h3 style="font-size: 1.2rem; font-weight: 700; color: #1A3050; margin-bottom: 10px;">Aire acondicionado en La Manga</h3>
+        <p style="color: #4a5568; line-height: 1.6;">Instalamos equipos adaptados a apartamentos turísticos y viviendas en zonas costeras.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-<a class="whatsapp" href="https://wa.me/34649990443">WhatsApp</a>
+  <!-- SERVICES CONTENT OVERLAY -->
+  <section id="servicios" class="section">
+    <div class="inner">
+      <h2 class="section-title">Nuestros servicios</h2>
+      <p class="section-sub">En Kaiser Clima somos tu equipo de referencia en climatización en Cartagena y alrededores. Ofrecemos un servicio técnico especializado con la rapidez y la calidad que cada proyecto o incidencia requiere.</p>
+      <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+        <article class="service-card">
+          <div class="service-icon">❄️</div>
+          <h3>Instalación de aire acondicionado y calefacción</h3>
+          <p>Instalamos equipos de climatización de todas las marcas y potencias, adaptados a las características de cada espacio. Viviendas, locales, oficinas y comunidades de vecinos. Asesoramiento técnico personalizado desde el primer momento para garantizar la solución más eficiente y duradera.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">🛠️</div>
+          <h3>Reparación urgente de equipos de climatización</h3>
+          <p>Servicio de reparación con respuesta rápida en Cartagena, La Manga, San Javier, Los Alcázares, Torre de Pacheco y alrededores. Diagnóstico preciso y reparación eficaz para restablecer el funcionamiento de tu equipo en el menor tiempo posible.</p>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3>Mantenimiento preventivo de climatización</h3>
+          <p>Revisiones periódicas para mantener tu equipo en condiciones óptimas. Limpieza de filtros, comprobación de niveles, ajuste de parámetros y detección temprana de anomalías. La manera más eficaz de evitar averías inesperadas y proteger la vida útil de tu instalación.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <p>©️ 2026 Climatización en Murcia | Cartagena | La Manga</p>
-</footer>
+  <footer>
+    <div class="inner">
+      <p style="font-size: 1.2rem; font-weight: bold; margin-bottom: 10px;">KAISER CLIMA</p>
+      <p style="color: #cbd5e0; font-size: 0.9rem;">Cartagena · La Manga · Murcia</p>
+      <p style="color: #cbd5e0; font-size: 0.9rem; margin-top:5px;">Teléfono: 649 990 443</p>
+      <div
+        style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 30px; padding-top: 20px; font-size: 0.8rem; color: #a0aec0;">
+        © 2026 Kaiser Clima. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp btn-wsp" href="https://wa.me/34649990443" target="_blank" title="WhatsApp">
+    <svg viewBox="0 0 448 512" width="36" height="36" fill="white" style="margin-bottom: 2px;">
+      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 512l149.8-39.3c32.5 17.6 69.4 26.9 107.9 26.9 122.4 0 222-99.6 222-222 0-59.3-23.1-115.1-65-157.1zM223.9 448.2c-33.1 0-65.5-8.9-94-25.7l-6.7-4-69.8 18.3L72 368.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.5-186.6 184.5zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.6-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-2.1-3.6 1.5-3.8 6.9-14.3 1.8-3.6.9-6.8-.5-9.6-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+    </svg>
+  </a>
 
 </body>
+</html>
 </html>
