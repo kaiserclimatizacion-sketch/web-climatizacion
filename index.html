@@ -45,11 +45,10 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-image: url('fondo.png');
+      background-image: url('fondo.png'); /* Desktop background */
       background-size: 140%;
       background-position: center top;
       background-attachment: fixed;
-      /* iOS fix handled appropriately */
       z-index: -10;
     }
 
@@ -235,6 +234,14 @@
     }
 
     @media (max-width: 950px) {
+      /* Mobile background image */
+      .bg-main {
+        background-image: url('fondo-movil.png');
+        background-size: cover;
+        background-position: center top;
+        background-attachment: scroll;
+      }
+
       .glass-header {
         left: 0;
         right: 0;
