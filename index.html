@@ -569,10 +569,10 @@
 
     @media (max-width: 768px) {
       .review-slide {
-        padding: 20px 10px;
+        padding: 20px 20%; /* Narrower carousel on mobile */
       }
       .review-slide .review-text {
-        font-size: 0.95rem !important;
+        font-size: 1rem !important;
         line-height: 1.5;
         white-space: normal !important;
         text-align: center;
@@ -605,9 +605,19 @@
         overflow-wrap: break-word;
         text-align: center;
       }
+      #hero h1 {
+        text-align: left !important;
+      }
+      #hero p {
+        text-align: left !important;
+      }
+      #hero div {
+        justify-content: flex-start !important;
+      }
       .resenas-title {
-        font-size: 1.4rem !important;
+        font-size: 2rem !important; /* Larger on mobile as requested */
         margin-bottom: 20px !important;
+        line-height: 1.2 !important;
       }
       .qr-title-mobile {
         font-size: 1.4rem !important;
@@ -776,11 +786,11 @@
 <section id="resenas" class="section" style="background: rgba(255,255,255,0.95); overflow: hidden;">
   <div class="inner">
     <!-- MAIN GRID LADO A LADO -->
-    <div class="resenas-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+    <div class="resenas-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
       
       <!-- LADO IZQUIERDO: TÍTULO Y SLIDER -->
       <div style="min-width: 0;">
-        <h2 class="section-title resenas-title" style="margin-bottom: 30px;">Lo que dicen nuestros clientes</h2>
+        <h2 class="section-title resenas-title" style="margin-bottom: 30px; font-size: 2.2rem; white-space: nowrap;">Lo que dicen nuestros clientes</h2>
         
         <!-- REVIEWS SLIDER -->
         <div class="reviews-slider-container">
@@ -841,7 +851,7 @@
       <div class="qr-feedback-grid" style="align-items: center; background: linear-gradient(135deg, #ffffff 0%, #f4f7fb 100%); padding: 40px 30px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,1); border: 1px solid rgba(0,188,235,0.05); gap: 20px;">
         <!-- Lado Izquierdo del Cuadro (Texto) -->
         <div style="flex: 1; padding-right: 0; text-align: center;">
-          <h2 class="section-title qr-title-mobile" style="font-size: 1.8rem; margin-bottom: 8px; line-height: 1.1;">KAISER CLIMA</h2>
+          <h2 class="section-title qr-title-mobile" style="font-size: 1.8rem; margin-bottom: 8px; line-height: 1.1; white-space: nowrap;">KAISER CLIMA</h2>
           <p style="font-family: 'Inter', sans-serif; font-size: 1.1rem; color: #4a5568; font-weight: 400; line-height: 1.4; letter-spacing: 1px; margin-bottom: 0;">Únete a nuestros clientes satisfechos y Comparte tu experiencia con nosotros <span style="font-size: 1.35rem; vertical-align: middle;">✨</span></p>
           <div style="height: 1px; background: rgba(0,0,0,0.08); margin: 15px auto; width: 80%;"></div>
           <p class="qr-instruction-mobile" style="color: #718096; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.3px;">escanea o pulsa sobre el código QR</p>
