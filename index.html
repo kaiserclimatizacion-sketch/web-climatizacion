@@ -398,12 +398,13 @@
     .section-title {
       font-size: 2.8rem;
       font-weight: 800;
-      color: #1a202c;
+      color: #1A3050;
       margin-bottom: 20px;
-      background: linear-gradient(90deg, #1A3050, #00BCEB);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+    }
+    
+    .resenas-title {
+      font-size: 2.22rem;
+      white-space: nowrap;
     }
 
     .section-sub {
@@ -577,6 +578,9 @@
         white-space: normal !important;
         text-align: center;
       }
+      .review-slide > div {
+        justify-content: center !important; /* Centering stars and author on mobile */
+      }
       .review-slide .stars {
         font-size: 1.1rem !important;
         justify-content: center;
@@ -615,11 +619,12 @@
         justify-content: flex-start !important;
       }
       .resenas-title {
-        font-size: 1.9rem !important; /* Larger and bold on mobile */
+        font-size: 1.8rem !important; /* Larger and bold on mobile */
         margin-bottom: 25px !important;
         line-height: 1.3 !important;
         text-align: center !important;
         white-space: normal !important;
+        display: block !important;
       }
       .qr-title-mobile {
         font-size: 1.5rem !important;
@@ -792,7 +797,7 @@
       
       <!-- LADO IZQUIERDO: TÍTULO Y SLIDER -->
       <div style="min-width: 0;">
-        <h2 class="section-title resenas-title" style="margin-bottom: 30px; font-size: 2.2rem; white-space: nowrap;">Lo que dicen nuestros clientes</h2>
+        <h2 class="section-title resenas-title" style="margin-bottom: 30px; line-height: 1.2;">Lo que dicen nuestros clientes</h2>
         
         <!-- REVIEWS SLIDER -->
         <div class="reviews-slider-container">
