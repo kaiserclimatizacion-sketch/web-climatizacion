@@ -593,6 +593,121 @@
       line-height: 1.6;
     }
 
+    /* ===================== FAQ ACCORDION ===================== */
+    .faq-section {
+      background: #f8fafc;
+      padding: 100px 5%;
+    }
+
+    .faq-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .faq-badge {
+      display: inline-block;
+      background: rgba(232, 98, 10, 0.1);
+      color: #E8620A;
+      padding: 8px 20px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 20px;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .faq-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: white;
+      border-radius: 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      overflow: hidden;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .faq-item:hover {
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      border-color: rgba(0, 188, 235, 0.2);
+    }
+
+    .faq-item summary {
+      padding: 24px 35px;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+      color: #1A3050;
+      font-size: 1.15rem;
+      outline: none;
+      transition: color 0.3s ease;
+    }
+
+    .faq-item summary:hover {
+      color: #E8620A;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: '\2304'; /* Chevron Down */
+      font-size: 1.5rem;
+      color: #cbd5e0;
+      transition: all 0.3s ease;
+    }
+
+    .faq-item[open] summary {
+      color: #E8620A;
+    }
+
+    .faq-item[open] {
+      border-color: rgba(232, 98, 10, 0.3);
+      box-shadow: 0 10px 25px rgba(232, 98, 10, 0.08);
+    }
+
+    .faq-item[open] summary::after {
+      transform: rotate(180deg);
+      color: #E8620A;
+    }
+
+    .faq-content {
+      padding: 0 35px 28px;
+      color: #4a5568;
+      line-height: 1.8;
+      font-size: 1rem;
+      border-top: 1px solid rgba(0, 0, 0, 0.02);
+      padding-top: 20px;
+    }
+
+    .faq-cta-box {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      margin-top: 50px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+      border: 1px solid rgba(0, 188, 235, 0.1);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .faq-cta-box:hover {
+      transform: translateY(-12px) scale(1.02);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+      border-color: #E8620A;
+      border-style: solid;
+    }
+
     /* Footer */
     footer {
       background: #1A3050;
@@ -816,6 +931,7 @@
         </div>
       </div>
       <a href="#zonas">Zonas de Servicio</a>
+      <a href="#faq">Preguntas Frecuentes</a>
       <a href="#resenas">Reseñas</a>
     </nav>
   </header>
@@ -909,7 +1025,8 @@
     </div>
   </section>
 
-<!-- ZONAS DE SERVICIO -->
+
+  <!-- ZONAS DE SERVICIO -->
 <section id="zonas" class="section" style="background: rgba(240,244,248,0.92);">
   <div class="inner">
     <h2 class="section-title">Zonas de Servicio</h2>
@@ -932,6 +1049,157 @@
     </div>
   </div>
 </section>
+
+
+
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="faq-section">
+    <div class="inner">
+      <div class="faq-header">
+        <span class="faq-badge">Ayuda & Soporte</span>
+        <h2 class="section-title">Preguntas Frecuentes sobre los servicios de Climatización</h2>
+        <p class="section-sub" style="margin-left: auto; margin-right: auto;">
+          Te ayudamos a resolver las dudas más comunes sobre instalación, reparación y mantenimiento de equipos de aire acondicionado. Consulta nuestras preguntas frecuentes basadas en experiencia técnica real.
+        </p>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <details class="faq-item">
+          <summary>¿Qué tipo de aire acondicionado es mejor para mi casa?</summary>
+          <div class="faq-content">
+            Depende de la arquitectura y necesidades térmicas. Para estancias individuales, un <strong>Split o Multi-Split</strong> es lo más eficiente y económico. Si la vivienda tiene preinstalación de falsos techos, un sistema de <strong>Conductos</strong> es ideal por estética y uniformidad. Siempre recomendamos tecnología Inverter para cumplir con la eficiencia energética que exige el RITE.
+          </div>
+        </details>
+
+        <!-- FAQ 2 -->
+        <details class="faq-item">
+          <summary>¿Qué potencia de aire acondicionado necesito según los metros cuadrados?</summary>
+          <div class="faq-content">
+            Como norma técnica general, calculamos unas 100 frigorías (116W) por metro cuadrado para una altura estándar de 2,5m.
+            <ul style="margin-top: 15px; list-style: none; padding-left: 0;">
+              <li>• <strong>Hasta 20 m²:</strong> 2.200 frig. (2.5 kW)</li>
+              <li>• <strong>Hasta 30 m²:</strong> 3.000 frig. (3.5 kW)</li>
+              <li>• <strong>Hasta 45 m²:</strong> 4.500 frig. (5.2 kW)</li>
+            </ul>
+          </div>
+        </details>
+
+        <!-- FAQ 3 -->
+        <details class="faq-item">
+          <summary>¿Cuál es la mejor marca de aire acondicionado calidad-precio?</summary>
+          <div class="faq-content">
+            Actualmente, <strong>Haier y Mitsubishi Heavy Industries</strong> ofrecen el mejor equilibrio. Proporcionan una alta eficiencia energética (A++/A+++), bajo nivel sonoro y una electrónica robusta a un precio muy competitivo en el mercado español.
+          </div>
+        </details>
+
+        <!-- FAQ 4 -->
+        <details class="faq-item">
+          <summary>¿Qué marcas de aire acondicionado se instalan habitualmente?</summary>
+          <div class="faq-content">
+            Trabajamos con marcas líderes que garantizan repuestos y eficiencia: <strong>Mitsubishi Electric, Daikin, Fujitsu, Panasonic</strong> (gama alta) y <strong>Haier o Hisense</strong> (excelente relación rendimiento-precio). Todas cumplen con los estándares europeos de refrigerantes ecológicos (R-32).
+          </div>
+        </details>
+
+        <!-- FAQ 5 -->
+        <details class="faq-item">
+          <summary>¿Se puede instalar aire acondicionado en un piso de alquiler?</summary>
+          <div class="faq-content">
+            <strong>Legalmente:</strong> Sí, pero requiere la autorización por escrito del propietario. <strong>Técnicamente:</strong> Es viable. Si el propietario no permite perforar fachada, existen soluciones como unidades portátiles, aunque lo ideal es un Split fijo por eficiencia y confort.
+          </div>
+        </details>
+
+        <!-- FAQ 6 -->
+        <details class="faq-item">
+          <summary>¿Necesito hacer obras para instalar aire acondicionado?</summary>
+          <div class="faq-content">
+            Para sistemas <strong>Split</strong>, la obra es mínima (un orificio de unos 5-6 cm para interconexiones). Para sistemas de <strong>Conductos</strong>, si no hay preinstalación, se requiere obra de albañilería y escayola para los falsos techos y rejillas. En Kaiser Clima priorizamos instalaciones limpias que minimicen el impacto en la vivienda.
+          </div>
+        </details>
+
+        <!-- FAQ 7 -->
+        <details class="faq-item">
+          <summary>¿Cuánto tiempo tarda la instalación?</summary>
+          <div class="faq-content">
+            Una instalación básica de un Split suele tardar entre <strong>3 y 5 horas</strong>. Una instalación de Conductos o un sistema Multi-split complejo puede requerir de 1 a 2 días laborales. En proyectos industriales o cámaras frigoríficas, el plazo se define según el diseño del proyecto.
+          </div>
+        </details>
+
+        <!-- FAQ 8 -->
+        <details class="faq-item">
+          <summary>¿Dónde se debe colocar la unidad exterior para un rendimiento óptimo?</summary>
+          <div class="faq-content">
+            Debe ubicarse en un lugar con buena ventilación, alejado de fuentes de calor directo y donde sea accesible para futuros mantenimientos. Evitamos espacios cerrados o muy estrechos, ya que si el aire caliente recircula, el compresor consume más energía y puede bloquearse por alta presión.
+          </div>
+        </details>
+
+        <!-- FAQ 9 -->
+        <details class="faq-item">
+          <summary>¿Qué es el gas R-32 y por qué es mejor que el R-410A?</summary>
+          <div class="faq-content">
+            El <strong>R-32</strong> es el refrigerante estándar actual en la UE. Es mucho más ecológico (su impacto en el calentamiento global es un 65% menor), permite usar menos carga de gas y es un 10% más eficiente energéticamente que su predecesor.
+          </div>
+        </details>
+
+        <!-- FAQ 10 -->
+        <details class="faq-item">
+          <summary>¿Cada cuánto tiempo debo limpiar los filtros?</summary>
+          <div class="faq-content">
+            En uso doméstico, recomendamos limpiarlos cada <strong>3 o 6 meses</strong>. Si hay mascotas o personas con alergias, una vez al mes durante la temporada de uso. Filtros sucios reducen el caudal de aire, aumentan el consumo eléctrico hasta un 20% y pueden causar la congelación de la batería interior.
+          </div>
+        </details>
+
+        <!-- FAQ 11 -->
+        <details class="faq-item">
+          <summary>¿Por qué mi aire acondicionado huele mal al encenderlo?</summary>
+          <div class="faq-content">
+            Se debe a la acumulación de bacterias y moho en la bandeja de condensados o en el evaporador. El mantenimiento de Kaiser Clima incluye una <strong>desinfección química profunda</strong> con productos fungicidas homologados para eliminar olores y garantizar la calidad del aire.
+          </div>
+        </details>
+
+        <!-- FAQ 12 -->
+        <details class="faq-item">
+          <summary>¿Es necesario realizar una carga de gas cada año?</summary>
+          <div class="faq-content">
+            <strong>No.</strong> Un sistema de aire acondicionado es un circuito cerrado; si le falta gas es porque existe una fuga. Cargar gas sin reparar la fuga es un error técnico y una infracción ambiental. Si el equipo no enfría, primero localizamos y reparamos la fuga siguiendo el RSIF.
+          </div>
+        </details>
+
+        <!-- FAQ 13 -->
+        <details class="faq-item">
+          <summary>¿Por qué gotea agua por la unidad interior?</summary>
+          <div class="faq-content">
+            Generalmente es por una obstrucción en el tubo de desagüe o porque la bandeja de condensados está desnivelada. En verano, el equipo condensa la humedad del ambiente; si el agua no puede salir por gravedad o bomba, desborda hacia el interior de la estancia.
+          </div>
+        </details>
+
+        <!-- FAQ 14 -->
+        <details class="faq-item">
+          <summary>Mi equipo enciende pero no sale aire frío, ¿qué puede ser?</summary>
+          <div class="faq-content">
+            Las causas más comunes son: un fallo en el condensador de arranque, una fuga de refrigerante, o suciedad extrema en la unidad exterior. Si el compresor no arranca, el equipo solo funcionará como un ventilador.
+          </div>
+        </details>
+
+        <!-- FAQ 15 -->
+        <details class="faq-item">
+          <summary>¿Merece la pena reparar un equipo con más de 12 años?</summary>
+          <div class="faq-content">
+            Técnicamente, si la avería es el compresor o la placa electrónica principal, solemos recomendar la sustitución. Los equipos antiguos usan gases obsoletos (R-22 o R-407C) y consumen casi el doble que un equipo moderno A+++. La inversión en un equipo nuevo se amortiza en pocos años solo con el ahorro en la factura eléctrica.
+          </div>
+        </details>
+
+        <!-- WhatsApp CTA -->
+        <div class="faq-cta-box">
+          <p style="color: #1A3050; font-weight: 600; font-size: 1.1rem; margin-bottom: 15px;">¿Aún tienes dudas?</p>
+          <p style="color: #4a5568; margin-bottom: 20px;">contáctanos directamente para un asesoramiento personalizado</p>
+          <a href="https://wa.me/34649990443" target="_blank" style="display: inline-flex; align-items: center; background: #25D366; color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: 700; transition: transform 0.3s ease;">
+            <span style="font-size: 1.3rem; margin-right: 10px;">💬</span> Consultar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
 
 <!-- RESEÑAS -->
 <section id="resenas" class="section" style="background: rgba(255,255,255,0.95); overflow: hidden;">
