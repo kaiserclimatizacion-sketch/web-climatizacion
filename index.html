@@ -518,13 +518,13 @@
     
     .reviews-slider {
       display: flex;
-      width: 300%;
+      width: 600%;
       height: 100%;
-      animation: slideReviews 12s infinite ease-in-out;
+      animation: slideReviews 25s infinite ease-in-out;
     }
 
     .review-slide {
-      width: 33.3333%;
+      width: 16.6666%;
       padding: 20px 40px;
       display: flex;
       flex-direction: column;
@@ -552,9 +552,12 @@
     }
     
     @keyframes slideReviews {
-      0%, 45% { transform: translateX(0); }
-      50%, 95% { transform: translateX(-33.3333%); }
-      100% { transform: translateX(-66.6666%); }
+      0%, 16% { transform: translateX(0); }
+      20%, 36% { transform: translateX(-16.6666%); }
+      40%, 56% { transform: translateX(-33.3333%); }
+      60%, 76% { transform: translateX(-50%); }
+      80%, 96% { transform: translateX(-66.6666%); }
+      100% { transform: translateX(-83.3333%); }
     }
 
     @media (max-width: 950px) {
@@ -734,28 +737,57 @@
         <div class="reviews-slider">
           <!-- Review 1 -->
           <div class="review-slide">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p class="review-text">"Excelente servicio, rápidos y profesionales. Instalaron el aire acondicionado en Cartagena el mismo día. ¡Totalmente recomendados!"</p>
-            <p class="review-author">- María García</p>
+            <p class="review-text">"Excelente trato profesional, muy formales y calidad en el trabajo. Totalmente recomendables."</p>
+            <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
+              <span class="stars" style="font-size: 1.2rem; margin-right: 8px; letter-spacing: 2px;">⭐⭐⭐⭐⭐</span>
+              <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Carlos N.</span>
+            </div>
           </div>
           <!-- Review 2 -->
           <div class="review-slide">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p class="review-text">"El mejor equipo de climatización en Murcia. Vinieron a hacer la reparación urgente de mi calefacción. El técnico fue puntual y resolvió el problema."</p>
-            <p class="review-author">- Carlos López</p>
+            <p class="review-text">"Los mejores, rápidos y limpios. Te aconsejan qué aparato te viene mejor tanto al bolsillo como que enfríe bien. Lo recomiendo."</p>
+            <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
+              <span class="stars" style="font-size: 1.2rem; margin-right: 8px; letter-spacing: 2px;">⭐⭐⭐⭐⭐</span>
+              <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Carmen P.</span>
+            </div>
+          </div>
+          <!-- Review 3 -->
+          <div class="review-slide">
+            <p class="review-text">"Atención rapidísima, un servicio increíble, trato inmejorable… los recomiendo 100%. Te dejan todo recogidito y limpio."</p>
+            <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
+              <span class="stars" style="font-size: 1.2rem; margin-right: 8px; letter-spacing: 2px;">⭐⭐⭐⭐⭐</span>
+              <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Carolina V.</span>
+            </div>
+          </div>
+          <!-- Review 4 -->
+          <div class="review-slide">
+            <p class="review-text">"Excelente trabajo. Vinieron rápidos a presupuestar. El trabajo final ha sido súper curioso y pulcro, funcionando de 10."</p>
+            <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
+              <span class="stars" style="font-size: 1.2rem; margin-right: 8px; letter-spacing: 2px;">⭐⭐⭐⭐⭐</span>
+              <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Mario C.</span>
+            </div>
+          </div>
+          <!-- Review 5 -->
+          <div class="review-slide">
+            <p class="review-text">"Eficiencia, rapidez y profesionalidad. Sin duda recomendable 100% y a precios muy competitivos en toda la zona."</p>
+            <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
+              <span class="stars" style="font-size: 1.2rem; margin-right: 8px; letter-spacing: 2px;">⭐⭐⭐⭐⭐</span>
+              <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Alberto P.</span>
+            </div>
           </div>
           <!-- Review 1 (Clone for loop) -->
           <div class="review-slide">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p class="review-text">"Excelente servicio, rápidos y profesionales. Instalaron el aire acondicionado en Cartagena el mismo día. ¡Totalmente recomendados!"</p>
-            <p class="review-author">- María García</p>
+            <p class="review-text">"Excelente trato profesional, muy formales y calidad en el trabajo. Totalmente recomendables."</p>
+            <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
+              <span class="stars" style="font-size: 1.2rem; margin-right: 8px; letter-spacing: 2px;">⭐⭐⭐⭐⭐</span>
+              <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Carlos N.</span>
+            </div>
           </div>
         </div>
       </div>
       
       <!-- QR AND CTA -->
       <div class="qr-container" style="text-align: center; background: rgba(240,244,248,0.8); padding: 40px; border-radius: 16px; border: 1px solid rgba(0,188,235,0.2); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
-        <img src="logo-kaiser-clima.png" alt="Logo Kaiser" style="width: 80px; margin-bottom: 10px;">
         <h3 style="font-size: 1.8rem; color: #1A3050; font-weight: 800; margin-bottom: 15px;">KAISER CLIMA</h3>
         <p style="font-size: 1.2rem; color: #4a5568; margin-bottom: 20px; font-weight: 600;">¡Déjanos tu reseña!</p>
         <a href="https://g.page/r/CQZJGscZ2n5VEBM/review" target="_blank" style="display: inline-block; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
