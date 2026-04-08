@@ -4,9 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Instalaciones y Mantenimiento de Aire Acondicionado en Cartagena  La Manga  |  Kaiser Clima</title>
-  <meta name="description"
-    content="Instalación, reparación y mantenimiento de aire acondicionado en Murcia con especial enfoque en Cartagena, la Manga y alrededores. Más de 10 años de experiencia. Solicita tu presupuesto sin compromiso. Servicio de urgencias con Tiempo de respuesta en menos de 24 horas" />
+  <title>Aire acondicionado en Murcia, Cartagena y La Manga | Kaiser Clima</title>
+  <meta name="description" content="Especialistas en instalación, reparación y mantenimiento de aire acondicionado en Murcia, Cartagena y La Manga. Más de 10 años de experiencia. Solicita tu presupuesto gratis." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
@@ -482,6 +481,17 @@
       }
     }
 
+    /* ===================== ANIMATIONS ===================== */
+    @keyframes heroReveal {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      animation: heroReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      opacity: 0;
+    }
+
     /* ===================== HERO SPACER ===================== */
     #hero {
       /* Gives space so the header sits over the background alone like the image */
@@ -813,16 +823,23 @@
 <!-- HERO AREA -->
 <section id="hero" style="min-height: 100vh; display: flex; align-items: center; padding: 0 3%; position: relative; background: linear-gradient(90deg, rgba(26,48,80,0.85) 0%, rgba(26,48,80,0.5) 55%, rgba(26,48,80,0.1) 100%);">
   <div style="position: relative; z-index: 2; max-width: 1000px; padding-top: 200px; padding-bottom: 60px;">
-    <p style="font-family: 'Inter', sans-serif; color: #ffffff; font-weight: 800; font-size: 1.05rem; letter-spacing: 4px; margin-bottom: 12px; text-transform: uppercase; text-shadow: 0 0 20px rgba(0,188,235,0.8), 0 2px 4px rgba(0,0,0,0.5); border-left: 5px solid #00BCEB; padding-left: 18px;">
-      EXPERTOS EN CLIMATIZACIÓN - CARTAGENA Y LA MANGA
+    <!-- Slogan Tagline -->
+    <p class="reveal" style="font-family: 'Inter', sans-serif; color: #fff; font-weight: 800; font-size: 1.05rem; letter-spacing: 4px; margin-bottom: 20px; text-transform: uppercase; text-shadow: 0 0 20px rgba(0,188,235,0.8), 0 2px 4px rgba(0,0,0,0.5); border-left: 5px solid #00BCEB; padding-left: 18px; animation-delay: 0.1s;">
+      TU CONFORT, ES NUESTRA PRIORIDAD
     </p>
-    <h1 style="font-family: 'Playfair Display', serif; font-size: clamp(3.2rem, 7.5vw, 5.2rem); font-weight: 900; color: white; line-height: 1.0; margin-bottom: 20px; text-transform: uppercase; text-shadow: 0 4px 15px rgba(0,0,0,0.4);">
-      TU CONFORT, <span style="color: #E8620A;">NUESTRA<br>PRIORIDAD</span>
+    
+    <!-- Main Title -->
+    <h1 class="reveal" style="font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 6.5vw, 4.5rem); font-weight: 900; color: white; line-height: 1.1; margin-bottom: 25px; text-transform: none; text-shadow: 0 4px 15px rgba(0,0,0,0.4); animation-delay: 0.3s;">
+      <span style="color: #E8620A;">Instalación, Reparación y Mantenimiento</span><br>
+      de Climatización en Murcia
     </h1>
-    <p style="font-family: 'Inter', sans-serif; font-size: 1.15rem; color: #e2e8f0; line-height: 1.7; max-width: 750px; margin-bottom: 35px; text-shadow: 0 2px 5px rgba(0,0,0,0.5); font-weight: 400; opacity: 0.95;">
-      Ofrecemos servicios profesionales de climatización: Instalación, reparación y mantenimiento de aire acondicionado con más de 10 años de experiencia.
+
+    <!-- Descriptive Text -->
+    <p class="reveal" style="font-family: 'Inter', sans-serif; font-size: 1.15rem; color: #e2e8f0; line-height: 1.7; max-width: 750px; margin-bottom: 35px; text-shadow: 0 2px 5px rgba(0,0,0,0.5); font-weight: 400; opacity: 0.95; animation-delay: 0.5s;">
+      Ofrecemos servicios profesionales especializados en sistema de aire acondicionado con más de 10 años de experiencia garantizando resultados de máxima calidad.
     </p>
-    <div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">
+
+    <div class="reveal" style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center; animation-delay: 0.7s;">
       <a href="https://wa.me/34649990443" target="_blank" style="font-family: 'Inter', sans-serif; background: #E8620A; color: white; padding: 22px 44px; border-radius: 8px; font-weight: 800; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 2px; box-shadow: 0 10px 30px rgba(232, 98, 10, 0.45); text-decoration: none; transition: 0.3s; border: 1px solid rgba(255,255,255,0.1);">
         SOLICITAR PRESUPUESTO
       </a>
@@ -870,7 +887,7 @@
   <!-- SERVICES CONTENT OVERLAY -->
   <section id="servicios" class="section">
     <div class="inner">
-      <h2 class="section-title">Nuestros servicios en la Región de Murcia</h2>
+      <h2 class="section-title" style="text-align: left;">Servicios de aire acondicionado<br>en la Región de Murcia</h2>
       <p class="section-sub">Instalamos, reparamos y realizamos mantenimiento preventivo de equipos de aire acondicionado en Murcia, Cartagena, La Manga y alrededores. Ofrecemos un servicio técnico especializado con la rapidez y la calidad que cada proyecto o incidencia requiere. Tenemos servicio de urgencias con tiempo de respuesta en menos de 24 horas.</p>
       <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
         <article class="service-card">
