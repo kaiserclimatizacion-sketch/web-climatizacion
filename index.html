@@ -4,13 +4,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kaiser Clima | Instalaciones y Mantenimiento</title>
+  <title>Kaiser Clima | Instalaciones y Mantenimiento de Aire Acondicionado en Cartagena / La Manga</title>
   <meta name="description"
-    content="Instalación, reparación y mantenimiento de aire acondicionado y electricidad en la Región de Murcia." />
+    content="Instalación, reparación y mantenimiento de aire acondicionado en Murcia con especial enfoque en Cartagena, la Manga y alrededores. Más de 10 años de experiencia. Solicita tu presupuesto sin compromiso. Servicio de urgencias con Tiempo de respuesta en menos de 24 horas" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
+
+  <!-- SCHEMA JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HVACBusiness",
+        "@id": "https://www.kaiserclima.com/#organization",
+        "name": "Kaiser Clima",
+        "url": "https://www.kaiserclima.com",
+        "telephone": "+34649990443",
+        "priceRange": "$$",
+        "image": "https://www.kaiserclima.com/instalacion.png",
+        "logo": "https://www.kaiserclima.com/logo-kaiser-clima.png",
+        "description": "Instalación, reparación y mantenimiento de aire acondicionado y electricidad en la Región de Murcia.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "AÑADIR_CALLE_Y_NUMERO",
+          "addressLocality": "Cartagena",
+          "addressRegion": "Murcia",
+          "postalCode": "30201",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "37.6051",
+          "longitude": "-0.9862"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "19:00"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "5",
+          "bestRating": "5"
+        },
+        "areaServed": [
+          { "@type": "City", "name": "Cartagena" },
+          { "@type": "City", "name": "La Manga" },
+          { "@type": "City", "name": "San Javier" },
+          { "@type": "City", "name": "Los Alcázares" },
+          { "@type": "City", "name": "Torre de Pacheco" },
+          { "@type": "State", "name": "Región de Murcia" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios Kaiser Clima",
+          "itemListElement": [
+            {
+              "@type": "Service",
+              "name": "Instalación de aire acondicionado y calefacción",
+              "description": "Instalación de equipos de climatización de todas las marcas y potencias para viviendas, locales y oficinas."
+            },
+            {
+              "@type": "Service",
+              "name": "Reparación urgente de equipos de climatización",
+              "description": "Diagnóstico rápido y reparación eficaz de averías en sistemas de aire acondicionado."
+            },
+            {
+              "@type": "Service",
+              "name": "Mantenimiento preventivo de climatización",
+              "description": "Revisiones periódicas, limpieza de filtros y carga de gas para optimizar el rendimiento y consumo."
+            }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
 
   <style>
     /* ===================== RESET ===================== */
@@ -103,11 +185,40 @@
       justify-content: center;
     }
 
-    /* TÍTULO CENTRAL */
-    .title-img {
-      height: 145px;
-      width: auto;
-      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
+    /* BRAND TEXT VERSION (Replaces titulo-kaiser-clima.png) */
+    .brand-text-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: #333333;
+      user-select: none;
+    }
+
+    .brand-main-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      font-size: 4.8rem;
+      line-height: 1;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .brand-subtitle-1 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      margin-top: 5px;
+      line-height: 1.2;
+    }
+
+    .brand-subtitle-2 {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      margin-top: 2px;
+      line-height: 1;
     }
 
     /* Right: Contact */
@@ -277,8 +388,13 @@
         justify-content: center;
       }
 
-      .title-img {
-        height: 40px !important;
+      .brand-main-title {
+        font-size: 1.7rem !important;
+        letter-spacing: 0.01em !important;
+      }
+      .brand-subtitle-1, .brand-subtitle-2 {
+        font-size: 0.42rem !important;
+        margin-top: 2px !important;
       }
 
       /* Ocultar número e icono en móvil para mayor limpieza */
@@ -651,7 +767,11 @@
       </div>
 
       <div class="title-img-container">
-        <img src="titulo-kaiser-clima.png" alt="KAISER CLIMA" class="title-img">
+        <div class="brand-text-block">
+          <div class="brand-main-title">KAISER CLIMA</div>
+          <div class="brand-subtitle-1">Instalación, Reparación y Mantenimiento de Aire Acondicionado</div>
+          <div class="brand-subtitle-2">en Cartagena, La Manga y alrededores</div>
+        </div>
       </div>
 
       <div class="contact-block">
@@ -686,14 +806,14 @@
 <!-- HERO AREA -->
 <section id="hero" style="min-height: 100vh; display: flex; align-items: center; padding: 0 3%; position: relative; background: linear-gradient(90deg, rgba(26,48,80,0.85) 0%, rgba(26,48,80,0.5) 55%, rgba(26,48,80,0.1) 100%);">
   <div style="position: relative; z-index: 2; max-width: 1000px; padding-top: 200px; padding-bottom: 60px;">
-    <p style="font-family: 'Inter', sans-serif; color: #ffffff; font-weight: 800; font-size: 1.25rem; letter-spacing: 6px; margin-bottom: 12px; text-transform: uppercase; text-shadow: 0 0 20px rgba(0,188,235,0.8), 0 2px 4px rgba(0,0,0,0.5); border-left: 5px solid #00BCEB; padding-left: 18px;">
-      EXPERTOS EN CLIMA
+    <p style="font-family: 'Inter', sans-serif; color: #ffffff; font-weight: 800; font-size: 1.25rem; letter-spacing: 4px; margin-bottom: 12px; text-transform: uppercase; text-shadow: 0 0 20px rgba(0,188,235,0.8), 0 2px 4px rgba(0,0,0,0.5); border-left: 5px solid #00BCEB; padding-left: 18px;">
+      EXPERTOS EN CLIMATIZACIÓN - CARTAGENA Y LA MANGA
     </p>
     <h1 style="font-family: 'Playfair Display', serif; font-size: clamp(3.8rem, 8.5vw, 6.2rem); font-weight: 900; color: white; line-height: 1.0; margin-bottom: 20px; text-shadow: 0 4px 15px rgba(0,0,0,0.4);">
       Tu confort, <span style="color: #E8620A;">nuestra<br>prioridad</span>
     </h1>
     <p style="font-family: 'Inter', sans-serif; font-size: 1.35rem; color: #e2e8f0; line-height: 1.7; max-width: 750px; margin-bottom: 35px; text-shadow: 0 2px 5px rgba(0,0,0,0.5); font-weight: 400; opacity: 0.95;">
-      Servicios profesionales de climatización: Instalación, reparación y mantenimiento.
+      Ofrecemos servicios profesionales de climatización: Instalación, reparación y mantenimiento de aire acondicionado con más de 10 años de experiencia.
     </p>
     <div style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">
       <a href="https://wa.me/34649990443" target="_blank" style="font-family: 'Inter', sans-serif; background: #E8620A; color: white; padding: 22px 44px; border-radius: 8px; font-weight: 800; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 2px; box-shadow: 0 10px 30px rgba(232, 98, 10, 0.45); text-decoration: none; transition: 0.3s; border: 1px solid rgba(255,255,255,0.1);">
@@ -895,3 +1015,4 @@
 
 </body>
 </html>
+
