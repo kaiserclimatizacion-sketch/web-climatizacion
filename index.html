@@ -567,18 +567,28 @@
       gap: 40px;
     }
 
-    @media (max-width: 950px) {
+    @media (max-width: 768px) {
       .review-slide {
-        padding: 20px 15px;
+        padding: 20px 10px;
       }
       .review-slide .review-text {
-        font-size: 1rem;
-        line-height: 1.6;
+        font-size: 0.95rem !important;
+        line-height: 1.5;
+        white-space: normal !important;
+        text-align: center;
+      }
+      .review-slide .stars {
+        font-size: 1.1rem !important;
+        justify-content: center;
+      }
+      .review-slide .review-author {
+        font-size: 0.9rem !important;
       }
       .resenas-grid {
         display: flex !important;
         flex-direction: column !important;
         gap: 30px !important;
+        padding-bottom: 40px;
       }
       .qr-feedback-grid {
         grid-template-columns: 1fr;
@@ -586,20 +596,21 @@
       }
       .qr-feedback-grid > div {
         padding-right: 0 !important;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
       }
-      /* Fix for titles not cutting off */
+      /* Global overflow fix and responsive titles */
       .section-title, h1, h2 {
         white-space: normal !important;
         word-wrap: break-word;
         overflow-wrap: break-word;
-      }
-      .resenas-title {
-        font-size: 1.6rem !important;
         text-align: center;
       }
+      .resenas-title {
+        font-size: 1.4rem !important;
+        margin-bottom: 20px !important;
+      }
       .qr-title-mobile {
-        font-size: 1.5rem !important;
+        font-size: 1.4rem !important;
       }
       .qr-instruction-mobile {
         font-size: 0.8rem !important;
@@ -867,4 +878,3 @@
 
 </body>
 </html>
-
