@@ -1,97 +1,377 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Preguntas Frecuentes sobre Aire Acondicionado | Kaiser Clima</title>
-  <meta name="description" content="Resuelve todas tus dudas sobre instalación, reparación y mantenimiento de aire acondicionado con las preguntas frecuentes de Kaiser Clima en Cartagena y Murcia." />
+  <meta name="description"
+    content="Resuelve todas tus dudas sobre instalación, reparación y mantenimiento de aire acondicionado con las preguntas frecuentes de Kaiser Clima en Cartagena y Murcia." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', sans-serif; color: #2d3748; overflow-x: hidden; min-height: 100vh; }
-    a { text-decoration: none; color: inherit; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    .bg-main { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-image: url('fondo.webp'); background-size: 140%; background-position: center top; background-attachment: fixed; z-index: -10; }
-    @media (max-width: 950px) { .bg-main { background-image: url('fondo-movil.webp'); background-size: 100% auto; background-repeat: no-repeat; background-position: center top; background-color: #f1f5f9; background-attachment: scroll; } }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #2d3748;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .bg-main {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('fondo.webp');
+      background-size: 140%;
+      background-position: center top;
+      background-attachment: fixed;
+      z-index: -10;
+    }
+
+    @media (max-width: 950px) {
+      .bg-main {
+        background-image: url('fondo-movil.webp');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-color: #f1f5f9;
+        background-attachment: scroll;
+      }
+    }
 
     /* FIXED HEADER */
-    .glass-header { 
-      position: absolute; 
-      top: 15px; 
-      left: 5% !important; 
-      right: 5% !important; 
-      background: linear-gradient(180deg, #f1f5f9 0%, #cbd5e1 100%); 
-      backdrop-filter: blur(20px); 
-      -webkit-backdrop-filter: blur(20px); 
-      border: 6px solid #94a3b8; 
-      border-top: 6px solid #f1f5f9; 
-      border-bottom: 8px solid #475569; 
-      border-radius: 14px; 
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25), inset 0 1px 1px #ffffff, inset 0 -2px 3px rgba(0, 0, 0, 0.1); 
-      z-index: 1000; 
-      display: flex; 
-      flex-direction: column; 
+    .glass-header {
+      position: absolute;
+      top: 15px;
+      left: 5% !important;
+      right: 5% !important;
+      background: linear-gradient(180deg, #f1f5f9 0%, #cbd5e1 100%);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 6px solid #94a3b8;
+      border-top: 6px solid #f1f5f9;
+      border-bottom: 8px solid #475569;
+      border-radius: 14px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25), inset 0 1px 1px #ffffff, inset 0 -2px 3px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
     }
-    .header-top { display: flex; align-items: center; padding: 8px 30px; gap: 40px; }
-    .logo-img { width: 180px; height: 180px; object-fit: contain; filter: drop-shadow(0 6px 16px rgba(0,0,0,0.3)); }
-    .title-img-container { display: flex; align-items: center; justify-content: center; }
-    .brand-text-block { display: flex; flex-direction: column; align-items: center; text-align: center; color: #333333; }
-    .brand-main-title { font-weight: 800; font-size: 4.8rem; line-height: 1; letter-spacing: 0.02em; text-transform: uppercase; }
-    .brand-subtitle-1 { font-weight: 700; font-size: 1.15rem; margin-top: 5px; line-height: 1.2; }
-    .brand-subtitle-2 { font-weight: 700; font-size: 1.15rem; margin-top: 2px; line-height: 1; }
-    .header-cta { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-left: auto; }
-    .cta-text { font-size: 1.25rem; font-weight: 700; color: #1A3050; line-height: 1.1; }
-    .cta-subtext { font-size: 0.95rem; font-weight: 500; color: #333333; text-transform: lowercase; letter-spacing: 0.5px; margin-bottom: 2px; opacity: 0.8; }
-    .btn-header-wsp { display: flex; align-items: center; gap: 10px; background: #25D366; color: white; padding: 10px 22px; border-radius: 50px; font-weight: 700; font-size: 1rem; transition: 0.3s; box-shadow: 0 4px 15px rgba(37,211,102,0.3); }
-    .btn-header-wsp svg { width: 20px; height: 20px; }
-    .header-sep { height: 1px; background: rgba(0,0,0,0.18); box-shadow: 0 1px 0 rgba(255,255,255,0.8); margin: 0 20px; }
-    nav { display: flex; padding: 10px 30px; gap: 30px; align-items: center; }
-    nav a { font-size: 0.98rem; font-weight: 500; color: #1a202c; letter-spacing: 0.2px; cursor: pointer; transition: 0.3s; }
-    nav a:hover, nav a.active, .dropdown-label:hover { color: #E8620A; }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      padding: 8px 30px;
+      gap: 40px;
+    }
+
+    .logo-img {
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
+      filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.3));
+    }
+
+    .title-img-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .brand-text-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: #333333;
+    }
+
+    .brand-main-title {
+      font-weight: 800;
+      font-size: 4.8rem;
+      line-height: 1;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .brand-subtitle-1 {
+      font-weight: 700;
+      font-size: 1.15rem;
+      margin-top: 5px;
+      line-height: 1.2;
+    }
+
+    .brand-subtitle-2 {
+      font-weight: 700;
+      font-size: 1.15rem;
+      margin-top: 2px;
+      line-height: 1;
+    }
+
+    .header-cta {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      margin-left: auto;
+    }
+
+    .cta-text {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #1A3050;
+      line-height: 1.1;
+    }
+
+    .cta-subtext {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #333333;
+      text-transform: lowercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 2px;
+      opacity: 0.8;
+    }
+
+    .btn-header-wsp {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: #25D366;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: 0.3s;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    }
+
+    .btn-header-wsp svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .header-sep {
+      height: 1px;
+      background: rgba(0, 0, 0, 0.18);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+      margin: 0 20px;
+    }
+
+    nav {
+      display: flex;
+      padding: 10px 30px;
+      gap: 30px;
+      align-items: center;
+    }
+
+    nav a {
+      font-size: 0.98rem;
+      font-weight: 500;
+      color: #1a202c;
+      letter-spacing: 0.2px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active,
+    .dropdown-label:hover {
+      color: #E8620A;
+    }
 
     /* Nav Dropdown */
-    .dropdown { position: relative; }
-    .dropdown-label { display: flex; align-items: center; gap: 6px; font-size: 0.98rem; font-weight: 500; color: #1a202c; letter-spacing: 0.2px; cursor: pointer; transition: 0.3s; }
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.98rem;
+      font-weight: 500;
+      color: #1a202c;
+      letter-spacing: 0.2px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
     .dropdown-menu {
-      position: absolute; top: 100%; left: -10px;
-      background: linear-gradient(180deg, rgba(245, 248, 252, 0.95), rgba(230, 235, 240, 0.92)); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.8); border-radius: 8px; box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-      padding: 10px 0; padding-top: 15px; min-width: 190px;
-      opacity: 0; pointer-events: none; transform: translateY(-10px); transition: all 0.3s ease; display: flex; flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: -10px;
+      background: linear-gradient(180deg, rgba(245, 248, 252, 0.95), rgba(230, 235, 240, 0.92));
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+      padding: 10px 0;
+      padding-top: 15px;
+      min-width: 190px;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
     }
-    .dropdown:hover .dropdown-menu { opacity: 1; pointer-events: auto; transform: translateY(0); }
-    .dropdown-menu a { padding: 12px 25px; display: block; transition: background 0.2s; }
-    .dropdown-menu a:hover { background: rgba(0, 0, 0, 0.04); color: #E8620A; }
-    .hamburger-btn { display: none; font-size: 2.2rem; color: #1A3050; cursor: pointer; }
+
+    .dropdown:hover .dropdown-menu {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .dropdown-menu a {
+      padding: 12px 25px;
+      display: block;
+      transition: background 0.2s;
+    }
+
+    .dropdown-menu a:hover {
+      background: rgba(0, 0, 0, 0.04);
+      color: #E8620A;
+    }
+
+    .hamburger-btn {
+      display: none;
+      font-size: 2.2rem;
+      color: #1A3050;
+      cursor: pointer;
+    }
+
     @media (max-width: 950px) {
-      .glass-header { position: absolute !important; z-index: 1000 !important; left: 0!important; right: 0!important; width: 100%!important; top: 0!important; border-radius: 0; border-left: none; border-right: none; border-top: none; border-bottom: 4px solid #94a3b8; overflow: hidden; }
-      .header-top { padding: 8px 15px!important; gap: 10px!important; }
-      .logo-img { width: 60px!important; height: 60px!important; }
-      .brand-main-title { font-size: 1.7rem!important; }
-      .brand-subtitle-1, .brand-subtitle-2 { font-size: 0.42rem!important; }
-      .header-cta { display: none; }
-      .hamburger-btn { display: block; margin-left: auto; }
-      nav { display: none; flex-direction: column; background: rgba(245,248,252,0.98); padding: 20px; gap: 20px; }
-      #mobile-menu-toggle:checked ~ nav { display: flex; }
+      .glass-header {
+        position: absolute !important;
+        z-index: 1000 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        top: 0 !important;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 4px solid #94a3b8;
+        overflow: hidden;
+      }
+
+      .header-top {
+        padding: 8px 15px !important;
+        gap: 10px !important;
+      }
+
+      .logo-img {
+        width: 60px !important;
+        height: 60px !important;
+      }
+
+      .brand-main-title {
+        font-size: 1.7rem !important;
+      }
+
+      .brand-subtitle-1,
+      .brand-subtitle-2 {
+        font-size: 0.42rem !important;
+      }
+
+      .header-cta {
+        display: none;
+      }
+
+      .hamburger-btn {
+        display: block;
+        margin-left: auto;
+      }
+
+      nav {
+        display: none;
+        flex-direction: column;
+        background: rgba(245, 248, 252, 0.98);
+        padding: 20px;
+        gap: 20px;
+      }
+
+      #mobile-menu-toggle:checked~nav {
+        display: flex;
+      }
     }
 
-    .page-wrapper { padding-top: 360px; padding-bottom: 80px; min-height: 100vh; }
-    @media (max-width: 950px) { .page-wrapper { padding-top: 120px; } }
+    .page-wrapper {
+      padding-top: 360px;
+      padding-bottom: 80px;
+      min-height: 100vh;
+    }
 
-    @keyframes slideInUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
-    .anim-up { animation: slideInUp 0.7s cubic-bezier(0.16,1,0.3,1) forwards; opacity: 0; }
-    .delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.25s; }
+    @media (max-width: 950px) {
+      .page-wrapper {
+        padding-top: 120px;
+      }
+    }
+
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .anim-up {
+      animation: slideInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      opacity: 0;
+    }
+
+    .delay-1 {
+      animation-delay: 0.1s;
+    }
+
+    .delay-2 {
+      animation-delay: 0.25s;
+    }
 
     /* FAQ MAIN CARD */
-    .faq-card-wrapper { max-width: 1100px; margin: 0 auto; padding: 0 5%; }
+    .faq-card-wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 5%;
+    }
 
     .faq-main-card {
-      background: rgba(255,255,255,0.92); backdrop-filter: blur(14px);
-      border: 1px solid rgba(255,255,255,0.95); border-radius: 24px;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.1); overflow: hidden;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      border-radius: 24px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
     }
 
     /* HEADER ZONE of card */
@@ -100,72 +380,300 @@
       padding: 35px 40px 30px;
       color: white;
     }
+
     .faq-badge-card {
-      display: inline-block; background: rgba(232,98,10,0.25); color: #ffb07a;
-      padding: 6px 18px; border-radius: 50px; font-size: 0.8rem; font-weight: 700;
-      text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 14px;
+      display: inline-block;
+      background: rgba(232, 98, 10, 0.25);
+      color: #ffb07a;
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 14px;
     }
-    .faq-card-title { font-size: clamp(1.5rem, 3.5vw, 2.2rem); font-weight: 800; margin-bottom: 10px; line-height: 1.2; }
-    .faq-card-desc { font-size: 0.97rem; color: rgba(255,255,255,0.75); line-height: 1.6; max-width: 680px; }
+
+    .faq-card-title {
+      font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+      font-weight: 800;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .faq-card-desc {
+      font-size: 0.97rem;
+      color: rgba(255, 255, 255, 0.75);
+      line-height: 1.6;
+      max-width: 680px;
+    }
 
     /* TAB PANELS */
-    .panel-container { position: relative; overflow: hidden; }
-    .faq-panel { display: none; padding: 20px 0; min-height: 380px; }
-    .faq-panel.active { display: block; animation: pageTurn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+    .panel-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .faq-panel {
+      display: none;
+      padding: 20px 0;
+      min-height: 380px;
+    }
+
+    .faq-panel.active {
+      display: block;
+      animation: pageTurn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
 
     @keyframes pageTurn {
-      0% { opacity: 0; transform: translateX(30px) rotateY(5deg); filter: blur(4px); }
-      100% { opacity: 1; transform: translateX(0) rotateY(0); filter: blur(0); }
+      0% {
+        opacity: 0;
+        transform: translateX(30px) rotateY(5deg);
+        filter: blur(4px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0) rotateY(0);
+        filter: blur(0);
+      }
     }
 
     .faq-tabs {
-      display: flex; gap: 0; border-top: 2px solid rgba(0,0,0,0.06);
-      background: #ffffff; overflow-x: auto;
-      border-bottom-left-radius: 24px; border-bottom-right-radius: 24px;
+      display: flex;
+      gap: 0;
+      border-top: 2px solid rgba(0, 0, 0, 0.06);
+      background: #ffffff;
+      overflow-x: auto;
+      border-bottom-left-radius: 24px;
+      border-bottom-right-radius: 24px;
     }
-    .faq-tab {
-      padding: 18px 28px; font-size: 0.92rem; font-weight: 700; color: #64748b;
-      cursor: pointer; border: none; background: none; border-top: 4px solid transparent;
-      margin-top: -2px; transition: all 0.3s ease; white-space: nowrap; flex: 1; text-align: center;
-    }
-    .faq-tab:hover { color: #E8620A; background: rgba(232,98,10,0.02); }
-    .faq-tab.active { color: #E8620A; border-top-color: #E8620A; background: white; }
 
-    .faq-item { border-bottom: 1px solid rgba(0,0,0,0.05); }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-item summary {
-      padding: 20px 40px; cursor: pointer; list-style: none;
-      display: flex; justify-content: space-between; align-items: center;
-      font-weight: 700; color: #1A3050; font-size: 1rem; outline: none; transition: color 0.3s;
+    .faq-tab {
+      padding: 18px 28px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #64748b;
+      cursor: pointer;
+      border: none;
+      background: none;
+      border-top: 4px solid transparent;
+      margin-top: -2px;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+      flex: 1;
+      text-align: center;
     }
-    .faq-item summary:hover { color: #E8620A; background: rgba(232,98,10,0.03); }
-    .faq-item summary::-webkit-details-marker { display: none; }
-    .faq-item summary::after { content: '\2304'; font-size: 1.3rem; color: #cbd5e0; transition: all 0.3s ease; flex-shrink: 0; margin-left: 16px; }
-    .faq-item[open] summary { color: #E8620A; }
-    .faq-item[open] summary::after { transform: rotate(180deg); color: #E8620A; }
-    .faq-content { padding: 0 40px 22px; color: #4a5568; line-height: 1.8; font-size: 0.97rem; }
-    .faq-content ul { margin-top: 12px; list-style: none; padding: 0; }
-    .faq-content ul li { margin-bottom: 6px; }
+
+    .faq-tab:hover {
+      color: #E8620A;
+      background: rgba(232, 98, 10, 0.02);
+    }
+
+    .faq-tab.active {
+      color: #E8620A;
+      border-top-color: #E8620A;
+      background: white;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .faq-item:last-child {
+      border-bottom: none;
+    }
+
+    .faq-item summary {
+      padding: 20px 40px;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+      color: #1A3050;
+      font-size: 1rem;
+      outline: none;
+      transition: color 0.3s;
+    }
+
+    .faq-item summary:hover {
+      color: #E8620A;
+      background: rgba(232, 98, 10, 0.03);
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: '\2304';
+      font-size: 1.3rem;
+      color: #cbd5e0;
+      transition: all 0.3s ease;
+      flex-shrink: 0;
+      margin-left: 16px;
+    }
+
+    .faq-item[open] summary {
+      color: #E8620A;
+    }
+
+    .faq-item[open] summary::after {
+      transform: rotate(180deg);
+      color: #E8620A;
+    }
+
+    .faq-content {
+      padding: 0 40px 22px;
+      color: #4a5568;
+      line-height: 1.8;
+      font-size: 0.97rem;
+    }
+
+    .faq-content ul {
+      margin-top: 12px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .faq-content ul li {
+      margin-bottom: 6px;
+    }
 
     /* BOTTOM CTA */
-    .faq-cta-box { background: rgba(240,245,252,0.95); padding: 50px 5%; text-align: center; border-top: 1px solid rgba(0,0,0,0.05); width: 100%; border-radius: 0; margin-top: 0; }
-    .faq-cta-box h3 { font-size: 1.5rem; font-weight: 800; color: #1A3050; margin-bottom: 8px; }
-    .faq-cta-box p { color: #4a5568; margin-bottom: 22px; font-size: 1.05rem; }
-    .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-    .btn-cta { display: inline-flex; align-items: center; gap: 9px; padding: 13px 24px; border-radius: 50px; font-weight: 700; font-size: 0.92rem; transition: all 0.3s ease; text-decoration: none; }
-    .btn-cta:hover { transform: translateY(-2px); }
-    .btn-cta.green { background: #25D366; color: white; }
-    .btn-cta.green:hover { background: #20BA56; }
-    .btn-cta.orange { background: #E8620A; color: white; }
-    .btn-cta.orange:hover { background: #d4530a; }
-    .btn-cta.dark { background: #1A3050; color: white; }
-    .btn-cta.dark:hover { background: #243e65; }
+    .faq-cta-box {
+      background: rgba(240, 245, 252, 0.95);
+      padding: 50px 5%;
+      text-align: center;
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+      width: 100%;
+      border-radius: 0;
+      margin-top: 0;
+    }
 
-    .btn-wsp { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; width: 55px; height: 55px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 30px rgba(37,211,102,0.5); transition: all 0.4s cubic-bezier(0.175,0.885,0.32,1.275); z-index: 2000; animation: wsp-pulse 2s infinite; }
-    .btn-wsp:hover { transform: scale(1.15) rotate(5deg); }
-    @keyframes wsp-pulse { 0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.7); } 70% { box-shadow: 0 0 0 20px rgba(37,211,102,0); } 100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); } }
-    .btn-top { position: fixed; bottom: 100px; right: 30px; background: #1A3050; color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: all 0.4s cubic-bezier(0.175,0.885,0.32,1.275); z-index: 2000; text-decoration: none; }
-    .btn-top:hover { transform: translateY(-8px) scale(1.1); background: #E8620A; }
+    .faq-cta-box h3 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #1A3050;
+      margin-bottom: 8px;
+    }
+
+    .faq-cta-box p {
+      color: #4a5568;
+      margin-bottom: 22px;
+      font-size: 1.05rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 13px 24px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.92rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn-cta:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-cta.green {
+      background: #25D366;
+      color: white;
+    }
+
+    .btn-cta.green:hover {
+      background: #20BA56;
+    }
+
+    .btn-cta.orange {
+      background: #E8620A;
+      color: white;
+    }
+
+    .btn-cta.orange:hover {
+      background: #d4530a;
+    }
+
+    .btn-cta.dark {
+      background: #1A3050;
+      color: white;
+    }
+
+    .btn-cta.dark:hover {
+      background: #243e65;
+    }
+
+    .btn-wsp {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #25D366;
+      color: white;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      z-index: 2000;
+      animation: wsp-pulse 2s infinite;
+    }
+
+    .btn-wsp:hover {
+      transform: scale(1.15) rotate(5deg);
+    }
+
+    @keyframes wsp-pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+      }
+
+      70% {
+        box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
+    }
+
+    .btn-top {
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      background: #1A3050;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      z-index: 2000;
+      text-decoration: none;
+    }
+
+    .btn-top:hover {
+      transform: translateY(-8px) scale(1.1);
+      background: #E8620A;
+    }
 
     /* Footer */
     footer {
@@ -183,17 +691,30 @@
     }
 
     @media (max-width: 950px) {
+
       /* FAQ mobile adjustments: show all questions together */
-      .faq-tabs { display: none !important; }
-      .faq-panel { 
-        display: block !important; 
-        min-height: auto !important; 
-        animation: none !important; 
+      .faq-tabs {
+        display: none !important;
+      }
+
+      .faq-panel {
+        display: block !important;
+        min-height: auto !important;
+        animation: none !important;
         padding: 0 !important;
       }
-      .faq-item { border-bottom: 1px solid rgba(0,0,0,0.05) !important; }
-      .faq-item:last-child { border-bottom: 1px solid rgba(0,0,0,0.05) !important; }
-      #panel-reparacion .faq-item:last-child { border-bottom: none !important; }
+
+      .faq-item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+      }
+
+      .faq-item:last-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+      }
+
+      #panel-reparacion .faq-item:last-child {
+        border-bottom: none !important;
+      }
 
       /* Footer mobile adjustments */
       .footer-content {
@@ -217,15 +738,69 @@
       }
 
       /* Reordering for symmetry: Info first, then Schedule */
-      .footer-content>div:nth-child(1) { order: 1; }
-      .footer-content>div:nth-child(3) { order: 2; }
-      .footer-content>div:nth-child(5) { order: 3; }
-      .footer-content>div:nth-child(2) { order: 4; }
-      .footer-content>div:nth-child(4) { order: 5; }
-      .footer-content>div:nth-child(6) { order: 6; }
+      .footer-content>div:nth-child(1) {
+        order: 1;
+      }
+
+      .footer-content>div:nth-child(3) {
+        order: 2;
+      }
+
+      .footer-content>div:nth-child(5) {
+        order: 3;
+      }
+
+      .footer-content>div:nth-child(2) {
+        order: 4;
+      }
+
+      .footer-content>div:nth-child(4) {
+        order: 5;
+      }
+
+      .footer-content>div:nth-child(6) {
+        order: 6;
+      }
+    }
+    @media (max-width: 950px) {
+      /* Footer mobile adjustments */
+      .footer-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px !important;
+        text-align: center !important;
+      }
+
+      .footer-content > div {
+        grid-column: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100%;
+      }
+
+      .footer-content p {
+        text-align: center !important;
+        margin-bottom: 5px !important;
+        justify-content: center !important; /* Center flex-based logo row */
+      }
+
+      /* Center copyright text on mobile */
+      .footer-copyright {
+        text-align: center !important;
+      }
+
+      /* Reordering for symmetry: Info first, then Schedule */
+      .footer-content > div:nth-child(1) { order: 1; }
+      .footer-content > div:nth-child(3) { order: 2; }
+      .footer-content > div:nth-child(5) { order: 3; }
+      .footer-content > div:nth-child(2) { order: 4; }
+      .footer-content > div:nth-child(4) { order: 5; }
+      .footer-content > div:nth-child(6) { order: 6; }
     }
   </style>
 </head>
+
 <body>
   <div class="bg-main"></div>
 
@@ -244,7 +819,10 @@
         <span class="cta-text">¿Necesitas reparación urgente?</span>
         <span class="cta-subtext">atención rápida garantizada</span>
         <a href="https://wa.me/34649990443" target="_blank" class="btn-header-wsp">
-          <svg viewBox="0 0 448 512" fill="white"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 512l149.8-39.3c32.5 17.6 69.4 26.9 107.9 26.9 122.4 0 222-99.6 222-222 0-59.3-23.1-115.1-65-157.1zM223.9 448.2c-33.1 0-65.5-8.9-94-25.7l-6.7-4-69.8 18.3L72 368.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.5-186.6 184.5zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.6-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-2.1-3.6 1.5-3.8 6.9-14.3 1.8-3.6.9-6.8-.5-9.6-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+          <svg viewBox="0 0 448 512" fill="white">
+            <path
+              d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 512l149.8-39.3c32.5 17.6 69.4 26.9 107.9 26.9 122.4 0 222-99.6 222-222 0-59.3-23.1-115.1-65-157.1zM223.9 448.2c-33.1 0-65.5-8.9-94-25.7l-6.7-4-69.8 18.3L72 368.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.5-186.6 184.5zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.6-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-2.1-3.6 1.5-3.8 6.9-14.3 1.8-3.6.9-6.8-.5-9.6-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+          </svg>
           Escríbenos ahora
         </a>
       </div>
@@ -256,7 +834,8 @@
       <a href="index.html#quienes-somos">Quienes Somos</a>
       <div class="dropdown">
         <input type="checkbox" id="mobile-dropdown-toggle" style="display:none;">
-        <label for="mobile-dropdown-toggle" class="dropdown-label">Servicios de Climatización <span style="font-size: 0.7em;">▼</span></label>
+        <label for="mobile-dropdown-toggle" class="dropdown-label">Servicios de Climatización <span
+            style="font-size: 0.7em;">▼</span></label>
         <div class="dropdown-menu">
           <a href="index.html#servicios">Instalaciones</a>
           <a href="index.html#servicios">Reparaciones</a>
@@ -279,7 +858,9 @@
         <!-- Header of card -->
         <div class="faq-card-header" style="text-align: center;">
           <h1 class="faq-card-title">Preguntas Frecuentes sobre los servicios de Climatización</h1>
-          <p class="faq-card-desc" style="margin: 0 auto;">Te ayudamos a resolver las dudas más comunes sobre instalación, reparación y mantenimiento de equipos de aire acondicionado. Respuestas basadas en experiencia técnica real.</p>
+          <p class="faq-card-desc" style="margin: 0 auto;">Te ayudamos a resolver las dudas más comunes sobre
+            instalación, reparación y mantenimiento de equipos de aire acondicionado. Respuestas basadas en experiencia
+            técnica real.</p>
         </div>
 
 
@@ -288,29 +869,48 @@
         <div id="panel-instalacion" class="faq-panel active">
           <details class="faq-item">
             <summary>¿Qué tipo de aire acondicionado es mejor para mi casa?</summary>
-            <div class="faq-content">Depende de la arquitectura y necesidades térmicas. Para estancias individuales, un <strong>Split o Multi-Split</strong> es lo más eficiente y económico. Si la vivienda tiene preinstalación de falsos techos, un sistema de <strong>Conductos</strong> es ideal por estética y uniformidad. Siempre recomendamos tecnología Inverter para cumplir con la eficiencia energética que exige el RITE.</div>
+            <div class="faq-content">Depende de la arquitectura y necesidades térmicas. Para estancias individuales, un
+              <strong>Split o Multi-Split</strong> es lo más eficiente y económico. Si la vivienda tiene preinstalación
+              de falsos techos, un sistema de <strong>Conductos</strong> es ideal por estética y uniformidad. Siempre
+              recomendamos tecnología Inverter para cumplir con la eficiencia energética que exige el RITE.</div>
           </details>
           <details class="faq-item">
             <summary>¿Qué potencia de aire acondicionado necesito según los metros cuadrados?</summary>
-            <div class="faq-content">Como norma técnica general, calculamos unas 100 frigorías (116W) por metro cuadrado para una altura estándar de 2,5m.
-              <ul><li>• <strong>Hasta 20 m²:</strong> 2.200 frig. (2.5 kW)</li><li>• <strong>Hasta 30 m²:</strong> 3.000 frig. (3.5 kW)</li><li>• <strong>Hasta 45 m²:</strong> 4.500 frig. (5.2 kW)</li></ul>
+            <div class="faq-content">Como norma técnica general, calculamos unas 100 frigorías (116W) por metro cuadrado
+              para una altura estándar de 2,5m.
+              <ul>
+                <li>• <strong>Hasta 20 m²:</strong> 2.200 frig. (2.5 kW)</li>
+                <li>• <strong>Hasta 30 m²:</strong> 3.000 frig. (3.5 kW)</li>
+                <li>• <strong>Hasta 45 m²:</strong> 4.500 frig. (5.2 kW)</li>
+              </ul>
             </div>
           </details>
           <details class="faq-item">
             <summary>¿Necesito hacer obras para instalar aire acondicionado?</summary>
-            <div class="faq-content">Para sistemas <strong>Split</strong>, la obra es mínima (un orificio de unos 5-6 cm para interconexiones). Para sistemas de <strong>Conductos</strong>, si no hay preinstalación, se requiere obra de albañilería y escayola para los falsos techos y rejillas. En Kaiser Clima priorizamos instalaciones limpias que minimicen el impacto en la vivienda.</div>
+            <div class="faq-content">Para sistemas <strong>Split</strong>, la obra es mínima (un orificio de unos 5-6 cm
+              para interconexiones). Para sistemas de <strong>Conductos</strong>, si no hay preinstalación, se requiere
+              obra de albañilería y escayola para los falsos techos y rejillas. En Kaiser Clima priorizamos
+              instalaciones limpias que minimicen el impacto en la vivienda.</div>
           </details>
           <details class="faq-item">
             <summary>¿Cuánto tiempo tarda la instalación?</summary>
-            <div class="faq-content">Una instalación básica de un Split suele tardar entre <strong>3 y 5 horas</strong>. Una instalación de Conductos o un sistema Multi-split complejo puede requerir de 1 a 2 días laborales. En proyectos industriales o cámaras frigoríficas, el plazo se define según el diseño del proyecto.</div>
+            <div class="faq-content">Una instalación básica de un Split suele tardar entre <strong>3 y 5 horas</strong>.
+              Una instalación de Conductos o un sistema Multi-split complejo puede requerir de 1 a 2 días laborales. En
+              proyectos industriales o cámaras frigoríficas, el plazo se define según el diseño del proyecto.</div>
           </details>
           <details class="faq-item">
             <summary>¿Se puede instalar aire acondicionado en un piso de alquiler?</summary>
-            <div class="faq-content"><strong>Legalmente:</strong> Sí, pero requiere la autorización por escrito del propietario. <strong>Técnicamente:</strong> Es viable. Si el propietario no permite perforar fachada, existen soluciones como unidades portátiles, aunque lo ideal es un Split fijo por eficiencia y confort.</div>
+            <div class="faq-content"><strong>Legalmente:</strong> Sí, pero requiere la autorización por escrito del
+              propietario. <strong>Técnicamente:</strong> Es viable. Si el propietario no permite perforar fachada,
+              existen soluciones como unidades portátiles, aunque lo ideal es un Split fijo por eficiencia y confort.
+            </div>
           </details>
           <details class="faq-item">
             <summary>¿Dónde se debe colocar la unidad exterior para un rendimiento óptimo?</summary>
-            <div class="faq-content">Debe ubicarse en un lugar con buena ventilación, alejado de fuentes de calor directo y donde sea accesible para futuros mantenimientos. Evitamos espacios cerrados o muy estrechos, ya que si el aire caliente recircula, el compresor consume más energía y puede bloquearse por alta presión.</div>
+            <div class="faq-content">Debe ubicarse en un lugar con buena ventilación, alejado de fuentes de calor
+              directo y donde sea accesible para futuros mantenimientos. Evitamos espacios cerrados o muy estrechos, ya
+              que si el aire caliente recircula, el compresor consume más energía y puede bloquearse por alta presión.
+            </div>
           </details>
         </div>
 
@@ -318,15 +918,22 @@
         <div id="panel-marcas" class="faq-panel">
           <details class="faq-item">
             <summary>¿Cuál es la mejor marca de aire acondicionado calidad-precio?</summary>
-            <div class="faq-content">Actualmente, <strong>Haier y Mitsubishi Heavy Industries</strong> ofrecen el mejor equilibrio. Proporcionan una alta eficiencia energética (A++/A+++), bajo nivel sonoro y una electrónica robusta a un precio muy competitivo en el mercado español.</div>
+            <div class="faq-content">Actualmente, <strong>Haier y Mitsubishi Heavy Industries</strong> ofrecen el mejor
+              equilibrio. Proporcionan una alta eficiencia energética (A++/A+++), bajo nivel sonoro y una electrónica
+              robusta a un precio muy competitivo en el mercado español.</div>
           </details>
           <details class="faq-item">
             <summary>¿Qué marcas de aire acondicionado se instalan habitualmente?</summary>
-            <div class="faq-content">Trabajamos con marcas líderes que garantizan repuestos y eficiencia: <strong>Mitsubishi Electric, Daikin, Fujitsu, Panasonic</strong> (gama alta) y <strong>Haier o Hisense</strong> (excelente relación rendimiento-precio). Todas cumplen con los estándares europeos de refrigerantes ecológicos (R-32).</div>
+            <div class="faq-content">Trabajamos con marcas líderes que garantizan repuestos y eficiencia:
+              <strong>Mitsubishi Electric, Daikin, Fujitsu, Panasonic</strong> (gama alta) y <strong>Haier o
+                Hisense</strong> (excelente relación rendimiento-precio). Todas cumplen con los estándares europeos de
+              refrigerantes ecológicos (R-32).</div>
           </details>
           <details class="faq-item">
             <summary>¿Qué es el gas R-32 y por qué es mejor que el R-410A?</summary>
-            <div class="faq-content">El <strong>R-32</strong> es el refrigerante estándar actual en la UE. Es mucho más ecológico (su impacto en el calentamiento global es un 65% menor), permite usar menos carga de gas y es un 10% más eficiente energéticamente que su predecesor.</div>
+            <div class="faq-content">El <strong>R-32</strong> es el refrigerante estándar actual en la UE. Es mucho más
+              ecológico (su impacto en el calentamiento global es un 65% menor), permite usar menos carga de gas y es un
+              10% más eficiente energéticamente que su predecesor.</div>
           </details>
         </div>
 
@@ -334,19 +941,29 @@
         <div id="panel-mantenimiento" class="faq-panel">
           <details class="faq-item">
             <summary>¿Cada cuánto tiempo debo limpiar los filtros?</summary>
-            <div class="faq-content">En uso doméstico, recomendamos limpiarlos cada <strong>3 o 6 meses</strong>. Si hay mascotas o personas con alergias, una vez al mes durante la temporada de uso. Filtros sucios reducen el caudal de aire, aumentan el consumo eléctrico hasta un 20% y pueden causar la congelación de la batería interior.</div>
+            <div class="faq-content">En uso doméstico, recomendamos limpiarlos cada <strong>3 o 6 meses</strong>. Si hay
+              mascotas o personas con alergias, una vez al mes durante la temporada de uso. Filtros sucios reducen el
+              caudal de aire, aumentan el consumo eléctrico hasta un 20% y pueden causar la congelación de la batería
+              interior.</div>
           </details>
           <details class="faq-item">
             <summary>¿Es necesario realizar una carga de gas cada año?</summary>
-            <div class="faq-content"><strong>No.</strong> Un sistema de aire acondicionado es un circuito cerrado; si le falta gas es porque existe una fuga. Cargar gas sin reparar la fuga es un error técnico y una infracción ambiental. Si el equipo no enfría, primero localizamos y reparamos la fuga siguiendo el RSIF.</div>
+            <div class="faq-content"><strong>No.</strong> Un sistema de aire acondicionado es un circuito cerrado; si le
+              falta gas es porque existe una fuga. Cargar gas sin reparar la fuga es un error técnico y una infracción
+              ambiental. Si el equipo no enfría, primero localizamos y reparamos la fuga siguiendo el RSIF.</div>
           </details>
           <details class="faq-item">
             <summary>¿Por qué mi aire acondicionado huele mal al encenderlo?</summary>
-            <div class="faq-content">Se debe a la acumulación de bacterias y moho en la bandeja de condensados o en el evaporador. El mantenimiento de Kaiser Clima incluye una <strong>desinfección química profunda</strong> con productos fungicidas homologados para eliminar olores y garantizar la calidad del aire.</div>
+            <div class="faq-content">Se debe a la acumulación de bacterias y moho en la bandeja de condensados o en el
+              evaporador. El mantenimiento de Kaiser Clima incluye una <strong>desinfección química profunda</strong>
+              con productos fungicidas homologados para eliminar olores y garantizar la calidad del aire.</div>
           </details>
           <details class="faq-item">
             <summary>¿Merece la pena reparar un equipo con más de 12 años?</summary>
-            <div class="faq-content">Técnicamente, si la avería es el compresor o la placa electrónica principal, solemos recomendar la sustitución. Los equipos antiguos usan gases obsoletos (R-22 o R-407C) y consumen casi el doble que un equipo moderno A+++. La inversión en un equipo nuevo se amortiza en pocos años solo con el ahorro en la factura eléctrica.</div>
+            <div class="faq-content">Técnicamente, si la avería es el compresor o la placa electrónica principal,
+              solemos recomendar la sustitución. Los equipos antiguos usan gases obsoletos (R-22 o R-407C) y consumen
+              casi el doble que un equipo moderno A+++. La inversión en un equipo nuevo se amortiza en pocos años solo
+              con el ahorro en la factura eléctrica.</div>
           </details>
         </div>
 
@@ -354,11 +971,15 @@
         <div id="panel-reparacion" class="faq-panel">
           <details class="faq-item">
             <summary>¿Por qué gotea agua por la unidad interior?</summary>
-            <div class="faq-content">Generalmente es por una obstrucción en el tubo de desagüe o porque la bandeja de condensados está desnivelada. En verano, el equipo condensa la humedad del ambiente; si el agua no puede salir por gravedad o bomba, desborda hacia el interior de la estancia.</div>
+            <div class="faq-content">Generalmente es por una obstrucción en el tubo de desagüe o porque la bandeja de
+              condensados está desnivelada. En verano, el equipo condensa la humedad del ambiente; si el agua no puede
+              salir por gravedad o bomba, desborda hacia el interior de la estancia.</div>
           </details>
           <details class="faq-item">
             <summary>Mi equipo enciende pero no sale aire frío, ¿qué puede ser?</summary>
-            <div class="faq-content">Las causas más comunes son: un fallo en el condensador de arranque, una fuga de refrigerante, o suciedad extrema en la unidad exterior. Si el compresor no arranca, el equipo solo funcionará como un ventilador.</div>
+            <div class="faq-content">Las causas más comunes son: un fallo en el condensador de arranque, una fuga de
+              refrigerante, o suciedad extrema en la unidad exterior. Si el compresor no arranca, el equipo solo
+              funcionará como un ventilador.</div>
           </details>
         </div>
 
@@ -379,7 +1000,8 @@
     <h3>¿Aún tienes dudas?</h3>
     <p>Contáctanos directamente para un asesoramiento personalizado sin compromiso.</p>
     <div class="cta-buttons">
-      <a href="https://wa.me/34649990443" target="_blank" class="btn-cta green"><span>💬</span> Consultar por WhatsApp</a>
+      <a href="https://wa.me/34649990443" target="_blank" class="btn-cta green"><span>💬</span> Consultar por
+        WhatsApp</a>
       <a href="tel:+34649990443" class="btn-cta orange"><span>📞</span> Llamar al 649 990 443</a>
       <a href="contacto.html" class="btn-cta dark"><span>✉️</span> Ir al Formulario</a>
     </div>
@@ -389,8 +1011,11 @@
     <div class="inner footer-content" style="grid-template-rows: auto auto auto; gap: 0 50px;">
       <!-- Row 1: Titles -->
       <div style="grid-column: 1;">
-        <p style="display: flex; align-items: center; gap: 10px; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px; letter-spacing: 1px; line-height: 1.2;">
-          <img src="logo-kaiser-clima.webp" alt="Logo" style="width: 40px; height: 40px; object-fit: contain;">KAISER CLIMA</p>
+        <p
+          style="display: flex; align-items: center; gap: 10px; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px; letter-spacing: 1px; line-height: 1.2;">
+          <img src="logo-kaiser-clima.webp" alt="Logo" style="width: 40px; height: 40px; object-fit: contain;">KAISER
+          CLIMA
+        </p>
       </div>
       <div style="grid-column: 2;">
         <p
@@ -417,7 +1042,7 @@
 
     <!-- Bottom Copyright -->
     <div class="inner">
-      <div
+      <div class="footer-copyright"
         style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 50px; padding-top: 25px; font-size: 0.85rem; color: #a0aec0; text-align: left;">
         © 2026 Kaiser Clima. Todos los derechos reservados.
       </div>
@@ -425,24 +1050,30 @@
   </footer>
 
   <a class="btn-wsp" href="https://wa.me/34649990443" target="_blank" title="WhatsApp">
-    <svg viewBox="0 0 448 512" width="30" height="30" fill="white"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 512l149.8-39.3c32.5 17.6 69.4 26.9 107.9 26.9 122.4 0 222-99.6 222-222 0-59.3-23.1-115.1-65-157.1zM223.9 448.2c-33.1 0-65.5-8.9-94-25.7l-6.7-4-69.8 18.3L72 368.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.5-186.6 184.5zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.6-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-2.1-3.6 1.5-3.8 6.9-14.3 1.8-3.6.9-6.8-.5-9.6-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    <svg viewBox="0 0 448 512" width="30" height="30" fill="white">
+      <path
+        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 512l149.8-39.3c32.5 17.6 69.4 26.9 107.9 26.9 122.4 0 222-99.6 222-222 0-59.3-23.1-115.1-65-157.1zM223.9 448.2c-33.1 0-65.5-8.9-94-25.7l-6.7-4-69.8 18.3L72 368.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.5-186.6 184.5zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.6-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-2.1-3.6 1.5-3.8 6.9-14.3 1.8-3.6.9-6.8-.5-9.6-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+    </svg>
   </a>
   <a class="btn-top" href="#" title="Volver al inicio">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 15l-6-6-6 6" />
+    </svg>
   </a>
 
   <script>
     function showTab(name, btn) {
       const panels = document.querySelectorAll('.faq-panel');
       const tabs = document.querySelectorAll('.faq-tab');
-      
+
       panels.forEach(p => p.classList.remove('active'));
       tabs.forEach(t => t.classList.remove('active'));
-      
+
       const targetPanel = document.getElementById('panel-' + name);
       targetPanel.classList.add('active');
       btn.classList.add('active');
-      
+
       // Reset scroll position if needed
       document.querySelector('.faq-main-card').scrollIntoView({ behavior: 'smooth', block: 'start' });
 
@@ -451,5 +1082,5 @@
     }
   </script>
 </body>
-</html>
 
+</html>
