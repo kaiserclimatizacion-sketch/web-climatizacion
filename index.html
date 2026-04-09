@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aire acondicionado en Murcia, Cartagena y La Manga | Kaiser Clima</title>
-  <meta name="description" content="Especialistas en instalación, reparación y mantenimiento de aire acondicionado en Murcia, Cartagena y La Manga. Más de 10 años de experiencia. Solicita tu presupuesto gratis." />
+  <title>Aire acondicionado en Murcia | Instalación y reparación 24h | Kaiser Clima</title>
+  <meta name="description"
+    content="Instalación y reparación de aire acondicionado en Murcia, Cartagena y La Manga. Servicio rápido en 24h. Presupuesto gratis." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
@@ -25,13 +26,13 @@
         "priceRange": "$$",
         "image": "https://www.kaiserclima.com/instalacion.png",
         "logo": "https://www.kaiserclima.com/logo-kaiser-clima.png",
-        "description": "Instalación, reparación y mantenimiento de aire acondicionado y electricidad en la Región de Murcia.",
+        "description": "Instalación, reparación y mantenimiento de aire acondicionado en la Región de Murcia.",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "AÑADIR_CALLE_Y_NUMERO",
+          "streetAddress": "Lugar San Justo, 14",
           "addressLocality": "Cartagena",
           "addressRegion": "Murcia",
-          "postalCode": "30201",
+          "postalCode": "30393",
           "addressCountry": "ES"
         },
         "geo": {
@@ -126,7 +127,8 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-image: url('fondo.png'); /* Desktop background */
+      background-image: url('fondo.png');
+      /* Desktop background */
       background-size: 140%;
       background-position: center top;
       background-attachment: fixed;
@@ -143,13 +145,16 @@
       background: linear-gradient(180deg, #f1f5f9 0%, #cbd5e1 100%);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
-      border: 6px solid #94a3b8; /* Outer silver border - Thicker */
-      border-top: 6px solid #f1f5f9; /* Lighter top for shine - Thicker */
-      border-bottom: 8px solid #475569; /* Darker bottom for depth - Thicker */
+      border: 6px solid #94a3b8;
+      /* Outer silver border - Thicker */
+      border-top: 6px solid #f1f5f9;
+      /* Lighter top for shine - Thicker */
+      border-bottom: 8px solid #475569;
+      /* Darker bottom for depth - Thicker */
       border-radius: 14px;
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25), 
-                  inset 0 1px 1px #ffffff,
-                  inset 0 -2px 3px rgba(0,0,0,0.1);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25),
+        inset 0 1px 1px #ffffff,
+        inset 0 -2px 3px rgba(0, 0, 0, 0.1);
       z-index: 1000;
       display: flex;
       flex-direction: column;
@@ -161,7 +166,8 @@
       align-items: center;
       padding: 8px 30px;
       position: relative;
-      gap: 40px; /* Space between Logo and Title */
+      gap: 40px;
+      /* Space between Logo and Title */
     }
 
     /* Left: Logo */
@@ -174,7 +180,7 @@
       width: 180px;
       height: 180px;
       object-fit: contain;
-      filter: drop-shadow(0 6px 16px rgba(0,0,0,0.3));
+      filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.3));
     }
 
     /* Center -> Left: Title */
@@ -225,7 +231,8 @@
       display: flex;
       align-items: center;
       gap: 15px;
-      margin-left: auto; /* Pushes to the right */
+      margin-left: auto;
+      /* Pushes to the right */
     }
 
     .contact-info {
@@ -308,7 +315,8 @@
       border-radius: 8px;
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
       padding: 10px 0;
-      padding-top: 15px; /* Added internal padding to bridge the visual gap */
+      padding-top: 15px;
+      /* Added internal padding to bridge the visual gap */
       min-width: 190px;
 
       opacity: 0;
@@ -344,13 +352,15 @@
     }
 
     @media (max-width: 950px) {
+
       /* Mobile background image */
       .bg-main {
         background-image: url('fondo-movil.png');
-        background-size: 100% auto; /* Expandido al 100% */
+        background-size: 100% auto;
+        /* Expandido al 100% */
         background-repeat: no-repeat;
         background-position: center top;
-        background-color: #f1f5f9; 
+        background-color: #f1f5f9;
         background-attachment: scroll;
       }
 
@@ -364,7 +374,7 @@
         border-right: none;
         border-top: none;
         border-bottom: 4px solid #94a3b8;
-        overflow: hidden; 
+        overflow: hidden;
       }
 
       .header-top {
@@ -391,7 +401,9 @@
         font-size: 1.7rem !important;
         letter-spacing: 0.01em !important;
       }
-      .brand-subtitle-1, .brand-subtitle-2 {
+
+      .brand-subtitle-1,
+      .brand-subtitle-2 {
         font-size: 0.42rem !important;
         margin-top: 2px !important;
       }
@@ -415,35 +427,44 @@
         gap: 20px;
       }
 
-      nav a, .dropdown-label {
+      nav a,
+      .dropdown-label {
         font-size: 1.2rem;
       }
 
-      #mobile-menu-toggle:checked ~ nav {
+      #mobile-menu-toggle:checked~nav {
         display: flex;
       }
 
       /* Control del submenú en móvil */
-      #mobile-dropdown-toggle:checked ~ .dropdown-menu {
+      #mobile-dropdown-toggle:checked~.dropdown-menu {
         display: flex;
         animation: subMenuFade 0.3s ease;
       }
 
       @keyframes subMenuFade {
-        from { opacity: 0; transform: translateY(-5px); }
-        to { opacity: 1; transform: translateY(0); }
+        from {
+          opacity: 0;
+          transform: translateY(-5px);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       .dropdown-menu {
         position: static;
         box-shadow: none;
-        background: rgba(0,0,0,0.03);
+        background: rgba(0, 0, 0, 0.03);
         border: none;
         padding: 5px 0 5px 20px;
         opacity: 1;
         pointer-events: auto;
         transform: none;
-        display: none; /* Oculto por defecto en móvil */
+        display: none;
+        /* Oculto por defecto en móvil */
         min-width: unset;
       }
 
@@ -454,7 +475,7 @@
       }
 
       /* Ajustes Responsivos del Hero */
-      #hero > div {
+      #hero>div {
         padding-top: 130px !important;
       }
 
@@ -472,19 +493,26 @@
         gap: 40px !important;
       }
 
-      .about-grid > div > img {
+      .about-grid>div>img {
         max-height: 400px !important;
       }
-      
-      .about-grid > div:last-child {
+
+      .about-grid>div:last-child {
         position: static !important;
       }
     }
 
     /* ===================== ANIMATIONS ===================== */
     @keyframes heroReveal {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .reveal {
@@ -527,7 +555,7 @@
       color: #1A3050;
       margin-bottom: 20px;
     }
-    
+
     .resenas-title {
       font-size: 2.22rem;
       white-space: nowrap;
@@ -537,7 +565,8 @@
       color: #4a5568;
       font-size: 1.1rem;
       line-height: 1.6;
-      max-width: 900px; /* Increased for desktop readability */
+      max-width: 900px;
+      /* Increased for desktop readability */
     }
 
     /* Service Cards */
@@ -661,7 +690,8 @@
     }
 
     .faq-item summary::after {
-      content: '\2304'; /* Chevron Down */
+      content: '\2304';
+      /* Chevron Down */
       font-size: 1.5rem;
       color: #cbd5e0;
       transition: all 0.3s ease;
@@ -696,14 +726,14 @@
       border-radius: 20px;
       text-align: center;
       margin-top: 50px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
       border: 1px solid rgba(0, 188, 235, 0.1);
       transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
 
     .faq-cta-box:hover {
       transform: translateY(-12px) scale(1.02);
-      box-shadow: 0 25px 60px rgba(0,0,0,0.12);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
       border-color: #E8620A;
       border-style: solid;
     }
@@ -730,13 +760,13 @@
       right: 30px;
       background: #25D366;
       color: white;
-      width: 65px;
-      height: 65px;
+      width: 55px;
+      height: 55px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5), inset 0 2px 2px rgba(255,255,255,0.3);
+      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.5), inset 0 2px 2px rgba(255, 255, 255, 0.3);
       transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       z-index: 2000;
       animation: wsp-pulse 2s infinite;
@@ -750,21 +780,66 @@
     }
 
     .btn-wsp svg {
-      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
     }
 
     @keyframes wsp-pulse {
-      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-      70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+      0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+      }
+
+      70% {
+        box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+      }
     }
+
+    /* Back to Top Button */
+    .btn-top {
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      /* Sleek dark brand color */
+      background: #1A3050;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      z-index: 2000;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn-top:hover {
+      transform: translateY(-8px) scale(1.1);
+      background: #E8620A;
+      /* Orange pop on hover */
+      box-shadow: 0 15px 35px rgba(232, 98, 10, 0.4);
+    }
+
+    .btn-top svg {
+      transition: transform 0.3s ease;
+    }
+
+    .btn-top:hover svg {
+      transform: translateY(-2px);
+    }
+
     /* ===================== REVIEWS SECTION ===================== */
     .reviews-slider-container {
       position: relative;
       width: 100%;
       overflow: hidden;
     }
-    
+
     .reviews-slider {
       display: flex;
       width: 600%;
@@ -779,7 +854,7 @@
       flex-direction: column;
       justify-content: center;
     }
-    
+
     .review-slide .stars {
       font-size: 1.5rem;
       letter-spacing: 2px;
@@ -800,14 +875,37 @@
       color: #1A3050;
       font-size: 1.1rem;
     }
-    
+
     @keyframes slideReviews {
-      0%, 16% { transform: translateX(0); }
-      20%, 36% { transform: translateX(-16.6666%); }
-      40%, 56% { transform: translateX(-33.3333%); }
-      60%, 76% { transform: translateX(-50%); }
-      80%, 96% { transform: translateX(-66.6666%); }
-      100% { transform: translateX(-83.3333%); }
+
+      0%,
+      16% {
+        transform: translateX(0);
+      }
+
+      20%,
+      36% {
+        transform: translateX(-16.6666%);
+      }
+
+      40%,
+      56% {
+        transform: translateX(-33.3333%);
+      }
+
+      60%,
+      76% {
+        transform: translateX(-50%);
+      }
+
+      80%,
+      96% {
+        transform: translateX(-66.6666%);
+      }
+
+      100% {
+        transform: translateX(-83.3333%);
+      }
     }
 
     .qr-feedback-grid {
@@ -818,69 +916,141 @@
 
     @media (max-width: 768px) {
       .review-slide {
-        padding: 20px 5%; /* Wider carousel on mobile (almost full width) */
+        padding: 20px 5%;
+        /* Wider carousel on mobile (almost full width) */
       }
+
       .review-slide .review-text {
         font-size: 1.05rem !important;
         line-height: 1.6;
         white-space: normal !important;
         text-align: center;
       }
-      .review-slide > div {
-        justify-content: center !important; /* Centering stars and author on mobile */
+
+      .review-slide>div {
+        justify-content: center !important;
+        /* Centering stars and author on mobile */
       }
+
       .review-slide .stars {
         font-size: 1.1rem !important;
         justify-content: center;
       }
+
       .review-slide .review-author {
         font-size: 0.95rem !important;
       }
+
       .resenas-grid {
         display: flex !important;
         flex-direction: column !important;
         gap: 30px !important;
         padding-bottom: 40px;
       }
+
       .qr-feedback-grid {
         grid-template-columns: 1fr;
         padding: 25px 15px !important;
       }
-      .qr-feedback-grid > div {
+
+      .qr-feedback-grid>div {
         padding-right: 0 !important;
         margin-bottom: 15px;
       }
+
       /* Global overflow fix and responsive titles */
-      .section-title, h1, h2 {
+      .section-title,
+      h1,
+      h2 {
         white-space: normal !important;
         word-wrap: break-word;
         overflow-wrap: break-word;
         text-align: center;
       }
+
       #hero h1 {
         text-align: left !important;
       }
+
       #hero p {
         text-align: left !important;
       }
+
       #hero div {
         justify-content: flex-start !important;
       }
+
       .resenas-title {
-        font-size: 1.5rem !important; /* Smaller on mobile as requested */
+        font-size: 1.5rem !important;
+        /* Smaller on mobile as requested */
         margin-bottom: 25px !important;
         line-height: 1.3 !important;
         text-align: center !important;
         white-space: normal !important;
         display: block !important;
       }
+
       .qr-title-mobile {
         font-size: 1.5rem !important;
       }
+
       .qr-instruction-mobile {
         font-size: 0.85rem !important;
         white-space: normal !important;
       }
+
+      /* Footer mobile adjustments */
+      .footer-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px !important;
+        text-align: center !important;
+      }
+
+      .footer-content>div {
+        grid-column: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100%;
+      }
+
+      .footer-content p {
+        text-align: center !important;
+        margin-bottom: 5px !important;
+      }
+
+      /* Reordering for symmetry: Info first, then Schedule */
+      .footer-content>div:nth-child(1) {
+        order: 1;
+      }
+
+      /* KAISER CLIMA */
+      .footer-content>div:nth-child(3) {
+        order: 2;
+      }
+
+      /* Locations */
+      .footer-content>div:nth-child(5) {
+        order: 3;
+      }
+
+      /* Phone */
+      .footer-content>div:nth-child(2) {
+        order: 4;
+      }
+
+      /* Horario title */
+      .footer-content>div:nth-child(4) {
+        order: 5;
+      }
+
+      /* Mon-Fri */
+      .footer-content>div:nth-child(6) {
+        order: 6;
+      }
+
+      /* Sat-Sun */
     }
   </style>
 </head>
@@ -902,7 +1072,7 @@
         <div class="brand-text-block">
           <div class="brand-main-title">KAISER CLIMA</div>
           <div class="brand-subtitle-1">Instalación, Reparación y Mantenimiento de Aire Acondicionado</div>
-          <div class="brand-subtitle-2">en Murcia: Cartagena, La Manga y alrededores</div>
+          <div class="brand-subtitle-2">en Murcia, Cartagena, La Manga y alrededores</div>
         </div>
       </div>
 
@@ -923,7 +1093,8 @@
       <a href="#quienes-somos">Quienes Somos</a>
       <div class="dropdown">
         <input type="checkbox" id="mobile-dropdown-toggle" style="display:none;">
-        <label for="mobile-dropdown-toggle" class="dropdown-label">Servicios de Climatización <span style="font-size: 0.7em;">▼</span></label>
+        <label for="mobile-dropdown-toggle" class="dropdown-label">Servicios de Climatización <span
+            style="font-size: 0.7em;">▼</span></label>
         <div class="dropdown-menu">
           <a href="#servicios">Instalaciones</a>
           <a href="#servicios">Reparaciones</a>
@@ -936,32 +1107,39 @@
     </nav>
   </header>
 
-<!-- HERO AREA -->
-<section id="hero" style="min-height: 100vh; display: flex; align-items: center; padding: 0 3%; position: relative; background: linear-gradient(90deg, rgba(26,48,80,0.85) 0%, rgba(26,48,80,0.5) 55%, rgba(26,48,80,0.1) 100%);">
-  <div style="position: relative; z-index: 2; max-width: 1000px; padding-top: 200px; padding-bottom: 60px;">
-    <!-- Slogan Tagline -->
-    <p class="reveal" style="font-family: 'Inter', sans-serif; color: #fff; font-weight: 800; font-size: 1.05rem; letter-spacing: 4px; margin-bottom: 20px; text-transform: uppercase; text-shadow: 0 0 20px rgba(0,188,235,0.8), 0 2px 4px rgba(0,0,0,0.5); border-left: 5px solid #00BCEB; padding-left: 18px; animation-delay: 0.1s;">
-      TU CONFORT, ES NUESTRA PRIORIDAD
-    </p>
-    
-    <!-- Main Title -->
-    <h1 class="reveal" style="font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 6.5vw, 4.5rem); font-weight: 900; color: white; line-height: 1.1; margin-bottom: 25px; text-transform: none; text-shadow: 0 4px 15px rgba(0,0,0,0.4); animation-delay: 0.3s;">
-      <span style="color: #E8620A;">Instalación, Reparación y Mantenimiento</span><br>
-      de Climatización en Murcia
-    </h1>
+  <!-- HERO AREA -->
+  <section id="hero"
+    style="min-height: 100vh; display: flex; align-items: center; padding: 0 3%; position: relative; background: linear-gradient(90deg, rgba(26,48,80,0.85) 0%, rgba(26,48,80,0.5) 55%, rgba(26,48,80,0.1) 100%);">
+    <div style="position: relative; z-index: 2; max-width: 1000px; padding-top: 200px; padding-bottom: 60px;">
+      <!-- Slogan Tagline -->
+      <p class="reveal"
+        style="font-family: 'Inter', sans-serif; color: #fff; font-weight: 800; font-size: 1.05rem; letter-spacing: 4px; margin-bottom: 20px; text-transform: uppercase; text-shadow: 0 0 20px rgba(0,188,235,0.8), 0 2px 4px rgba(0,0,0,0.5); border-left: 5px solid #00BCEB; padding-left: 18px; animation-delay: 0.1s;">
+        TU CONFORT, ES NUESTRA PRIORIDAD
+      </p>
 
-    <!-- Descriptive Text -->
-    <p class="reveal" style="font-family: 'Inter', sans-serif; font-size: 1.15rem; color: #e2e8f0; line-height: 1.7; max-width: 750px; margin-bottom: 35px; text-shadow: 0 2px 5px rgba(0,0,0,0.5); font-weight: 400; opacity: 0.95; animation-delay: 0.5s;">
-      Ofrecemos servicios profesionales especializados en sistema de aire acondicionado con más de 10 años de experiencia garantizando resultados de máxima calidad.
-    </p>
+      <!-- Main Title -->
+      <h1 class="reveal"
+        style="font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 6.5vw, 4.5rem); font-weight: 900; color: white; line-height: 1.1; margin-bottom: 25px; text-transform: none; text-shadow: 0 4px 15px rgba(0,0,0,0.4); animation-delay: 0.3s;">
+        <span style="color: #E8620A;">Instalación, Reparación y Mantenimiento</span><br>
+        de Climatización en Murcia
+      </h1>
 
-    <div class="reveal" style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center; animation-delay: 0.7s;">
-      <a href="https://wa.me/34649990443" target="_blank" style="font-family: 'Inter', sans-serif; background: #E8620A; color: white; padding: 22px 44px; border-radius: 8px; font-weight: 800; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 2px; box-shadow: 0 10px 30px rgba(232, 98, 10, 0.45); text-decoration: none; transition: 0.3s; border: 1px solid rgba(255,255,255,0.1);">
-        SOLICITAR PRESUPUESTO
-      </a>
+      <!-- Descriptive Text -->
+      <p class="reveal"
+        style="font-family: 'Inter', sans-serif; font-size: 1.15rem; color: #e2e8f0; line-height: 1.7; max-width: 750px; margin-bottom: 35px; text-shadow: 0 2px 5px rgba(0,0,0,0.5); font-weight: 400; opacity: 0.95; animation-delay: 0.5s;">
+        Ofrecemos servicios profesionales especializados en sistema de aire acondicionado con más de 10 años de
+        experiencia garantizando resultados de máxima calidad.
+      </p>
+
+      <div class="reveal"
+        style="display: flex; gap: 20px; flex-wrap: wrap; align-items: center; animation-delay: 0.7s;">
+        <a href="https://wa.me/34649990443" target="_blank"
+          style="font-family: 'Inter', sans-serif; background: #E8620A; color: white; padding: 22px 44px; border-radius: 8px; font-weight: 800; font-size: 1.05rem; text-transform: uppercase; letter-spacing: 2px; box-shadow: 0 10px 30px rgba(232, 98, 10, 0.45); text-decoration: none; transition: 0.3s; border: 1px solid rgba(255,255,255,0.1);">
+          SOLICITAR PRESUPUESTO
+        </a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- COMPANY INFO -->
   <section id="quienes-somos" class="section" style="background: rgba(240,242,245,0.92);">
@@ -970,25 +1148,43 @@
         <!-- TEXT COLUMN -->
         <div>
           <h2 class="section-title">Quiénes Somos</h2>
-          <p style="color: #4a5568; font-size: 1rem; line-height: 1.75; margin-bottom: 24px;">Empresa de Climatización en Cartagena con más de 10 Años de Experiencia. Trabajamos con hogares y negocios de Cartagena, La Manga, San Javier, Los Alcázares y Torre de Pacheco para garantizar el funcionamiento óptimo de sus sistemas de climatización durante todo el año.</p>
+          <p style="color: #4a5568; font-size: 1rem; line-height: 1.75; margin-bottom: 24px;">Empresa de Climatización
+            en Cartagena con más de 10 Años de Experiencia. Trabajamos con hogares y negocios de Cartagena, La Manga,
+            San Javier, Los Alcázares y Torre de Pacheco para garantizar el funcionamiento óptimo de sus sistemas de
+            climatización durante todo el año.</p>
 
-          <p style="color: #4a5568; font-size: 1rem; line-height: 1.75; margin-bottom: 28px;">Cada instalación, reparación o revisión la abordamos con el mismo estándar: rapidez de respuesta, calidad en la ejecución y soluciones adaptadas a las necesidades reales de cada cliente.</p>
+          <p style="color: #4a5568; font-size: 1rem; line-height: 1.75; margin-bottom: 28px;">Cada instalación,
+            reparación o revisión la abordamos con el mismo estándar: rapidez de respuesta, calidad en la ejecución y
+            soluciones adaptadas a las necesidades reales de cada cliente.</p>
 
-          <h3 style="font-family: 'Inter', sans-serif; font-size: 1.4rem; font-weight: 800; color: #1A3050; margin-bottom: 24px;">¿Por qué confiar en Kaiser Clima?</h3>
+          <h3
+            style="font-family: 'Inter', sans-serif; font-size: 1.4rem; font-weight: 800; color: #1A3050; margin-bottom: 24px;">
+            ¿Por qué confiar en Kaiser Clima?</h3>
 
           <div style="margin-bottom: 22px; padding-left: 16px; border-left: 3px solid #00BCEB;">
-            <h4 style="font-size: 1rem; font-weight: 700; color: #1A3050; margin-bottom: 6px;">Eficiencia energética en cada instalación</h4>
-            <p style="color: #4a5568; font-size: 0.95rem; line-height: 1.7;">Seleccionamos los equipos más eficientes del mercado para maximizar el rendimiento y minimizar el consumo energético. Una instalación bien dimensionada y correctamente ejecutada marca la diferencia en la factura eléctrica desde el primer mes.</p>
+            <h4 style="font-size: 1rem; font-weight: 700; color: #1A3050; margin-bottom: 6px;">Eficiencia energética en
+              cada instalación</h4>
+            <p style="color: #4a5568; font-size: 0.95rem; line-height: 1.7;">Seleccionamos los equipos más eficientes
+              del mercado para maximizar el rendimiento y minimizar el consumo energético. Una instalación bien
+              dimensionada y correctamente ejecutada marca la diferencia en la factura eléctrica desde el primer mes.
+            </p>
           </div>
 
           <div style="margin-bottom: 22px; padding-left: 16px; border-left: 3px solid #00BCEB;">
-            <h4 style="font-size: 1rem; font-weight: 700; color: #1A3050; margin-bottom: 6px;">Reparaciones urgentes con respuesta rápida</h4>
-            <p style="color: #4a5568; font-size: 0.95rem; line-height: 1.7;">Una avería en el sistema de climatización afecta directamente a la calidad de vida y a la productividad. Por eso ofrecemos un servicio de reparación ágil en Cartagena y toda la zona, con diagnóstico rápido y solución eficaz en el menor tiempo posible.</p>
+            <h4 style="font-size: 1rem; font-weight: 700; color: #1A3050; margin-bottom: 6px;">Reparaciones urgentes con
+              respuesta rápida</h4>
+            <p style="color: #4a5568; font-size: 0.95rem; line-height: 1.7;">Una avería en el sistema de climatización
+              afecta directamente a la calidad de vida y a la productividad. Por eso ofrecemos un servicio de reparación
+              ágil en Cartagena y toda la zona, con diagnóstico rápido y solución eficaz en el menor tiempo posible.</p>
           </div>
 
           <div style="padding-left: 16px; border-left: 3px solid #E8620A;">
-            <h4 style="font-size: 1rem; font-weight: 700; color: #1A3050; margin-bottom: 6px;">Mantenimiento preventivo para alargar la vida de tu equipo</h4>
-            <p style="color: #4a5568; font-size: 0.95rem; line-height: 1.7;">Un sistema de climatización bien mantenido rinde mejor, consume menos y prolonga su vida útil. Nuestro servicio de mantenimiento preventivo detecta y corrige cualquier anomalía antes de que se convierta en una avería, protegiendo tu inversión a largo plazo.</p>
+            <h4 style="font-size: 1rem; font-weight: 700; color: #1A3050; margin-bottom: 6px;">Mantenimiento preventivo
+              para alargar la vida de tu equipo</h4>
+            <p style="color: #4a5568; font-size: 0.95rem; line-height: 1.7;">Un sistema de climatización bien mantenido
+              rinde mejor, consume menos y prolonga su vida útil. Nuestro servicio de mantenimiento preventivo detecta y
+              corrige cualquier anomalía antes de que se convierta en una avería, protegiendo tu inversión a largo
+              plazo.</p>
           </div>
         </div>
         <!-- PHOTO COLUMN -->
@@ -1004,22 +1200,32 @@
   <section id="servicios" class="section">
     <div class="inner">
       <h2 class="section-title" style="text-align: left;">Servicios de aire acondicionado<br>en la Región de Murcia</h2>
-      <p class="section-sub">Instalamos, reparamos y realizamos mantenimiento preventivo de equipos de aire acondicionado en Murcia, Cartagena, La Manga y alrededores. Ofrecemos un servicio técnico especializado con la rapidez y la calidad que cada proyecto o incidencia requiere. Tenemos servicio de urgencias con tiempo de respuesta en menos de 24 horas.</p>
+      <p class="section-sub">Instalamos, reparamos y realizamos mantenimiento preventivo de equipos de aire
+        acondicionado en Murcia, Cartagena, La Manga y alrededores. Ofrecemos un servicio técnico especializado con la
+        rapidez y la calidad que cada proyecto o incidencia requiere. Tenemos servicio de urgencias con tiempo de
+        respuesta en menos de 24 horas.</p>
       <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
         <article class="service-card">
           <div class="service-icon">❄️</div>
           <h3>Instalación de aire acondicionado y calefacción</h3>
-          <p>instalamos equipos de climatización: Split, Equipos de Conductos, Equipos tipo Cassette de todas las marcas y potencias, adaptados a las características de cada espacio. Viviendas, locales, oficinas y comunidades de vecinos. Asesoramiento técnico personalizado desde el primer momento para garantizar la solución más eficiente y duradera.</p>
+          <p>instalamos equipos de climatización: Split, Equipos de Conductos, Equipos tipo Cassette de todas las marcas
+            y potencias, adaptados a las características de cada espacio. Viviendas, locales, oficinas y comunidades de
+            vecinos. Asesoramiento técnico personalizado desde el primer momento para garantizar la solución más
+            eficiente y duradera.</p>
         </article>
         <article class="service-card">
           <div class="service-icon">🛠️</div>
           <h3>Reparación urgente de equipos de climatización</h3>
-          <p>Servicio de reparación con respuesta rápida en Cartagena, La Manga, San Javier, Los Alcázares, Torre de Pacheco y alrededores. Diagnóstico preciso y reparación eficaz para restablecer el funcionamiento de tu equipo en el menor tiempo posible. Trabajamos con VRV, enfriadoras, UTAs y equipos domésticos.</p>
+          <p>Servicio de reparación con respuesta rápida en Cartagena, La Manga, San Javier, Los Alcázares, Torre de
+            Pacheco y alrededores. Diagnóstico preciso y reparación eficaz para restablecer el funcionamiento de tu
+            equipo en el menor tiempo posible. Trabajamos con VRV, enfriadoras, UTAs y equipos domésticos.</p>
         </article>
         <article class="service-card">
           <div class="service-icon">⚙️</div>
           <h3>Mantenimiento preventivo de climatización</h3>
-          <p>Revisiones periódicas para mantener tu equipo en condiciones óptimas. Limpieza de filtros, comprobación de niveles, ajuste de parámetros y detección temprana de anomalías. La manera más eficaz de evitar averías inesperadas y proteger la vida útil de tu instalación.</p>
+          <p>Revisiones periódicas para mantener tu equipo en condiciones óptimas. Limpieza de filtros, comprobación de
+            niveles, ajuste de parámetros y detección temprana de anomalías. La manera más eficaz de evitar averías
+            inesperadas y proteger la vida útil de tu instalación.</p>
         </article>
       </div>
     </div>
@@ -1027,28 +1233,39 @@
 
 
   <!-- ZONAS DE SERVICIO -->
-<section id="zonas" class="section" style="background: rgba(240,244,248,0.92);">
-  <div class="inner">
-    <h2 class="section-title">Zonas de Servicio</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 24px; margin-top: 40px;">
-      <div style="background: rgba(255,255,255,0.8); border: 1px solid rgba(0,188,235,0.2); border-radius: 12px; padding: 30px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
-        <div style="font-size: 2rem; margin-bottom: 12px;">📍</div>
-        <h3 style="font-size: 1.2rem; font-weight: 700; color: #1A3050; margin-bottom: 10px;">Toda la Región de Murcia</h3>
-        <p style="color: #4a5568; line-height: 1.6;">Trabajamos en toda Murcia con especial enfoque en Cartagena y La Manga del Mar Menor. También ofrecemos servicio en San Javier, Los Alcázares, Torre Pacheco y alrededores.</p>
-      </div>
-      <div style="background: rgba(255,255,255,0.8); border: 1px solid rgba(0,188,235,0.2); border-radius: 12px; padding: 30px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
-        <div style="font-size: 2rem; margin-bottom: 12px;">🏙️</div>
-        <h3 style="font-size: 1.2rem; font-weight: 700; color: #1A3050; margin-bottom: 10px;">Climatización en Cartagena</h3>
-        <p style="color: #4a5568; line-height: 1.6;">Especialistas en instalación y reparación de aire acondicionado en Cartagena centro, barrios y polígonos industriales.</p>
-      </div>
-      <div style="background: rgba(255,255,255,0.8); border: 1px solid rgba(0,188,235,0.2); border-radius: 12px; padding: 30px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
-        <div style="font-size: 2rem; margin-bottom: 12px;">🏖️</div>
-        <h3 style="font-size: 1.2rem; font-weight: 700; color: #1A3050; margin-bottom: 10px;">Aire acondicionado en La Manga</h3>
-        <p style="color: #4a5568; line-height: 1.6;">Instalamos equipos adaptados a apartamentos turísticos y viviendas en zonas costeras.</p>
+  <section id="zonas" class="section" style="background: rgba(240,244,248,0.92);">
+    <div class="inner">
+      <h2 class="section-title">Zonas de Servicio</h2>
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 24px; margin-top: 40px;">
+        <div
+          style="background: rgba(255,255,255,0.8); border: 1px solid rgba(0,188,235,0.2); border-radius: 12px; padding: 30px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
+          <div style="font-size: 2rem; margin-bottom: 12px;">📍</div>
+          <h3 style="font-size: 1.2rem; font-weight: 700; color: #1A3050; margin-bottom: 10px;">Toda la Región de Murcia
+          </h3>
+          <p style="color: #4a5568; line-height: 1.6;">Trabajamos en toda Murcia con especial enfoque en Cartagena y La
+            Manga del Mar Menor. También ofrecemos servicio en San Javier, Los Alcázares, Torre Pacheco y alrededores.
+          </p>
+        </div>
+        <div
+          style="background: rgba(255,255,255,0.8); border: 1px solid rgba(0,188,235,0.2); border-radius: 12px; padding: 30px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
+          <div style="font-size: 2rem; margin-bottom: 12px;">🏙️</div>
+          <h3 style="font-size: 1.2rem; font-weight: 700; color: #1A3050; margin-bottom: 10px;">Climatización en
+            Cartagena</h3>
+          <p style="color: #4a5568; line-height: 1.6;">Especialistas en instalación y reparación de aire acondicionado
+            en Cartagena centro, barrios y polígonos industriales.</p>
+        </div>
+        <div
+          style="background: rgba(255,255,255,0.8); border: 1px solid rgba(0,188,235,0.2); border-radius: 12px; padding: 30px; box-shadow: 0 6px 16px rgba(0,0,0,0.05);">
+          <div style="font-size: 2rem; margin-bottom: 12px;">🏖️</div>
+          <h3 style="font-size: 1.2rem; font-weight: 700; color: #1A3050; margin-bottom: 10px;">Aire acondicionado en La
+            Manga</h3>
+          <p style="color: #4a5568; line-height: 1.6;">Instalamos equipos adaptados a apartamentos turísticos y
+            viviendas en zonas costeras.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 
@@ -1060,7 +1277,8 @@
         <span class="faq-badge">Ayuda & Soporte</span>
         <h2 class="section-title">Preguntas Frecuentes sobre los servicios de Climatización</h2>
         <p class="section-sub" style="margin-left: auto; margin-right: auto;">
-          Te ayudamos a resolver las dudas más comunes sobre instalación, reparación y mantenimiento de equipos de aire acondicionado. Consulta nuestras preguntas frecuentes basadas en experiencia técnica real.
+          Te ayudamos a resolver las dudas más comunes sobre instalación, reparación y mantenimiento de equipos de aire
+          acondicionado. Consulta nuestras preguntas frecuentes basadas en experiencia técnica real.
         </p>
       </div>
 
@@ -1069,7 +1287,10 @@
         <details class="faq-item">
           <summary>¿Qué tipo de aire acondicionado es mejor para mi casa?</summary>
           <div class="faq-content">
-            Depende de la arquitectura y necesidades térmicas. Para estancias individuales, un <strong>Split o Multi-Split</strong> es lo más eficiente y económico. Si la vivienda tiene preinstalación de falsos techos, un sistema de <strong>Conductos</strong> es ideal por estética y uniformidad. Siempre recomendamos tecnología Inverter para cumplir con la eficiencia energética que exige el RITE.
+            Depende de la arquitectura y necesidades térmicas. Para estancias individuales, un <strong>Split o
+              Multi-Split</strong> es lo más eficiente y económico. Si la vivienda tiene preinstalación de falsos
+            techos, un sistema de <strong>Conductos</strong> es ideal por estética y uniformidad. Siempre recomendamos
+            tecnología Inverter para cumplir con la eficiencia energética que exige el RITE.
           </div>
         </details>
 
@@ -1077,7 +1298,8 @@
         <details class="faq-item">
           <summary>¿Qué potencia de aire acondicionado necesito según los metros cuadrados?</summary>
           <div class="faq-content">
-            Como norma técnica general, calculamos unas 100 frigorías (116W) por metro cuadrado para una altura estándar de 2,5m.
+            Como norma técnica general, calculamos unas 100 frigorías (116W) por metro cuadrado para una altura estándar
+            de 2,5m.
             <ul style="margin-top: 15px; list-style: none; padding-left: 0;">
               <li>• <strong>Hasta 20 m²:</strong> 2.200 frig. (2.5 kW)</li>
               <li>• <strong>Hasta 30 m²:</strong> 3.000 frig. (3.5 kW)</li>
@@ -1090,7 +1312,9 @@
         <details class="faq-item">
           <summary>¿Cuál es la mejor marca de aire acondicionado calidad-precio?</summary>
           <div class="faq-content">
-            Actualmente, <strong>Haier y Mitsubishi Heavy Industries</strong> ofrecen el mejor equilibrio. Proporcionan una alta eficiencia energética (A++/A+++), bajo nivel sonoro y una electrónica robusta a un precio muy competitivo en el mercado español.
+            Actualmente, <strong>Haier y Mitsubishi Heavy Industries</strong> ofrecen el mejor equilibrio. Proporcionan
+            una alta eficiencia energética (A++/A+++), bajo nivel sonoro y una electrónica robusta a un precio muy
+            competitivo en el mercado español.
           </div>
         </details>
 
@@ -1098,7 +1322,9 @@
         <details class="faq-item">
           <summary>¿Qué marcas de aire acondicionado se instalan habitualmente?</summary>
           <div class="faq-content">
-            Trabajamos con marcas líderes que garantizan repuestos y eficiencia: <strong>Mitsubishi Electric, Daikin, Fujitsu, Panasonic</strong> (gama alta) y <strong>Haier o Hisense</strong> (excelente relación rendimiento-precio). Todas cumplen con los estándares europeos de refrigerantes ecológicos (R-32).
+            Trabajamos con marcas líderes que garantizan repuestos y eficiencia: <strong>Mitsubishi Electric, Daikin,
+              Fujitsu, Panasonic</strong> (gama alta) y <strong>Haier o Hisense</strong> (excelente relación
+            rendimiento-precio). Todas cumplen con los estándares europeos de refrigerantes ecológicos (R-32).
           </div>
         </details>
 
@@ -1106,7 +1332,9 @@
         <details class="faq-item">
           <summary>¿Se puede instalar aire acondicionado en un piso de alquiler?</summary>
           <div class="faq-content">
-            <strong>Legalmente:</strong> Sí, pero requiere la autorización por escrito del propietario. <strong>Técnicamente:</strong> Es viable. Si el propietario no permite perforar fachada, existen soluciones como unidades portátiles, aunque lo ideal es un Split fijo por eficiencia y confort.
+            <strong>Legalmente:</strong> Sí, pero requiere la autorización por escrito del propietario.
+            <strong>Técnicamente:</strong> Es viable. Si el propietario no permite perforar fachada, existen soluciones
+            como unidades portátiles, aunque lo ideal es un Split fijo por eficiencia y confort.
           </div>
         </details>
 
@@ -1114,7 +1342,10 @@
         <details class="faq-item">
           <summary>¿Necesito hacer obras para instalar aire acondicionado?</summary>
           <div class="faq-content">
-            Para sistemas <strong>Split</strong>, la obra es mínima (un orificio de unos 5-6 cm para interconexiones). Para sistemas de <strong>Conductos</strong>, si no hay preinstalación, se requiere obra de albañilería y escayola para los falsos techos y rejillas. En Kaiser Clima priorizamos instalaciones limpias que minimicen el impacto en la vivienda.
+            Para sistemas <strong>Split</strong>, la obra es mínima (un orificio de unos 5-6 cm para interconexiones).
+            Para sistemas de <strong>Conductos</strong>, si no hay preinstalación, se requiere obra de albañilería y
+            escayola para los falsos techos y rejillas. En Kaiser Clima priorizamos instalaciones limpias que minimicen
+            el impacto en la vivienda.
           </div>
         </details>
 
@@ -1122,7 +1353,9 @@
         <details class="faq-item">
           <summary>¿Cuánto tiempo tarda la instalación?</summary>
           <div class="faq-content">
-            Una instalación básica de un Split suele tardar entre <strong>3 y 5 horas</strong>. Una instalación de Conductos o un sistema Multi-split complejo puede requerir de 1 a 2 días laborales. En proyectos industriales o cámaras frigoríficas, el plazo se define según el diseño del proyecto.
+            Una instalación básica de un Split suele tardar entre <strong>3 y 5 horas</strong>. Una instalación de
+            Conductos o un sistema Multi-split complejo puede requerir de 1 a 2 días laborales. En proyectos
+            industriales o cámaras frigoríficas, el plazo se define según el diseño del proyecto.
           </div>
         </details>
 
@@ -1130,7 +1363,9 @@
         <details class="faq-item">
           <summary>¿Dónde se debe colocar la unidad exterior para un rendimiento óptimo?</summary>
           <div class="faq-content">
-            Debe ubicarse en un lugar con buena ventilación, alejado de fuentes de calor directo y donde sea accesible para futuros mantenimientos. Evitamos espacios cerrados o muy estrechos, ya que si el aire caliente recircula, el compresor consume más energía y puede bloquearse por alta presión.
+            Debe ubicarse en un lugar con buena ventilación, alejado de fuentes de calor directo y donde sea accesible
+            para futuros mantenimientos. Evitamos espacios cerrados o muy estrechos, ya que si el aire caliente
+            recircula, el compresor consume más energía y puede bloquearse por alta presión.
           </div>
         </details>
 
@@ -1138,7 +1373,9 @@
         <details class="faq-item">
           <summary>¿Qué es el gas R-32 y por qué es mejor que el R-410A?</summary>
           <div class="faq-content">
-            El <strong>R-32</strong> es el refrigerante estándar actual en la UE. Es mucho más ecológico (su impacto en el calentamiento global es un 65% menor), permite usar menos carga de gas y es un 10% más eficiente energéticamente que su predecesor.
+            El <strong>R-32</strong> es el refrigerante estándar actual en la UE. Es mucho más ecológico (su impacto en
+            el calentamiento global es un 65% menor), permite usar menos carga de gas y es un 10% más eficiente
+            energéticamente que su predecesor.
           </div>
         </details>
 
@@ -1146,7 +1383,9 @@
         <details class="faq-item">
           <summary>¿Cada cuánto tiempo debo limpiar los filtros?</summary>
           <div class="faq-content">
-            En uso doméstico, recomendamos limpiarlos cada <strong>3 o 6 meses</strong>. Si hay mascotas o personas con alergias, una vez al mes durante la temporada de uso. Filtros sucios reducen el caudal de aire, aumentan el consumo eléctrico hasta un 20% y pueden causar la congelación de la batería interior.
+            En uso doméstico, recomendamos limpiarlos cada <strong>3 o 6 meses</strong>. Si hay mascotas o personas con
+            alergias, una vez al mes durante la temporada de uso. Filtros sucios reducen el caudal de aire, aumentan el
+            consumo eléctrico hasta un 20% y pueden causar la congelación de la batería interior.
           </div>
         </details>
 
@@ -1154,7 +1393,9 @@
         <details class="faq-item">
           <summary>¿Por qué mi aire acondicionado huele mal al encenderlo?</summary>
           <div class="faq-content">
-            Se debe a la acumulación de bacterias y moho en la bandeja de condensados o en el evaporador. El mantenimiento de Kaiser Clima incluye una <strong>desinfección química profunda</strong> con productos fungicidas homologados para eliminar olores y garantizar la calidad del aire.
+            Se debe a la acumulación de bacterias y moho en la bandeja de condensados o en el evaporador. El
+            mantenimiento de Kaiser Clima incluye una <strong>desinfección química profunda</strong> con productos
+            fungicidas homologados para eliminar olores y garantizar la calidad del aire.
           </div>
         </details>
 
@@ -1162,7 +1403,9 @@
         <details class="faq-item">
           <summary>¿Es necesario realizar una carga de gas cada año?</summary>
           <div class="faq-content">
-            <strong>No.</strong> Un sistema de aire acondicionado es un circuito cerrado; si le falta gas es porque existe una fuga. Cargar gas sin reparar la fuga es un error técnico y una infracción ambiental. Si el equipo no enfría, primero localizamos y reparamos la fuga siguiendo el RSIF.
+            <strong>No.</strong> Un sistema de aire acondicionado es un circuito cerrado; si le falta gas es porque
+            existe una fuga. Cargar gas sin reparar la fuga es un error técnico y una infracción ambiental. Si el equipo
+            no enfría, primero localizamos y reparamos la fuga siguiendo el RSIF.
           </div>
         </details>
 
@@ -1170,7 +1413,9 @@
         <details class="faq-item">
           <summary>¿Por qué gotea agua por la unidad interior?</summary>
           <div class="faq-content">
-            Generalmente es por una obstrucción en el tubo de desagüe o porque la bandeja de condensados está desnivelada. En verano, el equipo condensa la humedad del ambiente; si el agua no puede salir por gravedad o bomba, desborda hacia el interior de la estancia.
+            Generalmente es por una obstrucción en el tubo de desagüe o porque la bandeja de condensados está
+            desnivelada. En verano, el equipo condensa la humedad del ambiente; si el agua no puede salir por gravedad o
+            bomba, desborda hacia el interior de la estancia.
           </div>
         </details>
 
@@ -1178,7 +1423,8 @@
         <details class="faq-item">
           <summary>Mi equipo enciende pero no sale aire frío, ¿qué puede ser?</summary>
           <div class="faq-content">
-            Las causas más comunes son: un fallo en el condensador de arranque, una fuga de refrigerante, o suciedad extrema en la unidad exterior. Si el compresor no arranca, el equipo solo funcionará como un ventilador.
+            Las causas más comunes son: un fallo en el condensador de arranque, una fuga de refrigerante, o suciedad
+            extrema en la unidad exterior. Si el compresor no arranca, el equipo solo funcionará como un ventilador.
           </div>
         </details>
 
@@ -1186,147 +1432,196 @@
         <details class="faq-item">
           <summary>¿Merece la pena reparar un equipo con más de 12 años?</summary>
           <div class="faq-content">
-            Técnicamente, si la avería es el compresor o la placa electrónica principal, solemos recomendar la sustitución. Los equipos antiguos usan gases obsoletos (R-22 o R-407C) y consumen casi el doble que un equipo moderno A+++. La inversión en un equipo nuevo se amortiza en pocos años solo con el ahorro en la factura eléctrica.
+            Técnicamente, si la avería es el compresor o la placa electrónica principal, solemos recomendar la
+            sustitución. Los equipos antiguos usan gases obsoletos (R-22 o R-407C) y consumen casi el doble que un
+            equipo moderno A+++. La inversión en un equipo nuevo se amortiza en pocos años solo con el ahorro en la
+            factura eléctrica.
           </div>
         </details>
 
         <!-- WhatsApp CTA -->
         <div class="faq-cta-box">
           <p style="color: #1A3050; font-weight: 600; font-size: 1.1rem; margin-bottom: 15px;">¿Aún tienes dudas?</p>
-          <p style="color: #4a5568; margin-bottom: 20px;">contáctanos directamente para un asesoramiento personalizado</p>
-          <a href="https://wa.me/34649990443" target="_blank" style="display: inline-flex; align-items: center; background: #25D366; color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: 700; transition: transform 0.3s ease;">
+          <p style="color: #4a5568; margin-bottom: 20px;">contáctanos directamente para un asesoramiento personalizado
+          </p>
+          <a href="https://wa.me/34649990443" target="_blank"
+            style="display: inline-flex; align-items: center; background: #25D366; color: white; padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: 700; transition: transform 0.3s ease;">
             <span style="font-size: 1.3rem; margin-right: 10px;">💬</span> Consultar por WhatsApp
           </a>
         </div>
       </div>
     </div>
 
-<!-- RESEÑAS -->
-<section id="resenas" class="section" style="background: rgba(255,255,255,0.95); overflow: hidden;">
-  <div class="inner">
-    <!-- MAIN GRID LADO A LADO -->
-    <div class="resenas-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
-      
-      <!-- LADO IZQUIERDO: TÍTULO Y SLIDER -->
-      <div style="min-width: 0;">
-        <h2 class="section-title resenas-title" style="margin-bottom: 30px; line-height: 1.2;">Lo que dicen nuestros clientes</h2>
-        
-        <!-- REVIEWS SLIDER -->
-        <div class="reviews-slider-container">
-          <div class="reviews-slider">
-            <!-- Review 1 -->
-            <div class="review-slide">
-              <p class="review-text">"Excelente trato profesional, muy formales y calidad en el trabajo. Totalmente recomendables."</p>
-              <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
-                <span class="stars" style="color: #FBBF24; font-size: 1.3rem; margin-right: 8px; letter-spacing: 2px;">★★★★★</span>
-                <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Carlos N.</span>
-              </div>
-            </div>
-            <!-- Review 2 -->
-            <div class="review-slide">
-              <p class="review-text">"Los mejores, rápidos y limpios. Te aconsejan qué aparato te viene mejor tanto al bolsillo como que enfríe bien. Lo recomiendo."</p>
-              <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
-                <span class="stars" style="color: #FBBF24; font-size: 1.3rem; margin-right: 8px; letter-spacing: 2px;">★★★★★</span>
-                <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Carmen P.</span>
-              </div>
-            </div>
-            <!-- Review 3 -->
-            <div class="review-slide">
-              <p class="review-text">"Atención rapidísima, un servicio increíble, trato inmejorable… los recomiendo 100%. Te dejan todo recogidito y limpio."</p>
-              <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
-                <span class="stars" style="color: #FBBF24; font-size: 1.3rem; margin-right: 8px; letter-spacing: 2px;">★★★★★</span>
-                <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Carolina V.</span>
-              </div>
-            </div>
-            <!-- Review 4 -->
-            <div class="review-slide">
-              <p class="review-text">"Excelente trabajo. Vinieron rápidos a presupuestar. El trabajo final ha sido súper curioso y pulcro, funcionando de 10."</p>
-              <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
-                <span class="stars" style="color: #FBBF24; font-size: 1.3rem; margin-right: 8px; letter-spacing: 2px;">★★★★★</span>
-                <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Mario C.</span>
-              </div>
-            </div>
-            <!-- Review 5 -->
-            <div class="review-slide">
-              <p class="review-text">"Eficiencia, rapidez y profesionalidad. Sin duda recomendable 100% y a precios muy competitivos en toda la zona."</p>
-              <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
-                <span class="stars" style="color: #FBBF24; font-size: 1.3rem; margin-right: 8px; letter-spacing: 2px;">★★★★★</span>
-                <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Alberto P.</span>
-              </div>
-            </div>
-            <!-- Review 1 (Clone for loop) -->
-            <div class="review-slide">
-              <p class="review-text">"Excelente trato profesional, muy formales y calidad en el trabajo. Totalmente recomendables."</p>
-              <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
-                <span class="stars" style="color: #FBBF24; font-size: 1.3rem; margin-right: 8px; letter-spacing: 2px;">★★★★★</span>
-                <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Carlos N.</span>
+    <!-- RESEÑAS -->
+    <section id="resenas" class="section" style="background: rgba(255,255,255,0.95); overflow: hidden;">
+      <div class="inner">
+        <!-- MAIN GRID LADO A LADO -->
+        <div class="resenas-grid"
+          style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+
+          <!-- LADO IZQUIERDO: TÍTULO Y SLIDER -->
+          <div style="min-width: 0;">
+            <h2 class="section-title resenas-title" style="margin-bottom: 30px; line-height: 1.2;">Lo que dicen nuestros
+              clientes</h2>
+
+            <!-- REVIEWS SLIDER -->
+            <div class="reviews-slider-container">
+              <div class="reviews-slider">
+                <!-- Review 1 -->
+                <div class="review-slide">
+                  <p class="review-text">"Excelente trato profesional, muy formales y calidad en el trabajo. Totalmente
+                    recomendables."</p>
+                  <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
+                    <span class="stars"
+                      style="color: #FBBF24; font-size: 1.3rem; margin-right: 8px; letter-spacing: 2px;">★★★★★</span>
+                    <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Carlos
+                      N.</span>
+                  </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="review-slide">
+                  <p class="review-text">"Los mejores, rápidos y limpios. Te aconsejan qué aparato te viene mejor tanto
+                    al bolsillo como que enfríe bien. Lo recomiendo."</p>
+                  <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
+                    <span class="stars"
+                      style="color: #FBBF24; font-size: 1.3rem; margin-right: 8px; letter-spacing: 2px;">★★★★★</span>
+                    <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Carmen
+                      P.</span>
+                  </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="review-slide">
+                  <p class="review-text">"Atención rapidísima, un servicio increíble, trato inmejorable… los recomiendo
+                    100%. Te dejan todo recogidito y limpio."</p>
+                  <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
+                    <span class="stars"
+                      style="color: #FBBF24; font-size: 1.3rem; margin-right: 8px; letter-spacing: 2px;">★★★★★</span>
+                    <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Carolina
+                      V.</span>
+                  </div>
+                </div>
+                <!-- Review 4 -->
+                <div class="review-slide">
+                  <p class="review-text">"Excelente trabajo. Vinieron rápidos a presupuestar. El trabajo final ha sido
+                    súper curioso y pulcro, funcionando de 10."</p>
+                  <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
+                    <span class="stars"
+                      style="color: #FBBF24; font-size: 1.3rem; margin-right: 8px; letter-spacing: 2px;">★★★★★</span>
+                    <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Mario
+                      C.</span>
+                  </div>
+                </div>
+                <!-- Review 5 -->
+                <div class="review-slide">
+                  <p class="review-text">"Eficiencia, rapidez y profesionalidad. Sin duda recomendable 100% y a precios
+                    muy competitivos en toda la zona."</p>
+                  <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
+                    <span class="stars"
+                      style="color: #FBBF24; font-size: 1.3rem; margin-right: 8px; letter-spacing: 2px;">★★★★★</span>
+                    <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Alberto
+                      P.</span>
+                  </div>
+                </div>
+                <!-- Review 1 (Clone for loop) -->
+                <div class="review-slide">
+                  <p class="review-text">"Excelente trato profesional, muy formales y calidad en el trabajo. Totalmente
+                    recomendables."</p>
+                  <div style="margin-top: 15px; display: flex; align-items: center; flex-wrap: wrap;">
+                    <span class="stars"
+                      style="color: #FBBF24; font-size: 1.3rem; margin-right: 8px; letter-spacing: 2px;">★★★★★</span>
+                    <span class="review-author" style="font-weight: 700; color: #1A3050; font-size: 1.1rem;">- Carlos
+                      N.</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
+          <!-- LADO DERECHO: NUEVO BLOQUE DE FEEDBACK (QR) ASIMÉTRICO -->
+          <div class="qr-feedback-grid"
+            style="align-items: center; background: linear-gradient(135deg, #ffffff 0%, #f4f7fb 100%); padding: 40px 30px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,1); border: 1px solid rgba(0,188,235,0.05); gap: 20px;">
+            <!-- Lado Izquierdo del Cuadro (Texto) -->
+            <div style="flex: 1; padding-right: 0; text-align: center;">
+              <h2 class="section-title qr-title-mobile"
+                style="font-size: 1.8rem; margin-bottom: 8px; line-height: 1.1; white-space: nowrap;">KAISER CLIMA</h2>
+              <p
+                style="font-family: 'Inter', sans-serif; font-size: 1.1rem; color: #4a5568; font-weight: 400; line-height: 1.4; letter-spacing: 1px; margin-bottom: 0;">
+                Únete a nuestros clientes satisfechos y Comparte tu experiencia con nosotros <span
+                  style="font-size: 1.35rem; vertical-align: middle;">✨</span></p>
+              <div style="height: 1px; background: rgba(0,0,0,0.08); margin: 15px auto; width: 80%;"></div>
+              <p class="qr-instruction-mobile"
+                style="color: #718096; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.3px;">escanea o pulsa
+                sobre el código QR</p>
+            </div>
+            <!-- Lado Derecho del Cuadro (Acción QR) -->
+            <div style="display: flex; align-items: center; justify-content: center;">
+              <a href="https://g.page/r/CQZJGscZ2n5VEBM/review" target="_blank"
+                style="display: inline-block; transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);"
+                onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+                <img src="qr-code.PNG" alt="Código QR para dejar reseña"
+                  style="width: 260px; height: 260px; display: block;">
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
-      
-      <!-- LADO DERECHO: NUEVO BLOQUE DE FEEDBACK (QR) ASIMÉTRICO -->
-      <div class="qr-feedback-grid" style="align-items: center; background: linear-gradient(135deg, #ffffff 0%, #f4f7fb 100%); padding: 40px 30px; border-radius: 20px; box-shadow: 0 15px 40px rgba(0,0,0,0.06), inset 0 1px 0 rgba(255,255,255,1); border: 1px solid rgba(0,188,235,0.05); gap: 20px;">
-        <!-- Lado Izquierdo del Cuadro (Texto) -->
-        <div style="flex: 1; padding-right: 0; text-align: center;">
-          <h2 class="section-title qr-title-mobile" style="font-size: 1.8rem; margin-bottom: 8px; line-height: 1.1; white-space: nowrap;">KAISER CLIMA</h2>
-          <p style="font-family: 'Inter', sans-serif; font-size: 1.1rem; color: #4a5568; font-weight: 400; line-height: 1.4; letter-spacing: 1px; margin-bottom: 0;">Únete a nuestros clientes satisfechos y Comparte tu experiencia con nosotros <span style="font-size: 1.35rem; vertical-align: middle;">✨</span></p>
-          <div style="height: 1px; background: rgba(0,0,0,0.08); margin: 15px auto; width: 80%;"></div>
-          <p class="qr-instruction-mobile" style="color: #718096; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.3px;">escanea o pulsa sobre el código QR</p>
+    </section>
+
+    <footer>
+      <div class="inner footer-content" style="grid-template-rows: auto auto auto; gap: 0 50px;">
+        <!-- Row 1: Titles -->
+        <div style="grid-column: 1;">
+          <p style="font-size: 1.5rem; font-weight: bold; margin-bottom: 15px; letter-spacing: 1px; line-height: 1.2;">
+            KAISER CLIMA</p>
         </div>
-        <!-- Lado Derecho del Cuadro (Acción QR) -->
-        <div style="display: flex; align-items: center; justify-content: center;">
-          <a href="https://g.page/r/CQZJGscZ2n5VEBM/review" target="_blank" style="display: inline-block; transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
-            <img src="qr-code.PNG" alt="Código QR para dejar reseña" style="width: 260px; height: 260px; display: block;">
-          </a>
+        <div style="grid-column: 2;">
+          <p
+            style="font-size: 1rem; font-weight: 700; margin-bottom: 15px; color: #ffffff; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; padding-top: 0.4rem;">
+            Horario:</p>
+        </div>
+
+        <!-- Row 2: Locations & Mon-Fri -->
+        <div style="grid-column: 1;">
+          <p style="color: #cbd5e0; font-size: 1rem; margin-bottom: 10px;">Cartagena · La Manga · Murcia</p>
+        </div>
+        <div style="grid-column: 2;">
+          <p style="color: #cbd5e0; font-size: 1rem; margin-bottom: 10px;">Lunes a viernes • 8:00–17:00</p>
+        </div>
+
+        <!-- Row 3: Phone & Sat-Sun -->
+        <div style="grid-column: 1;">
+          <p style="color: #cbd5e0; font-size: 1rem; margin-bottom: 0;">Teléfono: 649 990 443</p>
+        </div>
+        <div style="grid-column: 2;">
+          <p style="color: #cbd5e0; font-size: 1rem; margin-bottom: 0;">Sábado y domingo • Cerrado</p>
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
+      <!-- Bottom Copyright -->
+      <div class="inner">
+        <div
+          style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 50px; padding-top: 25px; font-size: 0.85rem; color: #a0aec0; text-align: left;">
+          © 2026 Kaiser Clima. Todos los derechos reservados.
+        </div>
+      </div>
+    </footer>
 
-  <footer>
-    <div class="inner footer-content" style="grid-template-rows: auto auto auto; gap: 0 50px;">
-      <!-- Row 1: Titles -->
-      <div style="grid-column: 1;">
-        <p style="font-size: 1.5rem; font-weight: bold; margin-bottom: 15px; letter-spacing: 1px; line-height: 1.2;">KAISER CLIMA</p>
-      </div>
-      <div style="grid-column: 2;">
-        <p style="font-size: 1rem; font-weight: 700; margin-bottom: 15px; color: #ffffff; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; padding-top: 0.4rem;">Horario:</p>
-      </div>
+    <a class="whatsapp btn-wsp" href="https://wa.me/34649990443" target="_blank" title="WhatsApp">
+      <svg viewBox="0 0 448 512" width="30" height="30" fill="white" style="margin-bottom: 2px;">
+        <path
+          d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 512l149.8-39.3c32.5 17.6 69.4 26.9 107.9 26.9 122.4 0 222-99.6 222-222 0-59.3-23.1-115.1-65-157.1zM223.9 448.2c-33.1 0-65.5-8.9-94-25.7l-6.7-4-69.8 18.3L72 368.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.5-186.6 184.5zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.6-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-2.1-3.6 1.5-3.8 6.9-14.3 1.8-3.6.9-6.8-.5-9.6-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+      </svg>
+    </a>
 
-      <!-- Row 2: Locations & Mon-Fri -->
-      <div style="grid-column: 1;">
-        <p style="color: #cbd5e0; font-size: 1rem; margin-bottom: 10px;">Cartagena · La Manga · Murcia</p>
-      </div>
-      <div style="grid-column: 2;">
-        <p style="color: #cbd5e0; font-size: 1rem; margin-bottom: 10px;">Lunes a viernes • 8:00–17:00</p>
-      </div>
-
-      <!-- Row 3: Phone & Sat-Sun -->
-      <div style="grid-column: 1;">
-        <p style="color: #cbd5e0; font-size: 1rem; margin-bottom: 0;">Teléfono: 649 990 443</p>
-      </div>
-      <div style="grid-column: 2;">
-        <p style="color: #cbd5e0; font-size: 1rem; margin-bottom: 0;">Sábado y domingo • Cerrado</p>
-      </div>
-    </div>
-
-    <!-- Bottom Copyright -->
-    <div class="inner">
-      <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 50px; padding-top: 25px; font-size: 0.85rem; color: #a0aec0; text-align: left;">
-        © 2026 Kaiser Clima. Todos los derechos reservados.
-      </div>
-    </div>
-  </footer>
-
-  <a class="whatsapp btn-wsp" href="https://wa.me/34649990443" target="_blank" title="WhatsApp">
-    <svg viewBox="0 0 448 512" width="36" height="36" fill="white" style="margin-bottom: 2px;">
-      <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 512l149.8-39.3c32.5 17.6 69.4 26.9 107.9 26.9 122.4 0 222-99.6 222-222 0-59.3-23.1-115.1-65-157.1zM223.9 448.2c-33.1 0-65.5-8.9-94-25.7l-6.7-4-69.8 18.3L72 368.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.5-186.6 184.5zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.6-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-2.1-3.6 1.5-3.8 6.9-14.3 1.8-3.6.9-6.8-.5-9.6-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
-    </svg>
-  </a>
+    <!-- BACK TO TOP BUTTON -->
+    <a class="btn-top" href="#hero" title="Volver al inicio">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 15l-6-6-6 6" />
+      </svg>
+    </a>
 
 </body>
+
 </html>
