@@ -4,13 +4,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aire acondicionado Instalación y reparación Cartagena KaiserClima</title>
+  <title>Contacto Kaiser Clima | Presupuesto Aire Acondicionado Cartagena</title>
   <meta name="description"
-    content="Contacta con Kaiser Clima para solicitar presupuesto de instalación, reparación o mantenimiento de aire acondicionado en Cartagena, La Manga y Murcia." />
+    content="Contacta con Kaiser Clima para presupuesto de instalación, reparación o mantenimiento de aire acondicionado en Cartagena y Murcia. Respuesta en 24h." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
+
+  <!-- SCHEMA JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "url": "https://www.kaiserclima.com/contacto.html",
+    "name": "Contacto Kaiser Clima",
+    "description": "Página de contacto de Kaiser Clima para solicitar presupuesto de instalación, reparación o mantenimiento de aire acondicionado en Cartagena y Murcia.",
+    "mainEntity": {
+      "@type": "HVACBusiness",
+      "@id": "https://www.kaiserclima.com/#organization",
+      "name": "Kaiser Clima",
+      "telephone": "+34649990443",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "San Justo, 14",
+        "addressLocality": "Cartagena",
+        "addressRegion": "Murcia",
+        "postalCode": "30393",
+        "addressCountry": "ES"
+      }
+    }
+  }
+  </script>
+
   <style>
     *,
     *::before,
@@ -894,7 +920,7 @@
     <!-- HERO BOX -->
     <div class="page-hero-wrapper">
       <div class="page-hero-box anim-slide-up delay-1">
-        <h1 class="page-title">Formulario de Contacto</h1>
+        <h1 class="page-title" style="text-align: center;">Contacta con Kaiser Clima<br>Aire Acondicionado en Cartagena y Murcia</h1>
         <p class="page-subtitle">Cuéntanos qué necesitas y te respondemos en menos de 24 horas con un presupuesto sin
           compromiso.</p>
       </div>
@@ -951,6 +977,7 @@
       <div class="form-card anim-right delay-3">
         <h3>Envíanos tu consulta</h3>
         <p>Rellena el formulario y te contactamos lo antes posible con el presupuesto que necesitas.</p>
+        <p style="font-weight:700; color:#1A3050; margin-bottom: 20px; font-size: 1.05rem;">Solicita tu presupuesto de aire acondicionado en Cartagena</p>
 
         <form id="contact-form" onsubmit="handleSubmit(event)">
           <div class="form-row">
@@ -1010,6 +1037,14 @@
       </div>
 
     </div>
+
+    <div style="max-width:1100px; margin: 40px auto; padding: 0 5%;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.0!2d-0.9862!3d37.6051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zKai ser Clima!5e0!3m2!1ses!2ses!4v1"
+        width="100%" height="350" style="border:0; border-radius:20px; box-shadow: 0 20px 40px rgba(0,0,0,0.15), 0 5px 15px rgba(0,0,0,0.08); display: block;"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
   </main>
 
   <footer>
@@ -1068,37 +1103,4 @@
   </a>
 
   <script>
-    function toggleCiudad(val) {
-      const wrapper = document.getElementById('ciudad-otros-wrapper');
-      const input = document.getElementById('ciudad-otros');
-      if (val === 'Otros') { wrapper.classList.add('visible'); input.required = true; }
-      else { wrapper.classList.remove('visible'); input.required = false; input.value = ''; }
-    }
-    function toggleZona(val) {
-      const wrapper = document.getElementById('zona-otros-wrapper');
-      const input = document.getElementById('zona-otros');
-      if (val === 'Otros') { wrapper.classList.add('visible'); input.required = true; }
-      else { wrapper.classList.remove('visible'); input.required = false; input.value = ''; }
-    }
-    function handleSubmit(e) {
-      e.preventDefault();
-      const nombre = document.getElementById('nombre').value;
-      const email = document.getElementById('email').value;
-      const ciudad = document.getElementById('ciudad').value;
-      const ciudadOtros = document.getElementById('ciudad-otros').value;
-      const zona = document.getElementById('zona').value;
-      const zonaOtros = document.getElementById('zona-otros').value;
-      const mensaje = document.getElementById('mensaje').value;
-      const ciudadFinal = ciudad === 'Otros' ? ciudadOtros : ciudad;
-      const zonaFinal = zona === 'Otros' ? zonaOtros : zona;
-      const body = `Nombre: ${nombre}%0AEmail: ${email}%0ACiudad: ${ciudadFinal}%0AZona: ${zonaFinal}%0A%0AMensaje:%0A${encodeURIComponent(mensaje)}`;
-      const subject = encodeURIComponent(`Consulta de ${nombre} - Kaiser Clima`);
-      window.location.href = `mailto:KAISERCLIMATIZACION@GMAIL.COM?subject=${subject}&body=${body}`;
-      const btn = document.querySelector('.btn-submit');
-      btn.textContent = '✓ ¡Correo abierto! Envía el mensaje desde tu cliente de email.';
-      btn.style.background = '#25D366';
-    }
-  </script>
-</body>
-
-</html>
+    fun
