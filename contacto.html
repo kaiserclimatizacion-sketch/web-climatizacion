@@ -1117,23 +1117,49 @@
       if (val === 'Otros') { wrapper.classList.add('visible'); input.required = true; }
       else { wrapper.classList.remove('visible'); input.required = false; input.value = ''; }
     }
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
       e.preventDefault();
-      const nombre = document.getElementById('nombre').value;
-      const email = document.getElementById('email').value;
-      const ciudad = document.getElementById('ciudad').value;
-      const ciudadOtros = document.getElementById('ciudad-otros').value;
-      const zona = document.getElementById('zona').value;
-      const zonaOtros = document.getElementById('zona-otros').value;
-      const mensaje = document.getElementById('mensaje').value;
-      const ciudadFinal = ciudad === 'Otros' ? ciudadOtros : ciudad;
-      const zonaFinal = zona === 'Otros' ? zonaOtros : zona;
-      const body = `Nombre: ${nombre}%0AEmail: ${email}%0ACiudad: ${ciudadFinal}%0AZona: ${zonaFinal}%0A%0AMensaje:%0A${encodeURIComponent(mensaje)}`;
-      const subject = encodeURIComponent(`Consulta de ${nombre} - Kaiser Clima`);
-      window.location.href = `mailto:KAISERCLIMATIZACION@GMAIL.COM?subject=${subject}&body=${body}`;
       const btn = document.querySelector('.btn-submit');
-      btn.textContent = '✓ ¡Correo abierto! Envía el mensaje desde tu cliente de email.';
-      btn.style.background = '#25D366';
+      
+      // Captura de ciudad y zona (incluyendo la opción "Otros")
+      const ciudad = document.getElementById('ciudad').value === 'Otros'
+        ? document.getElementById('ciudad-otros').value
+        : document.getElementById('ciudad').value;
+        
+      const zona = document.getElementById('zona').value === 'Otros'
+        ? document.getElementById('zona-otros').value
+        : document.getElementById('zona').value;
+
+      btn.textContent = 'Enviando...';
+      btn.disabled = true;
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            access_key: '8d31ae25-549a-4e0e-ab4b-0bc04ff10223', 
+            subject: `Consulta de ${document.getElementById('nombre').value} - Kaiser Clima`,
+            from_name: document.getElementById('nombre').value,
+            email: document.getElementById('email').value,
+            ciudad: ciudad,
+            zona: zona,
+            message: document.getElementById('mensaje').value
+          })
+        });
+
+        if (res.ok) {
+          btn.textContent = '✓ Mensaje enviado. Te contactamos pronto.';
+          btn.style.background = '#25D366';
+          document.getElementById('contact-form').reset();
+        } else {
+          throw new Error();
+        }
+      } catch (err) {
+        btn.textContent = 'Error al enviar. Llámanos al 649 990 443.';
+        btn.style.background = '#e53e3e';
+        btn.disabled = false;
+      }
     }
   </script>
 </body>
