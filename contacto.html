@@ -677,7 +677,9 @@
     }
 
     .extra-field.visible {
-      display: block;
+      display: block !important;
+      opacity: 1 !important;
+      visibility: visible !important;
     }
 
     .btn-submit {
@@ -1103,4 +1105,37 @@
   </a>
 
   <script>
-    fun
+    function toggleCiudad(val) {
+      const wrapper = document.getElementById('ciudad-otros-wrapper');
+      const input = document.getElementById('ciudad-otros');
+      if (val === 'Otros') { wrapper.classList.add('visible'); input.required = true; }
+      else { wrapper.classList.remove('visible'); input.required = false; input.value = ''; }
+    }
+    function toggleZona(val) {
+      const wrapper = document.getElementById('zona-otros-wrapper');
+      const input = document.getElementById('zona-otros');
+      if (val === 'Otros') { wrapper.classList.add('visible'); input.required = true; }
+      else { wrapper.classList.remove('visible'); input.required = false; input.value = ''; }
+    }
+    function handleSubmit(e) {
+      e.preventDefault();
+      const nombre = document.getElementById('nombre').value;
+      const email = document.getElementById('email').value;
+      const ciudad = document.getElementById('ciudad').value;
+      const ciudadOtros = document.getElementById('ciudad-otros').value;
+      const zona = document.getElementById('zona').value;
+      const zonaOtros = document.getElementById('zona-otros').value;
+      const mensaje = document.getElementById('mensaje').value;
+      const ciudadFinal = ciudad === 'Otros' ? ciudadOtros : ciudad;
+      const zonaFinal = zona === 'Otros' ? zonaOtros : zona;
+      const body = `Nombre: ${nombre}%0AEmail: ${email}%0ACiudad: ${ciudadFinal}%0AZona: ${zonaFinal}%0A%0AMensaje:%0A${encodeURIComponent(mensaje)}`;
+      const subject = encodeURIComponent(`Consulta de ${nombre} - Kaiser Clima`);
+      window.location.href = `mailto:KAISERCLIMATIZACION@GMAIL.COM?subject=${subject}&body=${body}`;
+      const btn = document.querySelector('.btn-submit');
+      btn.textContent = '✓ ¡Correo abierto! Envía el mensaje desde tu cliente de email.';
+      btn.style.background = '#25D366';
+    }
+  </script>
+</body>
+
+</html>
