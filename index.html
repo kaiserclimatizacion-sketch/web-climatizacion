@@ -1038,6 +1038,12 @@
         flex-direction: column !important;
         gap: 30px !important;
         padding-bottom: 40px;
+        overflow-x: hidden; /* Added to prevent child overflow */
+      }
+
+      .reviews-slider-container {
+        max-width: 100vw;
+        overflow: hidden;
       }
 
       .qr-feedback-grid {
