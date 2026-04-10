@@ -964,30 +964,18 @@
             </div>
           </div>
 
-          <!-- Ciudad con campo extra -->
+          <!-- Ciudad -->
           <div class="form-group">
             <label for="ciudad">Ciudad</label>
             <div class="select-wrapper">
               <select id="ciudad" name="ciudad" required onchange="toggleCiudad(this.value)">
-                <option value="" disabled selected>Selecciona tu ciudad</option>
-                <optgroup label="Región de Murcia">
-                  <option value="Murcia">Murcia</option>
-                  <option value="Cartagena">Cartagena</option>
-                  <option value="La Manga del Mar Menor">La Manga del Mar Menor</option>
-                  <option value="San Javier">San Javier</option>
-                  <option value="Los Alcázares">Los Alcázares</option>
-                  <option value="Torre-Pacheco">Torre-Pacheco</option>
-                  <option value="Mazarrón">Mazarrón</option>
-                  <option value="Águilas">Águilas</option>
-                  <option value="Lorca">Lorca</option>
-                  <option value="Molina de Segura">Molina de Segura</option>
-                  <option value="Alcantarilla">Alcantarilla</option>
-                  <option value="Otros">Otros (especificar)</option>
-                </optgroup>
+                <option value="" disabled selected>Selecciona la ciudad</option>
+                <option value="Región de Murcia">Región de Murcia</option>
+                <option value="Otros">Otros</option>
               </select>
             </div>
             <div id="ciudad-otros-wrapper" class="extra-field">
-              <input type="text" id="ciudad-otros" name="ciudad-otros" placeholder="Indica tu localidad en Murcia">
+              <input type="text" id="ciudad-otros" name="ciudad-otros" placeholder="Especificar ciudad">
             </div>
           </div>
 
@@ -997,14 +985,12 @@
             <div class="select-wrapper">
               <select id="zona" name="zona" required onchange="toggleZona(this.value)">
                 <option value="" disabled selected>Selecciona la zona</option>
-                <option value="Murcia">Murcia</option>
-                <option value="Cartagena">Cartagena</option>
-                <option value="La Manga">La Manga</option>
+                <option value="Región de Murcia">Región de Murcia</option>
                 <option value="Otros">Otros</option>
               </select>
             </div>
             <div id="zona-otros-wrapper" class="extra-field">
-              <input type="text" id="zona-otros" name="zona-otros" placeholder="Especifica tu zona o localidad">
+              <input type="text" id="zona-otros" name="zona-otros" placeholder="Especificar zona o ciudad">
             </div>
           </div>
 
