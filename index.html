@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -518,15 +518,26 @@
 
       /* Ajustes Responsivos del Hero */
       #hero>div {
-        padding-top: 130px !important;
+        padding-top: 100px !important; /* Reduced from 130px */
+        padding-bottom: 40px !important;
+      }
+
+      .hero-desc-mobile {
+        display: none !important;
+      }
+
+      #hero {
+        min-height: 70vh !important;
+        height: auto !important;
       }
 
       #hero h1 {
-        font-size: 3rem !important;
+        font-size: 2.4rem !important;
+        line-height: 1.2 !important;
       }
 
       #hero p:first-of-type {
-        font-size: 1.1rem !important;
+        font-size: 0.95rem !important;
       }
 
       /* Ajuste Quienes Somos a 1 Columna y la imagen baja sola */
@@ -1178,7 +1189,7 @@
       </h1>
 
       <!-- Descriptive Text -->
-      <p class="reveal"
+      <p class="reveal hero-desc-mobile"
         style="font-family: 'Inter', sans-serif; font-size: 1.15rem; color: #e2e8f0; line-height: 1.7; max-width: 750px; margin-bottom: 35px; text-shadow: 0 2px 5px rgba(0,0,0,0.5); font-weight: 400; opacity: 0.95; animation-delay: 0.5s;">
         Ofrecemos servicios profesionales especializados en sistema de aire acondicionado con más de 10 años de
         experiencia garantizando resultados de máxima calidad.
