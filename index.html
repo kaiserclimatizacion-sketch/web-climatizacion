@@ -156,11 +156,16 @@
       scroll-behavior: smooth;
     }
 
+    :root {
+      --header-height: 250px;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
       color: #2d3748;
       overflow-x: hidden;
       min-height: 100vh;
+      background-color: #f1f5f9;
     }
 
     a {
@@ -170,16 +175,17 @@
 
     /* ===================== FIXED BACKGROUND ===================== */
     .bg-main {
-      position: fixed;
+      position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      bottom: 0;
+      height: 120vh;
       background-image: url('fondo.webp');
       /* Desktop background */
       background-size: 140%;
+      background-repeat: no-repeat;
       background-position: center top;
-      background-attachment: fixed;
+      background-attachment: scroll;
       z-index: -10;
     }
 
@@ -369,6 +375,7 @@
     }
 
     nav a:hover,
+    nav a.active,
     .dropdown-label:hover {
       color: #E8620A;
     }
@@ -436,20 +443,24 @@
 
       /* Mobile background image */
       .bg-main {
+        position: absolute !important;
+        height: 100vh !important;
         background-image: url('fondo-movil.webp');
         background-size: 100% auto;
         /* Expandido al 100% */
         background-repeat: no-repeat;
         background-position: center top;
-        background-color: #f1f5f9;
+        background-color: transparent !important;
         background-attachment: scroll;
       }
 
       .glass-header {
+        position: absolute !important;
+        z-index: 1000 !important;
         left: 0 !important;
         right: 0 !important;
         width: 100% !important;
-        top: 0;
+        top: 0 !important;
         border-radius: 0;
         border-left: none;
         border-right: none;
@@ -557,7 +568,7 @@
 
       /* Ajustes Responsivos del Hero */
       #hero>div {
-        padding-top: 100px !important; /* Reduced from 130px */
+        padding-top: 140px !important; /* Increased to avoid overlapping with header */
         padding-bottom: 40px !important;
       }
 
@@ -1041,6 +1052,14 @@
         overflow-x: hidden; /* Added to prevent child overflow */
       }
 
+      .resenas-grid > div:nth-child(1) {
+        order: 1 !important;
+      }
+
+      .resenas-grid > div:nth-child(2) {
+        order: 2 !important;
+      }
+
       .reviews-slider-container {
         max-width: 100vw;
         overflow: hidden;
@@ -1218,8 +1237,8 @@
 
   <!-- HERO AREA -->
   <section id="hero"
-    style="min-height: 100vh; display: flex; align-items: center; padding: 0 3%; position: relative; background: linear-gradient(90deg, rgba(26,48,80,0.85) 0%, rgba(26,48,80,0.5) 55%, rgba(26,48,80,0.1) 100%);">
-    <div style="position: relative; z-index: 2; max-width: 1000px; padding-top: 280px; padding-bottom: 60px;">
+    style="min-height: 100vh; display: flex; align-items: flex-start; padding: 0 3%; position: relative; background: linear-gradient(90deg, rgba(26,48,80,0.85) 0%, rgba(26,48,80,0.5) 55%, rgba(26,48,80,0.1) 100%);">
+    <div style="position: relative; z-index: 2; max-width: 1000px; padding-top: calc(var(--header-height) + 40px); padding-bottom: 60px;">
       <!-- Slogan Tagline -->
       <p class="reveal"
         style="font-family: 'Inter', sans-serif; color: #fff; font-weight: 800; font-size: 1.05rem; letter-spacing: 4px; margin-bottom: 20px; text-transform: uppercase; text-shadow: 0 0 20px rgba(0,188,235,0.8), 0 2px 4px rgba(0,0,0,0.5); border-left: 5px solid #00BCEB; padding-left: 18px; animation-delay: 0.1s;">
@@ -1665,6 +1684,31 @@
     </svg>
   </a>
 
+  <script>
+  (function() {
+    // Solo ejecutar en desktop (>950px)
+    function updateHeaderHeight() {
+      if (window.innerWidth > 950) {
+        var header = document.querySelector('.glass-header');
+        if (header) {
+          var rect = header.getBoundingClientRect();
+          var topOffset = parseFloat(getComputedStyle(header).top) || 0;
+          var totalHeight = rect.height + topOffset;
+          document.documentElement.style.setProperty('--header-height', totalHeight + 'px');
+        }
+      }
+    }
+
+    updateHeaderHeight();
+    window.addEventListener('resize', updateHeaderHeight);
+
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(updateHeaderHeight);
+    }
+
+    setTimeout(updateHeaderHeight, 1000);
+  })();
+  </script>
 </body>
 
 </html>
