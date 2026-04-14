@@ -1,13 +1,29 @@
-<!DOCTYPE html>
 <html lang="es">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto Kaiser Clima | Presupuesto Aire Acondicionado Cartagena</title>
+  <title>Contacto y Presupuesto — Kaiser Clima | Aire Acondicionado Cartagena</title>
   <meta name="description"
-    content="Contacta con Kaiser Clima para presupuesto de instalación, reparación o mantenimiento de aire acondicionado en Cartagena y Murcia. Respuesta en 24h." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    content="Solicita presupuesto sin compromiso para aire acondicionado en Cartagena, La Manga y Murcia. Te respondemos en menos de 24h. ☎ 649 990 443" />
+  <link rel="canonical" href="https://www.kaiserclima.com/contacto.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contacto y Presupuesto — Kaiser Clima | Aire Acondicionado Cartagena" />
+  <meta property="og:description" content="Solicita presupuesto sin compromiso para aire acondicionado en Cartagena, La Manga y Murcia. Respuesta en menos de 24h." />
+  <meta property="og:image" content="https://www.kaiserclima.com/logo-kaiser-clima.webp" />
+  <meta property="og:url" content="https://www.kaiserclima.com/contacto.html" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Kaiser Clima" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contacto y Presupuesto — Kaiser Clima" />
+  <meta name="twitter:description" content="Solicita presupuesto sin compromiso para aire acondicionado en Cartagena, La Manga y Murcia." />
+  <meta name="twitter:image" content="https://www.kaiserclima.com/logo-kaiser-clima.webp" />
+  <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="/favicon/site.webmanifest" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
@@ -63,39 +79,17 @@
       color: inherit;
     }
 
-    .bg-main {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 120vh;
-      background-image: url('fondo.webp');
-      background-size: 140%;
-      background-repeat: no-repeat;
-      background-position: center top;
-      background-attachment: scroll;
-      z-index: -10;
-    }
+    
 
     @media (max-width: 950px) {
-      .bg-main {
-        position: absolute !important;
-        height: 100vh !important;
-        background-image: url('fondo-movil.webp');
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        background-position: center top;
-        background-color: transparent !important;
-        background-attachment: scroll;
-      }
+      
     }
 
-    /* ABSOLUTE HEADER (SCROLLS AWAY) */
     .glass-header {
       position: absolute;
       top: 15px;
-      left: 5%;
-      right: 5%;
+      left: 5% !important;
+      right: 5% !important;
       background: linear-gradient(180deg, #f1f5f9 0%, #cbd5e1 100%);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
@@ -121,12 +115,6 @@
       height: 180px;
       object-fit: contain;
       filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.3));
-    }
-
-    .title-img-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .brand-text-block {
@@ -178,10 +166,8 @@
       font-size: 0.95rem;
       font-weight: 500;
       color: #333333;
-      text-transform: lowercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 2px;
       opacity: 0.8;
+      margin-bottom: 2px;
     }
 
     .btn-header-wsp {
@@ -209,6 +195,7 @@
       box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
       margin: 0 20px;
     }
+
 
     nav {
       display: flex;
@@ -324,9 +311,18 @@
         font-size: 1.7rem !important;
       }
 
-      .brand-subtitle-1,
-      .brand-subtitle-2 {
-        font-size: 0.42rem !important;
+      .brand-text-block {
+        position: absolute !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: max-content;
+      }
+
+                  .brand-subtitle-1, .brand-subtitle-2 { 
+        font-size: 0.42rem !important; 
+        font-weight: 700 !important;
+        line-height: 1.2 !important;
+        margin-top: 2px !important;
       }
 
       .header-cta {
@@ -399,10 +395,7 @@
       }
     }
 
-    .anim-slide-up {
-      animation: slideInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-      opacity: 0;
-    }
+    
 
     .anim-left {
       animation: fadeInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -414,9 +407,7 @@
       opacity: 0;
     }
 
-    .delay-1 {
-      animation-delay: 0.1s;
-    }
+    
 
     .delay-2 {
       animation-delay: 0.25s;
@@ -427,21 +418,9 @@
     }
 
     /* HERO BOX */
-    .page-hero-wrapper {
-      max-width: 1100px;
-      margin: 0 auto 50px;
-      padding: 0 5%;
-    }
+    
 
-    .page-hero-box {
-      background: rgba(255, 255, 255, 0.88);
-      backdrop-filter: blur(14px);
-      border: 1px solid rgba(255, 255, 255, 0.9);
-      border-radius: 20px;
-      padding: 40px 45px;
-      text-align: center;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
-    }
+    
 
     .page-badge {
       display: inline-flex;
@@ -458,24 +437,9 @@
       vertical-align: middle;
     }
 
-    .page-title {
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      font-weight: 800;
-      color: #1A3050;
-      margin-bottom: 12px;
-      line-height: 1.2;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
+    
 
-    .page-subtitle {
-      font-size: 1.05rem;
-      color: #4a5568;
-      line-height: 1.6;
-    }
+    
 
     /* CONTACT GRID */
     .contact-grid {
@@ -870,65 +834,187 @@
         order: 6;
       }
     }
+  
+    .bg-main { position: absolute; top: 0; left: 0; right: 0; height: 120vh; background-image: url('fondo.webp'); background-size: 140%; background-repeat: no-repeat; background-position: center top; background-attachment: scroll; z-index: -10; }
+    @media (max-width: 950px) { .bg-main { position: absolute !important; height: 100vh !important; background-image: url('fondo-movil.webp'); background-size: 100% auto; background-repeat: no-repeat; background-position: center top; background-color: transparent !important; } }
+    .page-hero { padding-top: 360px; padding-bottom: 20px; padding-left: 5%; padding-right: 5%; background: transparent; display: flex; align-items: flex-start; min-height: auto; }
+    @media (max-width: 950px) { .page-hero { padding-top: 180px !important; } }
+    .page-hero-wrapper { width: 100%; max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; }
+    .page-hero-box { width: 100%; background: rgba(255,255,255,0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.9); border-radius: 20px; padding: 40px 50px; box-shadow: 0 20px 60px rgba(0,0,0,0.12); }
+    .page-title { font-size: 2.4rem; font-weight: 800; color: #1A3050; line-height: 1.25; margin-bottom: 16px; }
+    .page-subtitle { font-size: 1.1rem; color: #4a5568; line-height: 1.7; }
+    @media (max-width: 950px) { .page-hero-box { padding: 25px 20px; } .page-title { font-size: 1.6rem; } .page-subtitle { font-size: 0.95rem; } }
+    .anim-slide-up { opacity: 0; transform: translateY(30px); animation: slideUp 0.7s ease forwards; }
+    .delay-1 { animation-delay: 0.2s; }
+    @keyframes slideUp { to { opacity: 1; transform: none; } }
+
+  
+    /* ===================== EXACT MOBILE HEADER ===================== */
+    @media (max-width: 950px) {
+      .glass-header {
+        position: absolute !important;
+        z-index: 1000 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        top: 0 !important;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 4px solid #94a3b8;
+        overflow: hidden;
+      }
+
+      .header-top {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        padding: 8px 15px !important;
+        gap: 10px !important;
+        width: 100%;
+      }
+
+      .logo-img {
+        width: 60px !important;
+        height: 60px !important;
+      }
+
+      .title-img-container {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+      }
+
+      .brand-main-title {
+        font-size: 1.7rem !important;
+        letter-spacing: 0.01em !important;
+        margin-top: -24px !important;
+        line-height: 1 !important;
+      }
+
+      .brand-subtitle-1,
+      .brand-subtitle-2 {
+        font-size: 0.42rem !important;
+        margin-top: 2px !important;
+      }
+
+      /* CRÍTICO: El botón WhatsApp/CTA se OCULTA en móvil */
+      .header-cta {
+        display: none !important;
+      }
+
+      .hamburger-btn {
+        display: block;
+        margin-left: auto;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .mobile-menu {
+        display: none;
+        flex-direction: column;
+        background: linear-gradient(180deg, #f1f5f9, #e2e8f0);
+        padding: 10px 20px 20px;
+        gap: 5px;
+      }
+
+      .mobile-menu.open {
+        display: flex;
+      }
+
+      .mobile-menu a,
+      .dropdown-label {
+        padding: 10px 5px;
+        font-size: 1rem;
+        color: #1a202c;
+        border-bottom: 1px solid rgba(0,0,0,0.07);
+      }
+
+      .mobile-menu .dropdown-label {
+        font-weight: 600;
+      }
+
+      .mobile-dropdown-content {
+        display: none;
+        flex-direction: column;
+        padding-left: 15px;
+      }
+
+      #mobile-dropdown-toggle:checked ~ .mobile-dropdown-content {
+        display: flex;
+      }
+
+      #mobile-dropdown-toggle {
+        display: none;
+      }
+    }
+    /* =============================================================== */
+
   </style>
 </head>
 
 <body>
-  <div class="bg-main"></div>
-
+  <div class="bg-main" aria-hidden="true"></div>
   <header class="glass-header">
-    <input type="checkbox" id="mobile-menu-toggle" style="display:none;">
-    <div class="header-top">
-      <div><img src="logo-kaiser-clima.webp" alt="Logo Kaiser Clima" class="logo-img"></div>
-      <div class="title-img-container">
-        <div class="brand-text-block">
-          <div class="brand-main-title">KAISER CLIMA</div>
-          <div class="brand-subtitle-1">Instalación, Reparación y Mantenimiento de Aire Acondicionado</div>
-          <div class="brand-subtitle-2">en Murcia, Cartagena, La Manga y alrededores</div>
-        </div>
-      </div>
-      <div class="header-cta">
-        <span class="cta-text">¿Necesitas reparación urgente?</span>
-        <span class="cta-subtext">atención rápida garantizada</span>
-        <a href="https://wa.me/34649990443" target="_blank" class="btn-header-wsp">
-          <svg viewBox="0 0 448 512" fill="white">
-            <path
-              d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 512l149.8-39.3c32.5 17.6 69.4 26.9 107.9 26.9 122.4 0 222-99.6 222-222 0-59.3-23.1-115.1-65-157.1zM223.9 448.2c-33.1 0-65.5-8.9-94-25.7l-6.7-4-69.8 18.3L72 368.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.5-186.6 184.5zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.6-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-2.1-3.6 1.5-3.8 6.9-14.3 1.8-3.6.9-6.8-.5-9.6-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
-          </svg>
-          Escríbenos ahora
-        </a>
-      </div>
-      <label for="mobile-menu-toggle" class="hamburger-btn">☰</label>
+  <input type="checkbox" id="mobile-menu-toggle" style="display:none;">
+  <div class="header-top">
+    <div class="logo-container">
+      <img src="logo-kaiser-clima.webp" alt="Logo Kaiser Clima" class="logo-img">
     </div>
-    <div class="header-sep"></div>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="index.html#quienes-somos">Quienes Somos</a>
-      <div class="dropdown">
-        <input type="checkbox" id="mobile-dropdown-toggle" style="display:none;">
-        <label for="mobile-dropdown-toggle" class="dropdown-label">Servicios de Climatización <span
-            style="font-size: 0.7em;">▼</span></label>
-        <div class="dropdown-menu">
-          <a href="index.html#servicios">Instalaciones</a>
-          <a href="index.html#servicios">Reparaciones</a>
-          <a href="index.html#servicios">Mantenimiento</a>
-        </div>
+
+    <div class="title-img-container">
+      <div class="brand-text-block">
+        <div class="brand-main-title">KAISER CLIMA</div>
+        <div class="brand-subtitle-1">Instalación, Reparación y Mantenimiento de Aire Acondicionado</div>
+        <div class="brand-subtitle-2">en Murcia, Cartagena, La Manga y alrededores</div>
       </div>
-      <a href="index.html#zonas">Zonas de Servicio</a>
-      <a href="preguntas.html">Preguntas Frecuentes</a>
-      <a href="index.html#resenas">Reseñas</a>
-      <a href="contacto.html" class="active" style="color:#E8620A; font-weight:700;">Contacto</a>
-    </nav>
-  </header>
+    </div>
 
-  <main class="page-wrapper">
+    <div class="header-cta">
+      <span class="cta-text">¿Necesitas reparación urgente?</span>
+      <span class="cta-subtext">atención rápida garantizada</span>
+      <a href="https://wa.me/34649990443" target="_blank" class="btn-header-wsp">
+        <svg viewBox="0 0 448 512" fill="white">
+          <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 512l149.8-39.3c32.5 17.6 69.4 26.9 107.9 26.9 122.4 0 222-99.6 222-222 0-59.3-23.1-115.1-65-157.1zM223.9 448.2c-33.1 0-65.5-8.9-94-25.7l-6.7-4-69.8 18.3L72 368.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.5-186.6 184.5zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.6-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-2.1-3.6 1.5-3.8 6.9-14.3 1.8-3.6.9-6.8-.5-9.6-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+        Escríbenos ahora
+      </a>
+    </div>
+    <label for="mobile-menu-toggle" class="hamburger-btn">☰</label>
+  </div>
 
-    <!-- HERO BOX -->
-    <div class="page-hero-wrapper">
-      <div class="page-hero-box anim-slide-up delay-1">
-        <h1 class="page-title" style="text-align: center;">Contacta con Kaiser Clima<br>Aire Acondicionado en Cartagena y Murcia</h1>
-        <p class="page-subtitle">Cuéntanos qué necesitas y te respondemos en menos de 24 horas con un presupuesto sin
-          compromiso.</p>
+  <div class="header-sep"></div>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="index.html#quienes-somos">Quienes Somos</a>
+    <div class="dropdown">
+      <input type="checkbox" id="mobile-dropdown-toggle" style="display:none;">
+      <label for="mobile-dropdown-toggle" class="dropdown-label">Servicios de Climatización <span style="font-size: 0.7em;">▼</span></label>
+      <div class="dropdown-menu">
+        <a href="instalacion-aire-acondicionado-cartagena.html">Instalaciones</a>
+        <a href="reparacion-aire-acondicionado-cartagena.html">Reparaciones</a>
+        <a href="mantenimiento-aire-acondicionado-cartagena.html">Mantenimiento</a>
+      </div>
+    </div>
+    <a href="index.html#zonas">Zonas de Servicio</a>
+    <a href="preguntas.html">Preguntas Frecuentes</a>
+    <a href="index.html#resenas">Reseñas</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</header>
+
+  <main>
+
+<div class="page-hero">
+      <div class="page-hero-wrapper">
+        <div class="page-hero-box anim-slide-up delay-1">
+          <h1 class="page-title" style="text-align: center;">Contacta con Kaiser Clima</h1>
+          <p class="page-subtitle" style="text-align: center;">Presupuesto de Aire Acondicionado en Cartagena, La Manga y Murcia</p>
+        </div>
       </div>
     </div>
 
@@ -1044,54 +1130,73 @@
 
     </div>
 
-    <div style="max-width:1100px; margin: 40px auto; padding: 0 5%;">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.0!2d-0.9862!3d37.6051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zKai ser Clima!5e0!3m2!1ses!2ses!4v1"
-        width="100%" height="350" style="border:0; border-radius:20px; box-shadow: 0 20px 40px rgba(0,0,0,0.15), 0 5px 15px rgba(0,0,0,0.08); display: block;"
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+
+  <!-- ADDITIONAL CONTENT SECTION -->
+  <section style="background: rgba(240,244,248,0.92); padding: 60px 5%;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <h2 style="font-size: 1.8rem; font-weight: 800; color: #1A3050; margin-bottom: 20px;">
+        ¿Qué información necesitamos para darte un presupuesto?
+      </h2>
+      <p style="color: #4a5568; font-size: 1rem; line-height: 1.75; margin-bottom: 24px;">
+        Para agilizar tu consulta y ofrecerte un presupuesto lo más ajustado posible, es útil que nos indiques: el tipo de servicio que necesitas (instalación nueva, reparación de avería o mantenimiento preventivo), el tipo de equipo si lo conoces (Split, Conductos, Cassette, Multi-Split), la superficie aproximada del espacio a climatizar, tu ubicación (ciudad y tipo de vivienda o local) y si se trata de una urgencia que necesitas resolver de inmediato.
+      </p>
+      <p style="color: #4a5568; font-size: 1rem; line-height: 1.75; margin-bottom: 24px;">
+        Con estos datos podemos darte una primera orientación de precio y, si es necesario, programar una visita técnica sin coste para valorar el proyecto en detalle. Nuestro compromiso es responderte en menos de 24 horas con una propuesta clara y sin compromiso.
+      </p>
+
+      <h2 style="font-size: 1.8rem; font-weight: 800; color: #1A3050; margin-bottom: 20px; margin-top: 40px;">
+        Zonas donde prestamos servicio de aire acondicionado
+      </h2>
+      <p style="color: #4a5568; font-size: 1rem; line-height: 1.75; margin-bottom: 24px;">
+        Desde nuestra base en <strong>Cartagena</strong>, damos cobertura a toda la Región de Murcia con especial presencia en <strong>La Manga del Mar Menor</strong>, <strong>San Javier</strong>, <strong>San Pedro del Pinatar</strong>, <strong>Los Alcázares</strong>, <strong>Torre Pacheco</strong>, <strong>Cartagena</strong> y <strong>Murcia capital</strong>. No cobramos desplazamiento en estas zonas. Para localidades fuera de esta área, consúltanos y te confirmamos disponibilidad.
+      </p>
+
+      <!-- MAPA DE GOOGLE MAPS -->
+      <div style="margin-top: 30px; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5!2d-0.9862!3d37.6051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDM2JzE4LjQiTiAwwrA1OSc1OC4yIlc!5e0!3m2!1ses!2ses!4v1000000000000"
+          width="100%"
+          height="350"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación de Kaiser Clima en Cartagena, Murcia">
+        </iframe>
+      </div>
+      <p style="color: #718096; font-size: 0.9rem; margin-top: 10px; text-align: center;">
+        📍 San Justo, 14, 30393 Cartagena, Murcia
+      </p>
     </div>
+  </section>
+
   </main>
 
-  <footer>
-    <div class="inner footer-content" style="grid-template-rows: auto auto auto; gap: 0 50px;">
-      <!-- Row 1: Titles -->
-      <div style="grid-column: 1;">
-        <p
-          style="display: flex; align-items: center; gap: 10px; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px; letter-spacing: 1px; line-height: 1.2;">
-          <img src="logo-kaiser-clima.webp" alt="Logo" style="width: 40px; height: 40px; object-fit: contain;">KAISER
-          CLIMA
+              <footer style="background: linear-gradient(135deg, #1a2535 0%, #0f1923 50%, #162032 100%); padding: 60px 5% 40px;">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 50px; max-width: 1200px; margin: 0 auto; padding-bottom: 20px;">
+      <div>
+        <p style="display: flex; align-items: center; gap: 10px; font-size: 1.5rem; font-weight: bold; margin-bottom: 15px; letter-spacing: 1px; line-height: 1.2; color: #ffffff;">
+          <img src="logo-kaiser-clima.webp" alt="Logo Kaiser Clima" style="width: 40px; height: 40px; object-fit: contain;">KAISER CLIMA
         </p>
-      </div>
-      <div style="grid-column: 2;">
-        <p
-          style="font-size: 1rem; font-weight: 700; margin-bottom: 15px; color: #ffffff; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; padding-top: 0.4rem;">
-          Horario:</p>
-      </div>
-
-      <!-- Row 2: Locations & Mon-Fri -->
-      <div style="grid-column: 1;">
         <p style="color: #cbd5e0; font-size: 1rem; margin-bottom: 10px;">Cartagena · La Manga · Murcia</p>
-      </div>
-      <div style="grid-column: 2;">
-        <p style="color: #cbd5e0; font-size: 1rem; margin-bottom: 10px;">Lunes a viernes • 8:00–17:00</p>
-      </div>
-
-      <!-- Row 3: Phone & Sat-Sun -->
-      <div style="grid-column: 1;">
         <p style="color: #cbd5e0; font-size: 1rem; margin-bottom: 10px;">Teléfono: 649 990 443</p>
-        <p style="color: #cbd5e0; font-size: 1rem; margin-bottom: 0;">Lugar: San Justo, 14, 30393 Cartagena, Murcia</p>
+        <p style="color: #cbd5e0; font-size: 1rem; margin-bottom: 0;">📍 San Justo, 14, 30393 Cartagena, Murcia.</p>
       </div>
-      <div style="grid-column: 2;">
+      <div>
+        <p style="font-size: 1rem; font-weight: 700; margin-bottom: 15px; color: #ffffff; letter-spacing: 1px; line-height: 1.2; padding-top: 0.4rem;">Horario:</p>
+        <p style="color: #cbd5e0; font-size: 1rem; margin-bottom: 10px;">Lunes a viernes • 8:00–17:00</p>
         <p style="color: #cbd5e0; font-size: 1rem; margin-bottom: 0;">Sábado y domingo • Cerrado</p>
       </div>
     </div>
-
-    <!-- Bottom Copyright -->
-    <div class="inner">
-      <div class="footer-copyright"
-        style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 50px; padding-top: 25px; font-size: 0.85rem; color: #a0aec0; text-align: left;">
+    
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 50px; padding-top: 25px; font-size: 0.85rem; color: #a0aec0; text-align: left;">
         © 2026 Kaiser Clima. Todos los derechos reservados.
+        <div style="margin-top: 10px; font-size: 0.8rem;">
+          <a href="aviso-legal.html" style="color: #a0aec0; text-decoration: underline; margin-right: 15px;">Aviso Legal</a>
+          <a href="politica-privacidad.html" style="color: #a0aec0; text-decoration: underline; margin-right: 15px;">Política de Privacidad</a>
+          <a href="politica-cookies.html" style="color: #a0aec0; text-decoration: underline;">Política de Cookies</a>
+        </div>
       </div>
     </div>
   </footer>
