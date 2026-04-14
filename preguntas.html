@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -165,6 +166,7 @@
       color: #2d3748;
       overflow-x: hidden;
       min-height: 100vh;
+      background-color: #f1f5f9;
     }
 
     a {
@@ -173,25 +175,28 @@
     }
 
     .bg-main {
-      position: fixed;
+      position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      bottom: 0;
+      height: 120vh;
       background-image: url('fondo.webp');
       background-size: 140%;
+      background-repeat: no-repeat;
       background-position: center top;
-      background-attachment: fixed;
+      background-attachment: scroll;
       z-index: -10;
     }
 
     @media (max-width: 950px) {
       .bg-main {
+        position: absolute !important;
+        height: 100vh !important;
         background-image: url('fondo-movil.webp');
         background-size: 100% auto;
         background-repeat: no-repeat;
         background-position: center top;
-        background-color: #f1f5f9;
+        background-color: transparent !important;
         background-attachment: scroll;
       }
     }
