@@ -61,6 +61,15 @@
     @media (max-width: 950px) {  }
     .glass-header { position: absolute; top: 15px; left: 5% !important; right: 5% !important; background: linear-gradient(180deg, #f1f5f9 0%, #cbd5e1 100%); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 6px solid #94a3b8; border-top: 6px solid #f1f5f9; border-bottom: 8px solid #475569; border-radius: 14px; box-shadow: 0 15px 40px rgba(0,0,0,0.25), inset 0 1px 1px #ffffff, inset 0 -2px 3px rgba(0,0,0,0.1); z-index: 1000; display: flex; flex-direction: column; }
     .header-top { display: flex; align-items: center; padding: 8px 30px; gap: 40px; }
+    .logo-container a {
+      display: block;
+      line-height: 0;
+    }
+    .logo-container a:focus {
+      outline: 2px solid #E8620A;
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
     .logo-img { width: 180px; height: 180px; object-fit: contain; filter: drop-shadow(0 6px 16px rgba(0,0,0,0.3)); }
     .brand-text-block { display: flex; flex-direction: column; align-items: center; text-align: center; color: #333333; }
     .brand-main-title { font-weight: 800; font-size: 4.8rem; line-height: 1; letter-spacing: 0.02em; text-transform: uppercase; }
@@ -83,7 +92,7 @@
     .dropdown-menu a:hover { background: rgba(0,0,0,0.04); color: #E8620A; }
     .hamburger-btn { display: none; font-size: 2.2rem; color: #1A3050; cursor: pointer; }
     @media (max-width: 950px) {
-      .glass-header { position: absolute !important; z-index: 1000 !important; left: 0 !important; right: 0 !important; width: 100% !important; top: 0 !important; border-radius: 0; border-left: none; border-right: none; border-top: none; border-bottom: 4px solid #94a3b8; overflow: hidden; }
+      .glass-header { position: absolute !important; z-index: 1000 !important; left: 0 !important; right: 0 !important; width: 100% !important; top: 0 !important; border-radius: 0; border-left: none; border-right: none; border-top: none; border-bottom: 4px solid #94a3b8; overflow: visible; }
       .header-top { display: flex !important; justify-content: space-between !important; align-items: center !important; padding: 8px 15px !important; gap: 10px !important; width: 100%; }
       .logo-img { width: 60px !important; height: 60px !important; }
       .title-img-container { display: flex; flex: 1; justify-content: center; }
@@ -92,6 +101,26 @@
       .header-cta { display: none !important; }
       .hamburger-btn { display: block; margin-left: auto; }
       nav { display: none; }
+      nav.mobile-open {
+        display: flex !important;
+        flex-direction: column !important;
+        background: rgba(245, 248, 252, 0.98) !important;
+        padding: 20px !important;
+        gap: 10px !important;
+        align-items: flex-start !important;
+      }
+      .dropdown-menu.dropdown-open {
+        display: flex !important;
+        flex-direction: column;
+        position: static;
+        box-shadow: none;
+        background: rgba(0,0,0,0.03);
+        border: none;
+        padding: 5px 0 5px 20px;
+        opacity: 1;
+        pointer-events: auto;
+        transform: none;
+      }
       .mobile-menu { display: none; flex-direction: column; background: linear-gradient(180deg, #f1f5f9, #e2e8f0); padding: 10px 20px 20px; gap: 5px; }
       .mobile-menu.open { display: flex; }
       .mobile-menu a, .dropdown-label { padding: 10px 5px; font-size: 1rem; color: #1a202c; border-bottom: 1px solid rgba(0,0,0,0.07); }
@@ -171,7 +200,7 @@
         border-right: none;
         border-top: none;
         border-bottom: 4px solid #94a3b8;
-        overflow: hidden;
+        overflow: visible;
       }
 
       .header-top {
@@ -268,7 +297,9 @@
   <input type="checkbox" id="mobile-menu-toggle" style="display:none;">
   <div class="header-top">
     <div class="logo-container">
-      <img src="logo-kaiser-clima.webp" alt="Logo Kaiser Clima" class="logo-img">
+      <a href="index.html" aria-label="Inicio">
+        <img src="logo-kaiser-clima.webp" alt="Logo Kaiser Clima" class="logo-img">
+      </a>
     </div>
 
     <div class="title-img-container">
@@ -423,6 +454,42 @@
     const backBtn = document.getElementById('back-to-top');
     window.addEventListener('scroll', () => { backBtn.classList.toggle('visible', window.scrollY > 300); });
     backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+  <script>
+  /* Mobile hamburger menu - JS fallback for iOS Safari compatibility */
+  (function() {
+    var header = document.querySelector('.glass-header');
+    var nav = header ? header.querySelector('nav') : null;
+    var btn = document.querySelector('.hamburger-btn');
+    if (!btn || !nav) return;
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      var isOpen = nav.classList.toggle('mobile-open');
+      btn.textContent = isOpen ? '✕' : '☰';
+    });
+    nav.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
+        nav.classList.remove('mobile-open');
+        btn.textContent = '☰';
+      });
+    });
+    document.addEventListener('click', function(e) {
+      if (header && !header.contains(e.target) && nav.classList.contains('mobile-open')) {
+        nav.classList.remove('mobile-open');
+        btn.textContent = '☰';
+      }
+    });
+    var dLabel = nav.querySelector('.dropdown-label');
+    var dMenu = nav.querySelector('.dropdown-menu');
+    if (dLabel && dMenu) {
+      dLabel.addEventListener('click', function(e) {
+        if (window.innerWidth <= 950) {
+          e.preventDefault();
+          dMenu.classList.toggle('dropdown-open');
+        }
+      });
+    }
+  })();
   </script>
 </body>
 </html>
