@@ -174,6 +174,20 @@
         background-image: url('fondo-movil.webp');
         background-size: cover;
         background-position: center top;
+        height: 160vh;
+      }
+      /* Cambio 2: reseñas en vertical — carrusel arriba, QR abajo, centrados */
+      .resenas-grid {
+        grid-template-columns: 1fr !important;
+        justify-items: center !important;
+      }
+      .resenas-grid > div:first-child {
+        text-align: center !important;
+        width: 100% !important;
+      }
+      .qr-feedback-grid {
+        grid-template-columns: 1fr !important;
+        justify-items: center !important;
       }
     }
 
@@ -566,7 +580,7 @@
       }
 
       #hero {
-        min-height: 70vh !important;
+        min-height: 100vh !important;
         height: auto !important;
       }
 
@@ -1231,8 +1245,20 @@
         flex-direction: column !important;
         background: rgba(245, 248, 252, 0.98) !important;
         padding: 20px !important;
-        gap: 10px !important;
+        gap: 0 !important;
         align-items: flex-start !important;
+      }
+      nav.mobile-open a,
+      nav.mobile-open .dropdown-label {
+        font-size: 1.2rem !important;
+        padding: 10px 5px !important;
+        border-bottom: 1px solid rgba(0,0,0,0.07) !important;
+        width: 100% !important;
+        font-weight: 500 !important;
+        color: #1a202c !important;
+      }
+      nav.mobile-open .dropdown-label {
+        font-weight: 600 !important;
       }
       .dropdown-menu.dropdown-open {
         display: flex !important;
