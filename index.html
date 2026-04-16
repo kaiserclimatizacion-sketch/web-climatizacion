@@ -1311,22 +1311,22 @@
     /* =============================================================== */
 
     /* ===== TABLET PORTRAIT (601px–1199px, vertical) ===== */
-    /* Usar fondo.webp — la imagen de escritorio encaja mejor en vertical */
+    /* Usar fondo-movil.webp en posición vertical */
     @media (min-width: 601px) and (max-width: 1199px) and (orientation: portrait) {
       .bg-main {
-        background-image: url('fondo.webp') !important;
-        background-size: 180% !important;
+        background-image: url('fondo-movil.webp') !important;
+        background-size: cover !important;
         background-position: center top !important;
         height: 120vh !important;
       }
     }
 
     /* ===== TABLET LANDSCAPE (601px–1199px, horizontal) ===== */
-    /* Usar fondo-movil.webp con más altura para que cubra bien */
+    /* Usar fondo.webp en posición horizontal */
     @media (min-width: 601px) and (max-width: 1199px) and (orientation: landscape) {
       .bg-main {
-        background-image: url('fondo-movil.webp') !important;
-        background-size: cover !important;
+        background-image: url('fondo.webp') !important;
+        background-size: 140% !important;
         background-position: center top !important;
         height: 140vh !important;
       }
