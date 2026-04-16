@@ -625,8 +625,8 @@
 
     /* ===================== HERO SPACER ===================== */
     #hero {
-      /* Gives space so the header sits over the background alone like the image */
-      height: 100vh;
+      /* Height adjusts to content — no forced full-screen gap */
+      height: auto;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1394,8 +1394,8 @@
 
   <!-- HERO AREA -->
   <section id="hero"
-    style="min-height: 100vh; display: flex; align-items: flex-start; padding: 0 3%; position: relative; background: linear-gradient(90deg, rgba(26,48,80,0.85) 0%, rgba(26,48,80,0.5) 55%, rgba(26,48,80,0.1) 100%);">
-    <div style="position: relative; z-index: 2; max-width: 1000px; padding-top: calc(var(--header-height) + 40px); padding-bottom: 60px;">
+    style="display: flex; align-items: flex-start; padding: 0 3%; position: relative; background: linear-gradient(90deg, rgba(26,48,80,0.85) 0%, rgba(26,48,80,0.5) 55%, rgba(26,48,80,0.1) 100%);">
+    <div style="position: relative; z-index: 2; max-width: 1000px; padding-top: calc(var(--header-height) + 40px); padding-bottom: 80px;">
       <!-- Slogan Tagline -->
       <p class="reveal"
         style="font-family: 'Inter', sans-serif; color: #fff; font-weight: 800; font-size: 1.05rem; letter-spacing: 4px; margin-bottom: 20px; text-transform: uppercase; text-shadow: 0 0 20px rgba(0,188,235,0.8), 0 2px 4px rgba(0,0,0,0.5); border-left: 5px solid #00BCEB; padding-left: 18px; animation-delay: 0.1s;">
